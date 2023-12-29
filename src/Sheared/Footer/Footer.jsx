@@ -45,7 +45,7 @@ const Footer = () => {
           <nav className='last-nav'>
             <header className="footer-title">Subscribe our Newsletter</header>
             <div className='subs-div'>
-              <input type="text" />
+              <input type="text" placeholder='Your Email'/>
               <button className='subs-btn'>Subscribe</button>
             </div>
             <div>
