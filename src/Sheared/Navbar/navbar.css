@@ -1,5 +1,6 @@
 .NavLink_color li a{
     color: black !important;
     background-color: transparent !important;
+    font-weight: bold;
 }
 
