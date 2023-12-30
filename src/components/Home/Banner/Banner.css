@@ -1,0 +1,82 @@
+.banner-container {
+  background-image: url(https://html.themefax.com/restina/html/assets/images/banner_bg.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px 0px;
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner-left {
+  flex-basis: 40%;
+}
+.banner-left h5 {
+  width: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f0165f;
+  padding: 7px 50px 7px 10px;
+  clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  margin-bottom: 17px;
+  border: 1px solid rgba(14, 13, 14, 0.1);
+  background: rgba(14, 13, 14, 0.1);
+}
+.banner-left h1 {
+  font-size: 54px;
+  font-weight: 600;
+  color: #f0165f;
+  text-transform: capitalize;
+}
+.banner-left p {
+  font-size: 20px;
+  margin: 10px 0px;
+  text-transform: capitalize;
+}
+.banner-btn {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.banner-btn button {
+  width: auto;
+  height: auto;
+  background-color: orangered;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.banner-btn a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.play-btn {
+  width: 45px;
+  height: 45px;
+  color: orangered;
+  border-radius: 50%;
+  border: 2px solid orangered;;
+  border-inline-end-color: transparent;
+  line-height: 40px;
+  text-align: center;
+}
+.play-btn span i {
+  color: rgb(255, 0, 43);
+}
+.banner-btn h4{
+    font-size: 17px;
+    font-weight: 600;
+     color: orangered;
+}
+.banner-right {
+  flex-basis: 40%;
+}
