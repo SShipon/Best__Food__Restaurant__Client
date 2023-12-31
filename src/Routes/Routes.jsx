@@ -2,11 +2,11 @@ import {createBrowserRouter} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
 import Explore from "../Pages/Explore";
-import About from "../components/About/About";
 import Contact from "../Pages/Contact";
 import Login from "../Pages/Login";
 import Dashboard from "../Pages/Dashboard";
 import Register from "../components/Authentication/Register";
+import About from "../Pages/About";
 
 export const router = createBrowserRouter([
     {
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
           element:<Explore></Explore>
         },
          {
-          path:'about',
+          path:'/about',
           element:<About></About>
          },
          {
