@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
 
 const Navbar = () => {
+  
+  const [colorChange, setNavbar] = useState(false);
+  const [white, setColor] = useState(false);
+
+  const changeBackground = () => {
+      if(window.scrollY >= 80){
+          setNavbar(true)
+      }else{
+          setNavbar(false)
+      }
+  }
+
+  const changeColor = () => {
+      if(window.scrollY >= 80){
+          setColor(true)
+      }else{
+          setColor(false)
+      }
+  }
+  
+  window.addEventListener('scroll',changeBackground);
+  window.addEventListener('black',changeColor);
   
   const navItems = <>
   <li ><Link   to="/">Home</Link></li>
@@ -14,8 +36,9 @@ const Navbar = () => {
   </>
 
     return (
-        <div>
-            <div className="navbar bg-base-100">
+    
+        <div className='my-20'>
+            <div className={colorChange ? 'navbar scroll' : 'navbar  fixed top-0 z-10'}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +48,7 @@ const Navbar = () => {
         {navItems}
       </ul>
     </div>
-    <a className=" text-xl">BEST__FOOD</a>
+    <a className={white ? 'black' : 'white'}>BEST__FOOD</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 NavLink_color">
