@@ -1,0 +1,62 @@
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.icon a i {
+    border-radius: 6px;
+    /* background: #645697; */
+    background-color: #F01543;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;   
+}
+
+.icon a i:hover{
+background-color: white;
+color: #F01543;
+ transition: all 0.5s linear;
+}
+
+.subs-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.last-nav input{
+    width:200px ;
+    height: 46px;
+    border-radius: 10px;
+    background-color: white;
+    border:none ;
+    outline: none;
+    padding-left: 15px;
+    color: black;
+}
+
+.subs-btn{
+    background-color: #F01543;
+    border: 2px solid #F01543;
+    color: #fff;
+    padding: 13px 32px;
+    transition: all 0.5s linear;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.subs-btn:hover{
+    background-color: #fff;
+    color: #F01543;
+}
