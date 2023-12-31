@@ -9,7 +9,7 @@ const Navbar = () => {
   <li ><Link   to="/explore">Explore</Link></li>
   <li ><Link   to="/about">About</Link></li>
   <li ><Link   to="/contact">Contact</Link></li>
-  <li ><Link  to="/login">Login</Link></li>
+  {/* <li ><Link  to="/login">Login</Link></li> */}
   <li ><Link  to="/dashboard">Dashboard</Link></li>
   </>
 
@@ -32,6 +32,7 @@ const Navbar = () => {
       {navItems}
     </ul>
   </div>
+  {/* navbar-end dropdown-end */}
   <div className="navbar-end">
   <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -50,8 +51,16 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    
   </div>
+  <div className="navbar-end">
+
+    <Link to='/login' className="btn btn-outline btn-primary mr-1">Login</Link>
+    <Link  to='/register' className="btn btn btn-outline btn-secondary">Sign Up Free</Link>
+  </div>
+ 
 </div>
+
         </div>
     );
 };
