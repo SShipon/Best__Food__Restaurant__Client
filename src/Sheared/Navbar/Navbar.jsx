@@ -27,18 +27,18 @@ const Navbar = () => {
   window.addEventListener('black',changeColor);
   
   const navItems = <>
-  <li ><Link   to="/">Home</Link></li>
-  <li ><Link   to="/explore">Explore</Link></li>
-  <li ><Link   to="/about">About</Link></li>
-  <li ><Link   to="/contact">Contact</Link></li>
-  {/* <li ><Link  to="/login">Login</Link></li> */}
-  <li ><Link  to="/dashboard">Dashboard</Link></li>
+  <li ><Link className={white ? 'black' : 'white'}  to="/">Home</Link></li>
+  <li ><Link className={white ? 'black' : 'white'}  to="/explore">Explore</Link></li>
+  <li ><Link className={white ? 'black' : 'white'}  to="/about">About</Link></li>
+  <li ><Link className={white ? 'black' : 'white'}  to="/contact">Contact</Link></li>
+  {/* <li >  className={white ? 'black' : 'white'} <Link  to="/login">Login</Link></li> */}
+  <li ><Link className={white ? 'black' : 'white'} to="/dashboard">Dashboard</Link></li>
   </>
 
     return (
     
         <div className='my-20'>
-            <div className={colorChange ? 'navbar scroll' : 'navbar bg-white  fixed'}>
+            <div className={colorChange ? 'navbar scroll' : 'navbar'}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

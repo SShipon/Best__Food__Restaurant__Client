@@ -1,9 +1,7 @@
 .NavLink_color li a{
-    color: black !important;
     background-color: transparent !important;
     font-weight: bold;
 }
-
 
 .navbar {
     width: 100%;
@@ -11,10 +9,11 @@
     display: flex;
     position: fixed;
     top: 0;
+    z-index: 20;
     min-height:6vh;
     justify-content: space-between;
-    transition: background-color 0.4s ease-out;
     flex-direction: row;
+    transition:all .7s ease-in-out;
 }
 
 .black {
@@ -28,7 +27,6 @@
 .scroll {
     background-color: #21353a;
     margin-left: 0; 
-    transition: all ease-in;
 }
 
 
