@@ -1,67 +1,122 @@
-/* .about-banner{
-    background-image: url(https://html.themefax.com/restina/html/assets/images/breadcrumb_bg.jpg);
-  height: 400px;
+.about-banner {
+  /* background-image: url(https://html.themefax.com/restina/html/assets/images/breadcrumb_bg.jpg); */
+  background-image: url(https://html.themefax.com/restina/html/assets/images/about_video_img.jpg);
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 50px 0px;
-} */
-.about-container{
-background-color: white;
-padding: 20px 0px;
+  position: relative;
 }
-.about-invite{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
-    max-width: 1500px;
-
+.about-banner-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
 }
-.about-invite-left{
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.about-banner-content h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
 }
-.about-invite-left h1{
-    font-size: 40px;
-    font-weight: 600;
-    color: black;
-    line-height: 46px;
-    text-transform: uppercase;
-    letter-spacing: -0.8px;
+.about-banner-content p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
-.about-invite-left p{
-    font-size: 15px;
-    font-weight: 500;
-    color: #000;
-    opacity: 0.7;
+.about-banner button {
+  font-size: 15px;
+  width: 200px;
+  height: auto;
+  background-color: rgb(245, 80, 30);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
-.about-invite-left button{
-    font-size: 15px;
-    font-weight: 500;
-    color: #000;
-    opacity: 0.7;
+/* ------------about-container-------------- */
+.about-container {
+  background-color: white;
+  /* padding: 50px 0px; */
 }
-.about-invite-right{
-    flex-basis: 40%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
+.about-invite {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  max-width: 1500px;
+  padding: 50px 0px;
 }
-.about-img-first-div ,.about-img-second-div{
-display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 10px;
+.about-invite-left {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-
+.about-invite-left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  line-height: 46px;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+}
+.about-invite-left p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.7;
+}
+.about-invite-left button {
+  font-size: 15px;
+  width: 40%;
+  height: auto;
+  background-color: rgb(245, 80, 30);
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+.about-invite-right {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-img-first-div,
+.about-img-second-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
 
 @media only screen and (max-width: 900px) {
- .about-invite{
+  .about-invite {
     display: block;
+  }
 }
+
+/*----------- about-all-img------------ */
+
+.about-all-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 0px;
+}
+
+.about-img-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

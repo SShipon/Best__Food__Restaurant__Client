@@ -3,9 +3,21 @@ import CustomButton from '../../Sheared/CustomButton/CustomButton';
 import './About.css'
 const About = () => {
   return (
-    <div className='about-container'>
-      <div className="about-banner">
-        <div className="about-invite">
+    <div className="about-container">
+      <div>
+        <section className="about-banner">
+          <div className='about-banner-content'>
+            <h2>DISCOVER ART OF FOOD WITH US.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm
+              reminu is one doeiusmod tempor incidition ulla mco laboris nisi ut
+              aliquip ex ea commo condorico consectetur adipiscing elitut
+              aliquip.
+                      </p>
+                      <button>Food Menue</button>
+          </div>
+        </section>
+        <section className="about-invite">
           <div className="about-invite-left">
             <h1>WE INVITE YOU TO VISIT OUR RESTAURANT</h1>
             <p>
@@ -23,7 +35,7 @@ const About = () => {
               dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
               aspernatur aut odit aut fugit
             </p>
-           <button>View All Menu </button>
+            <button>View All Menu </button>
           </div>
           <div className="about-invite-right">
             <div className="about-img-first-div">
@@ -51,7 +63,33 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
+        </section>
+        <section>
+          <div className="about-all-img">
+            <div className="about-img-1">
+              <img
+                src="https://html.themefax.com/restina/html/assets/images/showcase_img_1.jpg"
+                alt=""
+              />
+            </div>
+            <div className="about-img-2">
+              <img
+                src="https://html.themefax.com/restina/html/assets/images/showcase_img_2.jpg"
+                alt=""
+              />
+              <img
+                src="https://html.themefax.com/restina/html/assets/images/showcase_img_3.jpg"
+                alt=""
+              />
+            </div>
+            <div className="about-img-1">
+              <img
+                src="	https://html.themefax.com/restina/html/assets/images/showcase_img_4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
