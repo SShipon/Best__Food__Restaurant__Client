@@ -120,3 +120,30 @@
   flex-direction: column;
   gap: 15px;
 }
+
+/*------------- about-reservations-content-------------- */
+.about-reservations-content{
+  display: flex;
+  justify-content: center;
+  /* max-width: 1550px; */
+  gap: 30px;
+}
+.about-reservations-left,.about-reservations-right{
+  flex-basis: 40%;
+}
+.about-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-form input{
+     width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(8, 5, 33, 0.10);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: transparent;
+}

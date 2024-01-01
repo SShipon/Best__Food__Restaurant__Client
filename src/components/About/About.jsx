@@ -6,15 +6,15 @@ const About = () => {
     <div className="about-container">
       <div>
         <section className="about-banner">
-          <div className='about-banner-content'>
+          <div className="about-banner-content">
             <h2>DISCOVER ART OF FOOD WITH US.</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm
               reminu is one doeiusmod tempor incidition ulla mco laboris nisi ut
               aliquip ex ea commo condorico consectetur adipiscing elitut
               aliquip.
-                      </p>
-                      <button>Food Menue</button>
+            </p>
+            <button>Food Menue</button>
           </div>
         </section>
         <section className="about-invite">
@@ -87,6 +87,31 @@ const About = () => {
                 src="	https://html.themefax.com/restina/html/assets/images/showcase_img_4.jpg"
                 alt=""
               />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="about-reservations-container">
+            <div className="about-reservations-content">
+              <div className="about-reservations-left">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/reservation_img.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="about-reservations-right">
+                <h4>RESERVATIONS</h4>
+                <form action="">
+                  <div className="about-form">
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Select Person" />
+                    <input type="date" />
+                    <input type="text" placeholder="Select Time" />
+                    <button>BOOK NOW</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </section>
