@@ -197,14 +197,14 @@
   border: 2px solid red;
   margin-left: 20px;
 }
-.about-chefs-header-part button{
+.about-chefs-header-part button {
   font-size: 14px;
   font-weight: 500;
   padding: 10px 20px;
-border: 1px solid rgb(201, 196, 196);
+  border: 1px solid rgb(201, 196, 196);
   border-radius: 6px;
 
-  text-align: cente
+  text-align: cente;
 }
 .about-chef-cards-flex {
   display: flex;
@@ -229,3 +229,57 @@ border: 1px solid rgb(201, 196, 196);
   color: #525064;
 }
 
+/* -----------about-article-cards-------------- */
+.about-article-container {
+  padding: 40px 0px;
+}
+.about-article-container h4 {
+  font-size: 40px !important;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-article-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-article-card {
+ 
+}
+.about-article-card img {
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid rgb(238, 234, 234);
+}
+
+.about-article-content {
+  margin-top: 10px;
+  padding: 5px;
+  color: #000;
+}
+.about-article-content p {
+  color: #525064;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-article-content h1 {
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.about-article-content button {
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid rgb(252, 172, 143);
+  padding:10px 20px;
+}

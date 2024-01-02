@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomButton from '../../Sheared/CustomButton/CustomButton';
-import './About.css'
+import './About.css';
 const About = () => {
   return (
     <div className="about-container">
@@ -167,6 +167,50 @@ const About = () => {
                 />
                 <h2>FERGUS DOUCHEBAG</h2>
                 <h3>Executive Chef</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="about-article-container">
+            <h4>OUR LATEST NEWS & ARTICLE</h4>
+            <div className="about-article-cards">
+              <div className="about-article-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/blog_img_1.jpg"
+                  alt=""
+                />
+                <div className="about-article-content">
+                  <p> APRIL 18, 2024</p>
+                  <h1>WHAT IS THE DIFFERENCE BETWEEN HAMBURGERS &...</h1>
+                  <button>READ MORE</button>
+                </div>
+              </div>
+           
+            
+              <div className="about-article-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/blog_img_2.jpg"
+                  alt=""
+                />
+                <div className="about-article-content">
+                  <p> APRIL 18, 2024</p>
+                  <h1>PAIRING WINE WITH INDIAN FOOD: TIPS FROM A...</h1>
+                  <button>READ MORE</button>
+                </div>
+              </div>
+           
+           
+              <div className="about-article-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/blog_img_3.jpg"
+                  alt=""
+                />
+                <div className="about-article-content">
+                  <p> APRIL 18, 2024</p>
+                  <h1>THE WONDERS OF THAI CUISINE SWEET, SALTY &...</h1>
+                  <button>READ MORE </button>
+                </div>
               </div>
             </div>
           </div>
