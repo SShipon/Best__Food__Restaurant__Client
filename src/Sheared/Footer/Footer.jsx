@@ -2,8 +2,8 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-      <div>
-        <footer className="footer p-10 bg-base-200 text-base-content">
+      <div className='ba-back'>
+        <footer className="footer p-10 ">
           <nav className="max-w-sm">
             <img
               src="https://quomodosoft.com/html/reservq/assets/images/logo/footer-logo.svg"
@@ -49,7 +49,7 @@ const Footer = () => {
               <button className='subs-btn'>Subscribe</button>
             </div>
             <div>
-              <h1>We accept Payment methods:</h1>
+              <h1 className='mb-2'>We accept Payment methods:</h1>
               <div className="flex gap-2">
                 <div>
                   <img
