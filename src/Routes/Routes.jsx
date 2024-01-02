@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
           element:<Explore></Explore>
         },
          {
-          path:'/about',
+          path:'about',
           element:<About></About>
          },
          {
