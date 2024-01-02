@@ -5,7 +5,7 @@
 
 .navbar {
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     position: fixed;
     top: 0;
@@ -24,9 +24,30 @@
     color: #fcfcff;
 }
 
-.scroll {
-    background-color: #21353a;
-    margin-left: 0; 
+.black-bg {
+  background-color: #1f2122;
 }
 
+.scroll {
+  background-color: #fcfcff;
+}
+  
 
+
+.login-btn ,.register-btn{
+    width: auto;
+    height: auto;
+    background-color: rgb(231, 31, 81);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.register-btn{
+    width: auto;
+    height: auto;
+    background-color: rgb(231, 31, 81);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    line-height: 30px;
+}

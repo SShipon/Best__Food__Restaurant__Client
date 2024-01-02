@@ -122,28 +122,110 @@
 }
 
 /*------------- about-reservations-content-------------- */
-.about-reservations-content{
+.about-reservations-container {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.about-reservations-content {
   display: flex;
   justify-content: center;
   /* max-width: 1550px; */
   gap: 30px;
 }
-.about-reservations-left,.about-reservations-right{
+.about-reservations-left,
+.about-reservations-right {
   flex-basis: 40%;
 }
-.about-form{
+.about-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.about-form input{
-     width: 100%;
-    padding: 12px 20px;
-    outline: none;
-    resize: none;
-    border: 1px solid rgba(8, 5, 33, 0.10);
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    background-color: transparent;
+.about-form input {
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(8, 5, 33, 0.1);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: transparent;
 }
+.about-form button {
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(8, 5, 33, 0.1);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+/* -------------about-rating---------- */
+.about-rating {
+  background-image: url(https://html.themefax.com/restina/html/assets/images/testimonial_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.play-btn {
+}
+
+/* about-chef-cards-flex */
+.about-chefs-container {
+  padding: 50px 0px;
+}
+.about-chefs-header-part {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.about-chefs-header-part h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+}
+.about-chefs-header-part h1::after {
+  content: '';
+  border: 2px solid red;
+  margin-left: 20px;
+}
+.about-chefs-header-part button{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+border: 1px solid rgb(201, 196, 196);
+  border-radius: 6px;
+
+  text-align: cente
+}
+.about-chef-cards-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-chef-card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #000;
+}
+.about-chef-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  color: #525064;
+}
+
