@@ -6,11 +6,13 @@ import img4 from  '../../../assets/Restaurant_logo/images__6_-removebg-preview.p
 import img5 from  '../../../assets/Restaurant_logo/images__9_-removebg-preview.png'
 import Logo from './Logo';
 import Marquee from 'react-fast-marquee';
+import Facebook from '../../../Sheared/Svg/Facebook';
 const Logos = () => {
     const restaurantLogos =[
         {
-          id:1,
-          logoImg:img1
+        icon:<Facebook/>,
+        id:1,
+       logoImg:img1
         },
         {
           id:2,
