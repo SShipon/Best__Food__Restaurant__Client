@@ -1,9 +1,9 @@
 import React from 'react';
-
+import AboutCom from '../components/About/About'
 const About = () => {
     return (
         <div>
-            <h2>ia m about</h2>
+           <AboutCom></AboutCom>
         </div>
     );
 };
