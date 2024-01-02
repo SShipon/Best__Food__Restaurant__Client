@@ -26,6 +26,7 @@ const Login = () => {
                 <Link to='/forgetPassword' className="label-text-alt link link-hover">Forgot password?</Link>
               </label>
             </div>
+            
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
