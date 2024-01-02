@@ -1,8 +1,9 @@
 import React from 'react';
+import CustomButton from '../../Sheared/CustomButton/CustomButton';
 import './About.css'
 const About = () => {
   return (
-    <div>
+    <div className='about-container'>
       <div className="about-banner">
         <div className="about-invite">
           <div className="about-invite-left">
@@ -22,7 +23,7 @@ const About = () => {
               dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
               aspernatur aut odit aut fugit
             </p>
-            <button>View All Menue</button>
+           <button>View All Menu </button>
           </div>
           <div className="about-invite-right">
             <div className="about-img-first-div">
