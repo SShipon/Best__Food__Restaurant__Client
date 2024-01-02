@@ -78,8 +78,8 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
 
-    <Link to='/login' className="btn btn-outline btn-primary mr-1">Login</Link>
-    <Link  to='/register' className="btn btn btn-outline btn-secondary  hidden  pt-3 py-5 px-5 mx-0 md:block">Sign Up Free</Link>
+    <Link to='/login' className=" login-btn mr-1">Login</Link>
+    <Link  to='/register' className="register-btn  btn hidden  md:block">Sign Up Free</Link>
   </div>
  
 </div>
