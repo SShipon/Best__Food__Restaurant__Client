@@ -8,10 +8,12 @@ import Dashboard from "../Pages/Dashboard";
 import Register from "../components/Authentication/Register";
 import About from "../Pages/About";
 import ForgetPassword from "../components/Authentication/ForgetPassword";
+import NotFound from "../Sheared/PageNotFound/NotFound";
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <NotFound />,
       children:[
         {
             path:'/',
