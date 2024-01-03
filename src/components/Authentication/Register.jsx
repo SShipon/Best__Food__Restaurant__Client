@@ -5,10 +5,11 @@ import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import app from "../../firebase/firebase.config";
+import { Toaster } from "react-hot-toast";
 
 const auth = getAuth(app);
+
 const Register = () => {
-  const [regError, setRegError] = useState("");
 
   const handelRegister = (event) => {
     event.preventDefault();
@@ -16,16 +17,17 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    //console.log(name, email, password)
+    console.log(name, email, password);
 
     // new user creation :
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const loggedUser = result.user;
-        setRegError("");
+        toast.success('Successfully user created')
+        event.target.reset();
       })
       .catch((err) => {
-        setRegError(err.message);
+        toast.error(err.message)
       });
   };
 
@@ -45,6 +47,7 @@ const Register = () => {
           <div className=" mx-auto">
             <div className="w-96 p-7 mx-auto">
               <h2 className="text-xl text-center font-bold">Register</h2>
+              <Toaster position="top-center" reverseOrder={false} />
               <form onSubmit={handelRegister} className="card-body">
                 <div className="form-control">
                   <label className="label">
@@ -77,14 +80,10 @@ const Register = () => {
                   <input
                     type="password"
                     name="password"
-                    placeholder="Password"
+                    placeholder="Password "
                     className="input input-bordered"
                     required
                   />
-                  <label>
-                    <p className="text-error"> {regError}</p>
-                  </label> 
-
                   <label className="label">
                     <Link to="/forgetPassword" className="">
                       Forgot password?
