@@ -115,6 +115,20 @@ const About = () => {
             </div>
           </div>
         </section>
+        <section>
+          <div className="about-rating">
+            <div className="about-rating-content">
+              <a
+                class="venobox play-btn vbox-item"
+                data-autoplay="true"
+                data-vbtype="video"
+                href="https://youtu.be/nqye02H_H6I?si=ougeOsfL0tat6YbT"
+              >
+                <i class="fas fa-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
