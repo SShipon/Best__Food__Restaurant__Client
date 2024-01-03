@@ -1,5 +1,29 @@
-.contact-flex{
-    display: flex;
-    justify-content: center;
-   
+.contact-container {
+  background-color: white;
+  padding: 50px 0px;
+}
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.contact-left {
+  flex-basis: 30%;
+}
+.contact-right {
+  flex-basis: 40%;
+}
+
+.contact-left h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.contact-left p {
+    margin: 10px 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  max-width: 400px;
 }
