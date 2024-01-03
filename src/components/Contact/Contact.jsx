@@ -57,6 +57,34 @@ const Contact = () => {
             </form>
           </div>
         </section>
+        <section>
+          <div className="contact-cards-flex">
+            <div className="contact-card">
+              <div className="contact-logo ">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Call Us</h2>
+              </div>
+              <p>+1 234 XXXX 123</p>
+              <p>+1 234 XXXX 567</p>
+            </div>
+            <div className="contact-card">
+              <div className="contact-logo ">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Email</h2>
+              </div>
+              <p>demomail123@mail.com</p>
+              <p>helpdemo123@mail.com</p>
+            </div>
+            <div className="contact-card">
+              <div className="contact-logo ">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>Address</h2>
+              </div>
+              <p>37125 Maya Estate Dr, Victoria Road,</p>
+              <p>Warsaw, Poland - 234834</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
