@@ -15,30 +15,34 @@ const Login = () => {
           <div className=" mx-auto">
             <div className="w-96 p-7 mx-auto" >
               <h2 className="text-xl text-center font-bold">Login</h2>
-              <form className="card-body">
+              <form onSubmit={handelLogin} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" name='email' placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered" required />
+          <input type="password" name='password' placeholder="password" className="input input-bordered" required />
           <label className="label">
-            <Link to='/forgetPassword'   className="label-text-alt link link-hover">Forgot password?</Link>
+            <Link to='/forgetPassword'   className="">Forgot password?</Link>
           </label>
         </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+        <div className="form-control">
+         
+          <input className="btn btn-primary w-full" type="submit" value="Login" />
         </div>
-      </form>
-              <p>New to Doctors ? <Link className="text-secondary" to='/register'>Create New Account</Link></p>
+        <p>New to Restaurant ? <Link className="text-secondary" to='/register'>Create New Account</Link></p>
               <div className="divider">OR</div>
-  
-            
+    
+              <button  className="btn btn-outline btn-second w-full">CONTINUE WITH GOOGLE</button>
+
+            <button  className="btn btn-outline btn-second w-full">CONTINUE WITH GITHUB</button>
+      </form>
+          
             </div>
           </div>
           <div>
