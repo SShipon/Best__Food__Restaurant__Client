@@ -34,7 +34,7 @@ const Logos = () => {
     ]
     
     return (
-        <div>
+        <div className='my-20'>
           
            <div  className='text-center my-10'>
                 <h2 className='text-4xl bold'>  OUR TOP WORLD RESTAURANT PARTNERSHIP</h2>
@@ -42,7 +42,7 @@ const Logos = () => {
             tools in the next year.  <br />  One way to respond to this downscaling is to
             seek out technology partnerships..</p>
             </div>
-            <Marquee>
+            <Marquee speed={40}>
             <div className='flex z-0'>
             {
               restaurantLogos.map(logo=><Logo
