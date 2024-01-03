@@ -4,7 +4,7 @@ import img2 from  '../../../assets/Restaurant_logo/images__3_-removebg-preview.p
 import img3 from  '../../../assets/Restaurant_logo/images__4_-removebg-preview.png'
 import img4 from  '../../../assets/Restaurant_logo/images__6_-removebg-preview.png'
 import img5 from  '../../../assets/Restaurant_logo/images__9_-removebg-preview.png'
-import Logo from './Logo';
+import Logo from './AddLogo';
 import Marquee from 'react-fast-marquee';
 import Facebook from '../../../Sheared/Svg/Facebook';
 const Logos = () => {

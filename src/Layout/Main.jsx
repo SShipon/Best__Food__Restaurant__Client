@@ -8,11 +8,12 @@ const Main = () => {
     const location = useLocation()
     const noNavbarNoFooter = location.pathname.includes('login')
     const register = location.pathname.includes('register')
+    const forgetPassword = location.pathname.includes('forgetPassword')
     return (
         <div>
             <Navbar></Navbar>
             <Outlet></Outlet>
-          {noNavbarNoFooter || register || <Footer></Footer>}
+          {noNavbarNoFooter || register || forgetPassword|| <Footer></Footer>}
         </div>
     );
 };
