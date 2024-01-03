@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import Foods from './FoodItems/Foods';
+import Menu from './Menu/Menu';
 import PopularCategory from './PopularCategory/PopularCategory';
 import Logos from './RestaurantLogo/AddLogos';
 
@@ -9,6 +9,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <PopularCategory></PopularCategory>
+            <Menu></Menu>
             <Logos></Logos>
            
         </div>
