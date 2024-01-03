@@ -36,7 +36,7 @@ const Menu = () => {
                   <div className="menu-btn-price">
                     <button>Add To Cart</button>
                     <div className="menu-price">
-                      <h2>$40</h2>
+                      <h2>$45</h2>
                       <h5>$150</h5>
                     </div>
                   </div>
@@ -67,7 +67,7 @@ const Menu = () => {
                   <div className="menu-btn-price">
                     <button>Add To Cart</button>
                     <div className="menu-price">
-                      <h2>$40</h2>
+                      <h2>$65</h2>
                       <h5>$80</h5>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const Menu = () => {
                   <div className="menu-btn-price">
                     <button>Add To Cart</button>
                     <div className="menu-price">
-                      <h2>$40</h2>
+                      <h2>$34</h2>
                       <h5>$60</h5>
                     </div>
                   </div>
