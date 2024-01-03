@@ -10,7 +10,10 @@ const Login = () => {
       console.log(email, password)
     }
     return (
-        <section className="mx-5">
+      <section style={{
+        backgroundColor: "white",
+        color:"black"
+        }}>
         <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
           <div className=" mx-auto">
             <div className="w-96 p-7 mx-auto" >

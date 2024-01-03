@@ -30,3 +30,20 @@
 }
 
 
+.login-btn ,.register-btn{
+    width: auto;
+    height: auto;
+    background-color: rgb(231, 31, 81);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.register-btn{
+    width: auto;
+    height: auto;
+    background-color: rgb(231, 31, 81);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    line-height: 30px;
+}

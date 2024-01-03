@@ -129,6 +129,48 @@ const About = () => {
             </div>
           </div>
         </section>
+        <section>
+          <div className="about-chefs-container">
+            <div className="about-chefs-header-part">
+              <h1>MEET WITH OUR CHEFS</h1>
+              <button>VIEW ALL CHEF</button>
+            </div>
+            <div className="about-chef-cards-flex">
+              <div className="about-chef-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_1.png"
+                  alt=""
+                />
+                <h2>NATHANEAL DOWN</h2>
+                <h3>Main Chef</h3>
+              </div>
+              <div className="about-chef-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_2.png"
+                  alt=""
+                />
+                <h2>PELICAN STEVE</h2>
+                <h3>Executive Chef</h3>
+              </div>
+              <div className="about-chef-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_3.png"
+                  alt=""
+                />
+                <h2>DYLAN MERINGUE</h2>
+                <h3>Master Chef</h3>
+              </div>
+              <div className="about-chef-card">
+                <img
+                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_4.png"
+                  alt=""
+                />
+                <h2>FERGUS DOUCHEBAG</h2>
+                <h3>Executive Chef</h3>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
