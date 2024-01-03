@@ -94,6 +94,23 @@
 .category-left img{
     height: 200px;
 }
-.category-right img{
-    height: 200px;
+
+.category-left{
+  position: relative;
+}
+
+.category-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.category-content h1 {
+  font-size: 25px;
+    color: #000;
+}
+.category-content p {
+    color: #000;
 }

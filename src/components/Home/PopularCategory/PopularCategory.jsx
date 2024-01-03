@@ -112,20 +112,20 @@ const PopularCategory = () => {
                 src="https://html.themefax.com/restina/html/rtl/assets/images/small_banner_img_1.jpg"
                 alt=""
               />
-              <div>
+              <div className="category-content">
                 <h1>GREAT VALUE</h1>
                 <h1>MIXED DRINKS</h1>
                 <p>ORDER NOW</p>
               </div>
             </div>
-            <div className="category-right">
+            <div className="category-left">
               <img
                 src="https://html.themefax.com/restina/html/rtl/assets/images/large_banner_img_1.jpg"
                 alt=""
               />
-              <div>
-                <h1>GREAT VALUE</h1>
-                <h1>MIXED DRINKS</h1>
+              <div className="category-content">
+                <h1>THE BEST BURGER</h1>
+                <h1>PLACE IN TOWN</h1>
                 <p>ORDER NOW</p>
               </div>
             </div>
