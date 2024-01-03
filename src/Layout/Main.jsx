@@ -11,7 +11,7 @@ const Main = () => {
     const forgetPassword = location.pathname.includes('forgetPassword')
     return (
         <div>
-            <Navbar></Navbar>
+          { noNavbarNoFooter || register || forgetPassword||  <Navbar></Navbar>}
             <Outlet></Outlet>
           {noNavbarNoFooter || register || forgetPassword|| <Footer></Footer>}
         </div>
