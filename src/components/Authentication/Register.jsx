@@ -78,7 +78,7 @@ const Register = () => {
                     />
                   </div>
                   <p>
-                    Already hve an account ?{' '}
+                    Already have an account ?{' '}
                     <Link className="text-secondary" to="/login">
                       Please Login
                     </Link>

@@ -5,7 +5,7 @@
 
 .navbar {
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     position: fixed;
     top: 0;
@@ -24,10 +24,14 @@
     color: #fcfcff;
 }
 
-.scroll {
-    background-color: #21353a;
-    margin-left: 0; 
+.black-bg {
+  background-color: #1f2122;
 }
+
+.scroll {
+  background-color: #fcfcff;
+}
+  
 
 
 .login-btn ,.register-btn{
