@@ -105,6 +105,32 @@ const PopularCategory = () => {
             </SwiperSlide>
           </Swiper>
         </section>
+        <section>
+          <div className="two-category-container">
+            <div className="category-left">
+              <img
+                src="https://html.themefax.com/restina/html/rtl/assets/images/small_banner_img_1.jpg"
+                alt=""
+              />
+              <div>
+                <h1>GREAT VALUE</h1>
+                <h1>MIXED DRINKS</h1>
+                <p>ORDER NOW</p>
+              </div>
+            </div>
+            <div className="category-right">
+              <img
+                src="https://html.themefax.com/restina/html/rtl/assets/images/large_banner_img_1.jpg"
+                alt=""
+              />
+              <div>
+                <h1>GREAT VALUE</h1>
+                <h1>MIXED DRINKS</h1>
+                <p>ORDER NOW</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
