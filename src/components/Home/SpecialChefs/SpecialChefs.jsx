@@ -4,6 +4,9 @@ import chef1 from '../../../assets/chefs/chef_img_1.jpg';
 import chef2 from '../../../assets/chefs/chef_img_2.jpg';
 import chef3 from '../../../assets/chefs/chef_img_3.jpg';
 import chef4 from '../../../assets/chefs/chef_img_4.jpg';
+import article1 from '../../../assets/Article/blog_img_1.jpg';
+import article2 from '../../../assets/Article/blog_img_2.jpg';
+import article3 from '../../../assets/Article/blog_img_3.jpg';
 const SpecialChefs = () => {
   return (
     <div>
@@ -104,10 +107,7 @@ const SpecialChefs = () => {
           <h4>OUR LATEST NEWS & ARTICLE</h4>
           <div className="about-article-cards">
             <div className="about-article-card">
-              <img
-                src="https://html.themefax.com/restina/html/assets/images/blog_img_1.jpg"
-                alt=""
-              />
+              <img src={article1} alt="" />
               <div className="about-article-content">
                 <p> APRIL 18, 2024</p>
                 <h1>WHAT IS THE DIFFERENCE BETWEEN HAMBURGERS &...</h1>
@@ -116,10 +116,7 @@ const SpecialChefs = () => {
             </div>
 
             <div className="about-article-card">
-              <img
-                src="https://html.themefax.com/restina/html/assets/images/blog_img_2.jpg"
-                alt=""
-              />
+              <img src={article2} alt="" />
               <div className="about-article-content">
                 <p> APRIL 18, 2024</p>
                 <h1>PAIRING WINE WITH INDIAN FOOD: TIPS FROM A...</h1>
@@ -128,10 +125,7 @@ const SpecialChefs = () => {
             </div>
 
             <div className="about-article-card">
-              <img
-                src="https://html.themefax.com/restina/html/assets/images/blog_img_3.jpg"
-                alt=""
-              />
+              <img src={article3} alt="" />
               <div className="about-article-content">
                 <p> APRIL 18, 2024</p>
                 <h1>THE WONDERS OF THAI CUISINE SWEET, SALTY &...</h1>
