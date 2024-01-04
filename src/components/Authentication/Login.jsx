@@ -5,7 +5,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
-  const handelLogin = () => {
+  const handelLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
@@ -32,7 +32,7 @@ const Login = () => {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  className="input input-bordered"
+                  className="input input-bordered focus:outline-none focus:ring-0 w-[100%]"
                   required
                 />
               </div>
@@ -44,7 +44,7 @@ const Login = () => {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="input input-bordered"
+                  className="input input-bordered focus:outline-none focus:ring-0 w-[100%]"
                   required
                 />
                 <label className="label">
@@ -69,7 +69,7 @@ const Login = () => {
               <div className="divider">OR</div>
 
               <button className="btn btn-outline btn-second w-full">
-                CONTINUE WITH GOOGLE <FaGoogle />{" "}
+                CONTINUE WITH GOOGLE <FaGoogle /> {" "}
               </button>
 
               <button className="btn btn-outline btn-second w-full">
