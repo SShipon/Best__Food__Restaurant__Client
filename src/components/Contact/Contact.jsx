@@ -1,6 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
+import { toast } from 'react-toastify';
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_g1c26wo",
+        "template_yb7v9ac",
+        form.current,
+        "user_5ySjOOUu9Vj2df9Ohyyw7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Thank you dear Customer !!!", {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+    
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div>
       <div className="contact-container">
@@ -17,13 +43,14 @@ const Contact = () => {
             />
           </div>
           <div className="contact-right">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail} action="">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
                 <input
-                  type="text"
+                    type="text"
+                    name="user_name}"
                   placeholder="Enter Name"
                   className="input input-bordered"
                   required
@@ -34,7 +61,8 @@ const Contact = () => {
                   <span className="label-text">E-mail</span>
                 </label>
                 <input
-                  type="email"
+                  name="user_email"
+                  type="text"
                   placeholder="Enter Your email"
                   className="input input-bordered"
                   required
@@ -47,13 +75,12 @@ const Contact = () => {
                 </label>
                 <textarea
                   placeholder="Enter Your message"
-                  name=""
-                  id=""
+                  name="message"
                   cols="30"
                   rows="10"
                 ></textarea>
               </div>
-              <button>Send Message</button>
+              <button type='submit' >Send Message</button>
             </form>
           </div>
         </section>
