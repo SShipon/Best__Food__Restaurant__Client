@@ -11,7 +11,6 @@ const SpecialChefs = () => {
         <div className="home-chefs-container">
           <div className="home-chefs-header-part">
             <h1>MEET WITH OUR CHEFS</h1>
-            <button>VIEW ALL CHEF</button>
           </div>
           <div className="home-chef-cards-flex">
             <div className="home-chef-card">
@@ -94,6 +93,9 @@ const SpecialChefs = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="all-chefs-btn">
+            <button>View All Chefs</button>
           </div>
         </div>
       </section>
