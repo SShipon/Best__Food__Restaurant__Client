@@ -1,59 +1,83 @@
 
 /* about-chef-cards-flex */
-.about-chefs-container {
+.home-chefs-container {
   padding: 50px 0px;
   background-color: white;
 }
-.about-chefs-header-part {
+.home-chefs-header-part {
   display: flex;
   justify-content: space-around;
   margin-bottom: 25px;
 }
-.about-chefs-header-part h1 {
+.home-chefs-header-part h1 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #000;
 }
-.about-chefs-header-part h1::after {
+.home-chefs-header-part h1::after {
   content: '';
   border: 2px solid red;
   margin-left: 20px;
 }
-.about-chefs-header-part button {
+.home-chefs-header-part button {
   font-size: 14px;
   font-weight: 500;
   padding: 10px 20px;
   border: 1px solid rgb(201, 196, 196);
   border-radius: 6px;
-
-  text-align: cente;
+  text-align: center;
 }
-.about-chef-cards-flex {
+.home-chef-cards-flex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.about-chef-card h2 {
+.home-chef-card{
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+.home-chef-content{
+    padding: 15px;
+    
+}
+.home-chef-content h2 {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.36px;
   text-transform: uppercase;
-  margin-top: 20px;
   margin-bottom: 5px;
   color: #000;
 }
-.about-chef-card h3 {
+.home-chef-content h3 {
   font-size: 15px;
   font-weight: 500;
   margin: 0;
   color: #525064;
 }
 
+.chef-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+    font-size: 15px;
 
+}
+.chef-social li{
+   border:1px solid rgb(218, 214, 214) ;
+   color: black;
+   padding: 10px 15px;
+   border-radius: 10px;
+}
+.chef-social li:hover{
+     border:1px solid rgb(255, 0, 64) ;
+   background-color: rgb(255, 0, 64);
+   color: white;
+}
 /* -----------about-article-cards-------------- */
 .about-article-container {
   padding: 40px 0px;
