@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomButton from '../../Sheared/CustomButton/CustomButton';
 import './About.css';
 const About = () => {
   return (
