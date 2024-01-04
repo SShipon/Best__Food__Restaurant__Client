@@ -4,12 +4,15 @@ import chef1 from '../../../assets/chefs/chef_img_1.jpg';
 import chef2 from '../../../assets/chefs/chef_img_2.jpg';
 import chef3 from '../../../assets/chefs/chef_img_3.jpg';
 import chef4 from '../../../assets/chefs/chef_img_4.jpg';
-import article1 from '../../../assets/Article/blog_img_1.jpg';
-import article2 from '../../../assets/Article/blog_img_2.jpg';
-import article3 from '../../../assets/Article/blog_img_3.jpg';
+import article1 from '../../../assets/Article/blog_2_img_1.jpg';
+import article2 from '../../../assets/Article/blog_2_img_2.jpg';
+import article3 from '../../../assets/Article/blog_2_img_3.jpg';
 const SpecialChefs = () => {
   return (
     <div>
+      <section>
+        <div className="home-back-img"></div>
+      </section>
       <section>
         <div className="home-chefs-container">
           <div className="home-chefs-header-part">
@@ -102,6 +105,7 @@ const SpecialChefs = () => {
           </div>
         </div>
       </section>
+
       <section>
         <div className="about-article-container">
           <h4>OUR LATEST NEWS & ARTICLE</h4>
