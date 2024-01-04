@@ -1,4 +1,9 @@
 import React from 'react';
+import chef1 from '../../assets/chefs/chef_img_1.jpg';
+import chef2 from '../../assets/chefs/chef_img_2.jpg';
+import chef3 from '../../assets/chefs/chef_img_3.jpg';
+import chef4 from '../../assets/chefs/chef_img_4.jpg';
+import testimonial from '../../assets/chefs/testimonial_bg.jpg';
 import './About.css';
 const About = () => {
   return (
@@ -86,7 +91,6 @@ const About = () => {
                 src="	https://html.themefax.com/restina/html/assets/images/showcase_img_4.jpg"
                 alt=""
               />
-            
             </div>
           </div>
         </section>
@@ -137,34 +141,22 @@ const About = () => {
             </div>
             <div className="about-chef-cards-flex">
               <div className="about-chef-card">
-                <img
-                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_1.png"
-                  alt=""
-                />
+                <img src={chef1} alt="" />
                 <h2>NATHANEAL DOWN</h2>
                 <h3>Main Chef</h3>
               </div>
               <div className="about-chef-card">
-                <img
-                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_2.png"
-                  alt=""
-                />
+                <img src={chef2} alt="" />
                 <h2>PELICAN STEVE</h2>
                 <h3>Executive Chef</h3>
               </div>
               <div className="about-chef-card">
-                <img
-                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_3.png"
-                  alt=""
-                />
+                <img src={chef3} alt="" />
                 <h2>DYLAN MERINGUE</h2>
                 <h3>Master Chef</h3>
               </div>
               <div className="about-chef-card">
-                <img
-                  src="https://html.themefax.com/restina/html/assets/images/chefs_3_img_4.png"
-                  alt=""
-                />
+                <img src={chef4} alt="" />
                 <h2>FERGUS DOUCHEBAG</h2>
                 <h3>Executive Chef</h3>
               </div>
@@ -186,8 +178,7 @@ const About = () => {
                   <button>READ MORE</button>
                 </div>
               </div>
-           
-            
+
               <div className="about-article-card">
                 <img
                   src="https://html.themefax.com/restina/html/assets/images/blog_img_2.jpg"
@@ -199,8 +190,7 @@ const About = () => {
                   <button>READ MORE</button>
                 </div>
               </div>
-           
-           
+
               <div className="about-article-card">
                 <img
                   src="https://html.themefax.com/restina/html/assets/images/blog_img_3.jpg"
