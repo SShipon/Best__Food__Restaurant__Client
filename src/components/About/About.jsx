@@ -87,6 +87,7 @@ const About = () => {
                 src="	https://html.themefax.com/restina/html/assets/images/showcase_img_4.jpg"
                 alt=""
               />
+            
             </div>
           </div>
         </section>

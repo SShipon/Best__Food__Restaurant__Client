@@ -37,7 +37,7 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className={white ? 'black' : 'white'}>BEST__FOOD</a>
+          <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
