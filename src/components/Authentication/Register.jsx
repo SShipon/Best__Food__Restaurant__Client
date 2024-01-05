@@ -93,7 +93,7 @@ const Register = () => {
                     <span className="label-text">Password</span>
                   </label>
                  <div className="relative ">
-                  <p className="absolute top-4 right-0 pr-3">
+                  <p className="absolute top-4 right-0 ">
                   <FaRegEyeSlash />
                   </p>
               
