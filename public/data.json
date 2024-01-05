@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Daria Shevtsova",
+    "price": 60,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_2.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "chicken",
+    "featured": true
+  },
+  {
+    "name": "Hyderabadi Biryani",
+    "price": 50,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "chiken"
+  },
+  {
+    "name": "Spicy Burger",
+    "price": 30,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "burger"
+  },
+  {
+    "name": "Mexican Pizza",
+    "price": 25,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_4.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "pizza"
+  },
+  {
+    "name": "Mozzarella Sticks",
+    "price": 49,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_5.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "chiken"
+  },
+  {
+    "name": "Popcorn Chicken",
+    "company": "apple",
+    "price": 99,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "chicken"
+  },
+  {
+    "name": "Mexican Pizza",
+    "price": 23,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "pizza"
+  },
+  {
+    "name": "Onion Rings",
+    "price": 19,
+    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
+    "description": "Homemade pizza crust, pizza sauce",
+    "category": "chinese",
+    "featured": true
+  }
+]

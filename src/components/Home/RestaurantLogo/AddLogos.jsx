@@ -34,7 +34,11 @@ const Logos = () => {
     ]
     
     return (
-        <div className='my-20'>
+      <div className='pt-5 pb-20 '
+        style={{
+        backgroundColor:'white'
+      }}
+      >
           
            <div  className='text-center my-10'>
                 <h2 className='text-4xl bold'>  OUR TOP WORLD RESTAURANT PARTNERSHIP</h2>
