@@ -1,33 +1,36 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
-import app from "../../firebase/firebase.config";
 import { Toaster } from "react-hot-toast";
-
-const auth = getAuth(app);
+import { useForm } from "react-hook-form";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Register = () => {
+  const { newCreateUser } = useContext(AuthContext);
+  const { register,handleSubmit, formState: { errors }, reset, } = useForm();
+  const [sigUpError, SetSignUpError] = useState("");
 
-  const handelRegister = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const password = form.password.value;
-    console.log(name, email, password);
 
-    // new user creation :
-    createUserWithEmailAndPassword(auth, email, password)
+  const location = useLocation()
+
+
+
+  const HandleRegister = (data) => {
+    console.log(data);
+    SetSignUpError("");
+    newCreateUser(data.email, data.password)
       .then((result) => {
-        const loggedUser = result.user;
-        toast.success('Successfully user created')
-        event.target.reset();
+        const user = result.user;
+        console.log(user);
+        toast.success("User Created Successfully!", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+        reset();
       })
-      .catch((err) => {
-        toast.error(err.message)
+      .catch((error) => {
+        SetSignUpError(error.message);
       });
   };
 
@@ -48,41 +51,55 @@ const Register = () => {
             <div className="w-96 p-7 mx-auto">
               <h2 className="text-xl text-center font-bold">Register</h2>
               <Toaster position="top-center" reverseOrder={false} />
-              <form onSubmit={handelRegister} className="card-body">
+              <form
+                onSubmit={handleSubmit(HandleRegister)}
+                className="card-body"
+              >
+                 {/* new user create name */}
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
                   </label>
                   <input
-                    type="name"
-                    name="name"
-                    placeholder="Name"
-                    className="input input-bordered"
-                    required
+                    type="text"
+                    {...register("name", { required: "Name is required" })}
+                    className="input input-bordered focus:outline-none focus:ring-0 w-[100%]"
                   />
                 </div>
+                  {/* new user create email */}
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
                   </label>
                   <input
                     type="email"
-                    name="email"
-                    placeholder="Email"
-                    className="input input-bordered"
-                    required
+                    {...register("email", {
+                      required: "Email Address is required",
+                    })}
+                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%]"
                   />
                 </div>
+ 
+                 {/* new user create password */}
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
                   <input
                     type="password"
-                    name="password"
-                    placeholder="Password "
-                    className="input input-bordered"
-                    required
+                    {...register("password", {
+                      required: "Password is required ",
+                      minLength: {
+                        value: 6,
+                        message: "Password must be 6 characters or long",
+                      },
+                      pattern: {
+                        value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
+                        message:
+                          "Password must have uppercase number and special character number",
+                      },
+                    })}
+                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%]"
                   />
                   <label className="label">
                     <Link to="/forgetPassword" className="">

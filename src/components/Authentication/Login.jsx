@@ -32,7 +32,7 @@ const Login = () => {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  className="input input-bordered"
+                  className="input input-bordered focus:outline-none focus:ring-0 w-[100%]"
                   required
                 />
               </div>
@@ -44,7 +44,7 @@ const Login = () => {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="input input-bordered"
+                  className="input input-bordered focus:outline-none focus:ring-0 w-[100%]"
                   required
                 />
                 <label className="label">
