@@ -1,61 +1,15 @@
 [
   {
-    "name": "Daria Shevtsova",
-    "price": 60,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_2.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "chicken",
-    "featured": true
-  },
-  {
-    "name": "Hyderabadi Biryani",
-    "price": 50,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "chiken"
-  },
-  {
-    "name": "Spicy Burger",
-    "price": 30,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "burger"
-  },
-  {
-    "name": "Mexican Pizza",
-    "price": 25,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_4.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "pizza"
-  },
-  {
-    "name": "Mozzarella Sticks",
-    "price": 49,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_5.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "chiken"
-  },
-  {
-    "name": "Popcorn Chicken",
-    "company": "apple",
-    "price": 99,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "chicken"
-  },
-  {
-    "name": "Mexican Pizza",
-    "price": 23,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "pizza"
-  },
-  {
-    "name": "Onion Rings",
-    "price": 19,
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
-    "description": "Homemade pizza crust, pizza sauce",
-    "category": "chinese",
+    "category": "Kitchen Burger",
+    "name": "Bread Street Kitchen Burger",
+    "newPrice": 129,
+    "oldPrice": 220,
+    "discount": 30,
+    "review":5,
+    "love": "100k",
+    "hate":"2K",
+    "image": "https://images.pexels.com/photos/2271099/pexels-photo-2271099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
     "featured": true
   }
 ]
