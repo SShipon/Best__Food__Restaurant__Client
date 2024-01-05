@@ -61,7 +61,10 @@ const AuthProvider = ({children}) => {
               forgetPassword,
               user,
 
- }
+              
+           
+             
+      }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

@@ -6,16 +6,17 @@ import { FaGithub } from "react-icons/fa";
 import { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-
+import { FaRegEyeSlash } from "react-icons/fa";
 const Register = () => {
   const { newCreateUser } = useContext(AuthContext);
   const { register,handleSubmit, formState: { errors }, reset, } = useForm();
   const [sigUpError, SetSignUpError] = useState("");
+  const [showPassword, setShowPassword]= useState(false)
 
 
   const location = useLocation()
 
-
+     
 
   const HandleRegister = (data) => {
     console.log(data);
@@ -34,6 +35,12 @@ const Register = () => {
       });
   };
 
+
+  const handelShowPassword = () =>{
+    setShowPassword(!true)
+  }
+
+  
   return (
     <section
       style={{
@@ -85,7 +92,12 @@ const Register = () => {
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
-                  <input
+                 <div className="relative ">
+                  <p className="absolute top-4 right-0 pr-3">
+                  <FaRegEyeSlash />
+                  </p>
+              
+                 <input
                     type="password"
                     {...register("password", {
                       required: "Password is required ",
@@ -99,8 +111,9 @@ const Register = () => {
                           "Password must have uppercase number and special character number",
                       },
                     })}
-                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%]"
+                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] "
                   />
+                 </div>
                   <label className="label">
                     <Link to="/forgetPassword" className="">
                       Forgot password?
