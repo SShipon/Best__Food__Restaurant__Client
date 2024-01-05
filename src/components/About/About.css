@@ -1,6 +1,6 @@
 .about-banner {
   /* background-image: url(https://html.themefax.com/restina/html/assets/images/breadcrumb_bg.jpg); */
-  background-image: url(https://html.themefax.com/restina/html/assets/images/about_video_img.jpg);
+  background-image: url(../../assets/about_video_img.jpg);
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,6 +15,7 @@
   flex-direction: column;
   gap: 10px;
   margin-left: 20px;
+  
 }
 .about-banner-content h2 {
   color: white;
@@ -166,7 +167,7 @@
 
 /* -------------about-rating---------- */
 .about-rating {
-  background-image: url(https://html.themefax.com/restina/html/assets/images/testimonial_bg.jpg);
+  background-image: url(../../assets/testimonial_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

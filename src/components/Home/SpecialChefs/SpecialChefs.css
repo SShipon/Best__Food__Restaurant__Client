@@ -1,0 +1,156 @@
+.home-back-img{
+   background-image: url(../../../assets/testimonial_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+/* about-chef-cards-flex */
+.home-chefs-container {
+  padding: 50px 0px;
+  background-color: white;
+}
+.home-chefs-header-part {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+.home-chefs-header-part h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+}
+.home-chefs-header-part h1::after {
+  content: '';
+  border: 2px solid rgb(245, 101, 45);
+  margin-left: 20px;
+}
+.home-chefs-header-part button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid rgb(201, 196, 196);
+  border-radius: 6px;
+  text-align: center;
+}
+.home-chef-cards-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-chef-card{
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+.home-chef-content{
+    padding: 15px;
+    
+}
+.home-chef-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #000;
+}
+.home-chef-content h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  color: #525064;
+}
+
+.chef-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+    font-size: 15px;
+
+}
+.chef-social li{
+   border:1px solid rgb(218, 214, 214) ;
+   color: black;
+   padding: 10px 15px;
+   border-radius: 10px;
+}
+.chef-social li:hover{
+     border:1px solid rgb(255, 0, 64) ;
+   background-color: rgb(255, 0, 64);
+   color: white;
+}
+.all-chefs-btn{
+    margin: 50px 0px;
+}
+.all-chefs-btn button{
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: auto;
+    background-color: rgb(245, 101, 45);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 30px;
+    border-radius: 5px;
+}
+/* -----------about-article-cards-------------- */
+.about-article-container {
+  padding: 40px 0px;
+  background-color: white;
+}
+.about-article-container h4 {
+  font-size: 40px !important;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-article-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-article-card {
+ 
+}
+.about-article-card img {
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid rgb(238, 234, 234);
+}
+
+.about-article-content {
+  margin-top: 10px;
+  padding: 5px;
+  color: #000;
+}
+.about-article-content p {
+  color: #525064;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-article-content h1 {
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.about-article-content button {
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid rgb(252, 172, 143);
+  padding:10px 20px;
+}

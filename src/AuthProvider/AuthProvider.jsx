@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail , } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider  } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
 
@@ -10,18 +10,39 @@ const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
   
+
+     // google and gitHub and facebook login Provider
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider()
+    const facebookProvider =  new FacebookAuthProvider()
 
+    // new user create and register
     const newCreateUser = (email, password)=>{
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
+    // user login 
+    
      const loginInSignUp = ()=>{
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
      }
+
+    // user forget Password create now
+     const forgetPassword = (email)=>{
+        setLoading(true)
+        sendPasswordResetEmail(auth, email)
+
+    }
+  
+    // user logOut web page
+    const logOUt = ()=>{
+        setLoading(true)
+        signOut(auth)
+    }
+
+
 
      const googleInSingUp =()=>{
         return signInWithPopup(auth, googleProvider)
@@ -33,12 +54,6 @@ const AuthProvider = ({children}) => {
         return signInWithPopup(auth, githubProvider)
      }
 
-
-    const forgetPassword = (email)=>{
-        setLoading(true)
-        sendPasswordResetEmail(auth, email)
-
-    }
 
 
     useEffect(() =>{
@@ -59,6 +74,7 @@ const AuthProvider = ({children}) => {
               googleInSingUp,
               githubInSingUp,
               forgetPassword,
+              logOUt,
               user,
 
               
