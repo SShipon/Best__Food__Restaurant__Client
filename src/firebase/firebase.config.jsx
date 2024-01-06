@@ -29,13 +29,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD9HD38i8qH1EFHblU9AeoAbIEzdsgPhro",
-  authDomain: "food-4cdb2.firebaseapp.com",
-  projectId: "food-4cdb2",
-  storageBucket: "food-4cdb2.appspot.com",
-  messagingSenderId: "914952086993",
-  appId: "1:914952086993:web:c890ca0ceb874f9d4eecf0",
-  measurementId: "G-5V7GKFXX6D"
+  apiKey: "AIzaSyB6Wll-QGX7kLlaJO_i7D9bON-Pm8dTzzw",
+  authDomain: "best-food-restaurant-client.firebaseapp.com",
+  projectId: "best-food-restaurant-client",
+  storageBucket: "best-food-restaurant-client.appspot.com",
+  messagingSenderId: "483989405392",
+  appId: "1:483989405392:web:bc7ca2deff34b001cfa8d5",
+  measurementId: "G-5YZBNSXZSM"
 };
 
 // Initialize Firebase

@@ -10,7 +10,6 @@ const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
   
-
      // google and gitHub and facebook login Provider
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider()
@@ -24,7 +23,7 @@ const AuthProvider = ({children}) => {
 
     // user login 
     
-     const loginInSignUp = ()=>{
+     const loginInSignUp = (email, password)=>{
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
      }

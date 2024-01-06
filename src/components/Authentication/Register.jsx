@@ -12,8 +12,7 @@ const Register = () => {
   const { register,handleSubmit, formState: { errors }, reset, } = useForm();
   const [sigUpError, SetSignUpError] = useState("");
   const [showPassword, setShowPassword]= useState(false)
-
-
+  const [message, setMessage] = useState('');
   const location = useLocation()
 
      
@@ -36,10 +35,9 @@ const Register = () => {
   };
 
 
-  const handelShowPassword = () =>{
-    setShowPassword(!true)
+  const togglePassword = () => {
+    setShowPassword(!showPassword)
   }
-
   
   return (
     <section
@@ -49,11 +47,13 @@ const Register = () => {
       }}
     >
       <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
-        <img
+       <div className="order-2 xl:order-first">
+       <img
           src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?w=740&t=st=1704175534~exp=1704176134~hmac=912bca2161724942122c23b769f558b83e6bc947e4402fb7f9d47c0ac2ed9354"
           alt=""
         />
-        <div>
+       </div>
+        <div className="order-1">
           <div className=" mx-auto">
             <div className="w-96 p-7 mx-auto">
               <h2 className="text-xl text-center font-bold">Register</h2>
@@ -85,6 +85,8 @@ const Register = () => {
                     })}
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%]"
                   />
+                     <p className="text-red">{sigUpError}</p>
+                   {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                 </div>
  
                  {/* new user create password */}
@@ -93,12 +95,9 @@ const Register = () => {
                     <span className="label-text">Password</span>
                   </label>
                  <div className="relative ">
-                  <p className="absolute top-4 right-0 pr-2 ">
-                  <FaRegEyeSlash />
-                  </p>
-              
+            
                  <input
-                    type="password"
+                  type={showPassword ? "text" : "password"} 
                     {...register("password", {
                       required: "Password is required ",
                       minLength: {
@@ -111,14 +110,18 @@ const Register = () => {
                           "Password must have uppercase number and special character number",
                       },
                     })}
-                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] "
+                    className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
+                   <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                   <p className="text-red">{sigUpError}</p>
+                   {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
                   <label className="label">
                     <Link to="/forgetPassword" className="">
                       Forgot password?
                     </Link>
                   </label>
+                  {errors.password && <p className="text-red-600 my-2">{errors.password?.message}</p>}
                 </div>
                 <div className="form-control">
                   <input
