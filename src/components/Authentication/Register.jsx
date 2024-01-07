@@ -21,6 +21,10 @@ const from = location.state?.from?.pathname || "/";
 
      
 
+const togglePassword = () => {
+  setShowPassword(!showPassword)
+}
+
   const HandleRegister = (data) => {
     console.log(data);
     SetSignUpError("");
@@ -40,9 +44,7 @@ const from = location.state?.from?.pathname || "/";
   };
 
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword)
-  }
+
   
   return (
     <section

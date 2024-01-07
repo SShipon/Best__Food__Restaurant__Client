@@ -1,5 +1,5 @@
 
-import { Link} from "react-router-dom"
+import { Link, useLocation, useNavigate} from "react-router-dom"
 import { useContext, useRef, useState } from "react"
 import { AuthContext } from "../../AuthProvider/AuthProvider"
 import { toast } from "react-toastify"
@@ -12,10 +12,9 @@ export default function ForgotPassword() {
 
 
      
-//   const location = useLocation()
-//   const navigate = useNavigate()
-
-//   const from = location.state?.from?.pathname || "/login";
+  const location = useLocation()
+  const navigate = useNavigate()
+  const from = location.state?.from?.pathname || "/";
 
 
     async function handleSubmit(e) {
@@ -27,7 +26,7 @@ export default function ForgotPassword() {
            // setLoading(true)
             console.log('wait')
             await sendResetPassword(emailRef.current.value)
-           // navigate(from, { replace: true });
+            navigate(from, { replace: true });
             console.log('done')
             setMessage("Check your inbox email")
             toast.success("Check your inbox email", {
@@ -37,9 +36,9 @@ export default function ForgotPassword() {
             console.log(error)
             setError("Failed to reset password")
         }
-     
+    
         setLoading(false)
-        emailRef.current.value = '  '
+        emailRef.current.value = ''
     }
 
     return (

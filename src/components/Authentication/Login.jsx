@@ -62,8 +62,7 @@ const Login = () => {
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
-                 <div className="relative ">
-            
+                 <div className="relative">
                  <input
                   type={showPassword ? "text" : "password"} 
                     {...register("password", {
@@ -81,6 +80,8 @@ const Login = () => {
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
                    <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+
+
                  <p className="text-red">{logInError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
