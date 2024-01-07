@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, redirect, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -13,7 +13,11 @@ const Register = () => {
   const [sigUpError, SetSignUpError] = useState("");
   const [showPassword, setShowPassword]= useState(false)
   const [message, setMessage] = useState('');
+
+ //users redirect pages and login now
   const location = useLocation()
+  const navigate = useNavigate()
+const from = location.state?.from?.pathname || "/";
 
      
 
@@ -28,6 +32,7 @@ const Register = () => {
           position: toast.POSITION.TOP_RIGHT,
         });
         reset();
+          navigate(from, { replace: true });
       })
       .catch((error) => {
         SetSignUpError(error.message);

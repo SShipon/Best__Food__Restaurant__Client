@@ -1,11 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+
 
 const Navbar = () => {
-  
+  const { logOut, user } = useContext(AuthContext);
   const [colorChange, setNavbar] = useState(false);
   const [white, setColor] = useState(false);
+
+
+
+
+  const handelLogOut =()=>{
+    logOut()
+    .then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      console.log(user)
+    });
+  }
+
 
   const changeBackground = () => window.scrollY >= 80 ? setNavbar(true) : setNavbar(false);
 
@@ -68,7 +83,10 @@ const Navbar = () => {
 
         <div className="navbar-end">
 
-          <Link to='/login' className="btn btn-outline btn-primary mr-1">Login</Link>
+         { user?.uid ? <Link  onClick={handelLogOut} to='/login' className="btn btn-outline btn-primary mr-1">LogOut</Link>
+        :
+        <Link  to='/login' className="btn btn-outline btn-primary mr-1">Login</Link>
+         }
           <Link  to='/register' className="btn btn btn-outline btn-secondary  hidden  pt-3 py-5 px-5 mx-0 md:block">Sign Up Free</Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ const auth = getAuth(app);
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
-  
+
      // google and gitHub and facebook login Provider
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider()
@@ -29,14 +29,13 @@ const AuthProvider = ({children}) => {
      }
 
     // user forget Password create now
-     const forgetPassword = (email)=>{
-        setLoading(true)
-        sendPasswordResetEmail(auth, email)
-
-    }
+    const sendResetPassword = (email) => {
+        return sendPasswordResetEmail(auth, email);
+      };
+      
   
     // user logOut web page
-    const logOUt = ()=>{
+    const logOut = ()=>{
         setLoading(true)
         signOut(auth)
     }
@@ -72,8 +71,8 @@ const AuthProvider = ({children}) => {
               loginInSignUp,
               googleInSingUp,
               githubInSingUp,
-              forgetPassword,
-              logOUt,
+              sendResetPassword,
+              logOut,
               user,
 
               
