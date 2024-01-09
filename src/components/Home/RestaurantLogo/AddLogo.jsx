@@ -7,7 +7,7 @@ const Logo = ({logo}) => {
   return (
    
        <div className=''>
-         <img className='h-20 w-26 ml-9' src={logoImg} alt="" srcset="" />
+         <img className='h-20 w-26 ml-11' src={logoImg} alt="" srcset="" />
        
        </div>
 
