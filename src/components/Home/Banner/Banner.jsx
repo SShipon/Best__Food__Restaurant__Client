@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css';
+import bannerimg from '../../../assets/HomeBanner/home_banner_img.png'
 const Banner = () => {
   return (
     <div>
@@ -35,7 +36,7 @@ const Banner = () => {
           </div>
           <div className="banner-right">
             <img
-              src="https://html.themefax.com/restina/html/assets/images/banner_img.png"
+              src={bannerimg}
               alt=""
             />
           </div>

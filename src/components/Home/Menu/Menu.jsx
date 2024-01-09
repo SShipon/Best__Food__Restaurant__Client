@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Food from './Food';
 import './Menu.css';
 
 const Menu = () => {
+  const [foods, setFoods] = useState([]);
+  useEffect(() => {
+    fetch('../../../../public/data.json')
+      .then((res) => res.json())
+      .then((data) => setFoods(data));
+  }, []);
   return (
     <div className="menu-cards-main">
       <div className="menu-container-grid">
@@ -11,131 +18,9 @@ const Menu = () => {
         <section>
           <div className="menu-right">
             <div className="menu-cards-flex">
-              <div className="menu-card">
-                <img
-                  src="https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg"
-                  alt=""
-                />
-                <div className="menu-card-content">
-                  <div className="stars">
-                    <ul>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <a className="menu-category" href="">
-                    CHICKEN
-                  </a>
-                  <h1>Daria Shevtsova</h1>
-                  <p>Homemade pizza crust, pizza sauce</p>
-                  <div className="menu-btn-price">
-                    <button>Add To Cart</button>
-                    <div className="menu-price">
-                      <h2>$45</h2>
-                      <h5>$150</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="menu-card">
-                <img
-                  src="https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg"
-                  alt=""
-                />
-                <div className="menu-card-content">
-                  <div className="stars">
-                    <ul>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <a className="menu-category" href="">
-                    CHICKEN
-                  </a>
-                  <h1>Daria Shevtsova</h1>
-                  <p>Homemade pizza crust, pizza sauce</p>
-                  <div className="menu-btn-price">
-                    <button>Add To Cart</button>
-                    <div className="menu-price">
-                      <h2>$65</h2>
-                      <h5>$80</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="menu-card">
-                <img
-                  src="https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg"
-                  alt=""
-                />
-                <div className="menu-card-content">
-                  <div className="stars">
-                    <ul>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <a className="menu-category" href="">
-                    CHICKEN
-                  </a>
-                  <h1>Daria Shevtsova</h1>
-                  <p>Homemade pizza crust, pizza sauce</p>
-                  <div className="menu-btn-price">
-                    <button>Add To Cart</button>
-                    <div className="menu-price">
-                      <h2>$34</h2>
-                      <h5>$60</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="menu-card">
-                <img
-                  src="https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg"
-                  alt=""
-                />
-                <div className="menu-card-content">
-                  <div className="stars">
-                    <ul>
-                      <li>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <a className="menu-category" href="">
-                    CHICKEN
-                  </a>
-                  <h1>Daria Shevtsova</h1>
-                  <p>Homemade pizza crust, pizza sauce</p>
-                  <div className="menu-btn-price">
-                    <button>Add To Cart</button>
-                    <div className="menu-price">
-                      <h2>$40</h2>
-                      <h5>$54</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {foods.map((food) => (
+                <Food key={food.name} food={food}></Food>
+              ))}
             </div>
           </div>
         </section>
