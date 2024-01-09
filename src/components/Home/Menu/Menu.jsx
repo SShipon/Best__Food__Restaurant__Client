@@ -17,6 +17,9 @@ const Menu = () => {
         </section>
         <section>
           <div className="menu-right">
+            <div className="menu-header">
+              <h1>DELICIOUS MENU</h1>
+            </div>
             <div className="menu-cards-flex">
               {foods.map((food) => (
                 <Food key={food.name} food={food}></Food>
