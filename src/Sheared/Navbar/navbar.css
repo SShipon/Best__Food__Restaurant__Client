@@ -37,5 +37,11 @@
   color: white !important;
 }
   
-
+.navbar-login{
+    background-color: rgb(224, 62, 124);
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
 
