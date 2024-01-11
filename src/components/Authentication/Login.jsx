@@ -5,14 +5,21 @@ import { FaGithub } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import GithubAndGoogle from "./GithubAndGoogle";
 
 const Login = () => {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
-  const { loginInSignUp } = useContext(AuthContext);
+  const { loginInSignUp,githubSignUp,googleInSingUp } = useContext(AuthContext);
   const [showPassword, setShowPassword]= useState(false)
   const [logInError, setLoginError] = useState('')
   const [message, setMessage] = useState('');
 
+  // github and google signUp pages 
+  const githubProvider = new GithubAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
+
+  
   const togglePassword = () =>{
     setShowPassword(!showPassword)
   }
@@ -36,6 +43,37 @@ const Login = () => {
 
       });
   }
+
+
+  const handleGithubLogin = () => {
+    githubSignUp(githubProvider)
+      .then(result => {
+        const user = result.user;
+        console.log(user)
+        toast.success("User Login Successfully!", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      })
+      .catch(error => console.log(error))
+  }
+
+
+
+  const handleGoogleLogin = () => {
+    githubSignUp(githubProvider)
+      .then(result => {
+        const user = result.user;
+        console.log(user)
+        toast.success("User Login Successfully!", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      })
+      .catch(error => console.log(error))
+  }
+
+
+
+
 
 
   return (
@@ -105,16 +143,9 @@ const Login = () => {
                   Create New Account
                 </Link>
               </p>
-              <div className="divider">OR</div>
-
-              <button className="btn btn-outline btn-second w-full">
-                CONTINUE WITH GOOGLE <FaGoogle />{" "}
-              </button>
-
-              <button className="btn btn-outline btn-second w-full">
-                CONTINUE WITH GITHUB <FaGithub />
-              </button>
+              <div className="divider ">OR</div>
             </form>
+             <GithubAndGoogle/>
           </div>
         </div>
         <div className="">

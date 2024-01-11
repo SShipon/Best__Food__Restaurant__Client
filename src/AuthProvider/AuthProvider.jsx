@@ -11,9 +11,8 @@ const AuthProvider = ({children}) => {
     const [loading, setLoading] = useState(true)
 
      // google and gitHub and facebook login Provider
-    const googleProvider = new GoogleAuthProvider();
-    const githubProvider = new GithubAuthProvider()
-    const facebookProvider =  new FacebookAuthProvider()
+  
+    //const facebookProvider =  new FacebookAuthProvider()
 
     // new user create and register
     const newCreateUser = (email, password)=>{
@@ -42,16 +41,15 @@ const AuthProvider = ({children}) => {
     }
 
 
-
-     const googleInSingUp =()=>{
-        return signInWithPopup(auth, googleProvider)
-     }
-
-
-     const githubInSingUp =()=>{
+     const githubSignUp = (provider)=>{
         setLoading(true)
-        return signInWithPopup(auth, githubProvider)
-     }
+        return signInWithPopup(auth, provider)
+      }
+
+      const googleInSingUp = (provider)=>{
+        setLoading(true)
+        return signInWithPopup(auth, provider)
+      }
 
 
 
@@ -71,7 +69,7 @@ const AuthProvider = ({children}) => {
               newCreateUser,
               loginInSignUp,
               googleInSingUp,
-              githubInSingUp,
+              githubSignUp,
               sendResetPassword,
               logOut,
               user,
