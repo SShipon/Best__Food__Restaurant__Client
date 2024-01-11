@@ -5,7 +5,7 @@ import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
 const GithubAndGoogle = () => {
-    const {githubSignUp,googleInSingUp } = useContext(AuthContext);
+    const {githubSignUp,googleInSingUp,verifyYouEmail} = useContext(AuthContext);
     const githubProvider = new GithubAuthProvider();
     const googleProvider = new GoogleAuthProvider();
 
@@ -26,6 +26,7 @@ const GithubAndGoogle = () => {
             navigate(from, { replace: true });
           })
           .catch(error => console.log(error))
+          verifyYouEmail()
       }
 
 // google in signIn
@@ -40,6 +41,7 @@ const GithubAndGoogle = () => {
             navigate(from, { replace: true });
           })
           .catch(error => console.log(error))
+          verifyYouEmail()
       }
 
       
