@@ -5,12 +5,7 @@ import './Menu.css';
 
 const Menu = () => {
   const { isLoading, products } = useMenuContext();
-  // const [foods, setFoods] = useState([]);
-  // useEffect(() => {
-  //   fetch('../../../../public/data.json')
-  //     .then((res) => res.json())
-  //     .then((data) => setFoods(data));
-  // }, []);
+ 
   return (
     <div className="menu-cards-main">
       <div className="menu-container-grid">
@@ -23,8 +18,8 @@ const Menu = () => {
               <h1>DELICIOUS MENU</h1>
             </div>
             <div className="menu-cards-flex">
-              {products.map((food) => (
-                <Food key={food.name} food={food}></Food>
+              {products.map((curElem) => (
+                <Food key={curElem.name} curElem={curElem}></Food>
               ))}
             </div>
           </div>
