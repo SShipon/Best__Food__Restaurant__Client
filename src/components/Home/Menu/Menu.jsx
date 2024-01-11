@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useMenuContext } from '../../../Context/MenuContext';
 import Food from './Food';
 import './Menu.css';
 
 const Menu = () => {
-  const [foods, setFoods] = useState([]);
-  useEffect(() => {
-    fetch('../../../../public/data.json')
-      .then((res) => res.json())
-      .then((data) => setFoods(data));
-  }, []);
+  const { isLoading, products } = useMenuContext();
+  // const [foods, setFoods] = useState([]);
+  // useEffect(() => {
+  //   fetch('../../../../public/data.json')
+  //     .then((res) => res.json())
+  //     .then((data) => setFoods(data));
+  // }, []);
   return (
     <div className="menu-cards-main">
       <div className="menu-container-grid">
@@ -21,7 +23,7 @@ const Menu = () => {
               <h1>DELICIOUS MENU</h1>
             </div>
             <div className="menu-cards-flex">
-              {foods.map((food) => (
+              {products.map((food) => (
                 <Food key={food.name} food={food}></Food>
               ))}
             </div>

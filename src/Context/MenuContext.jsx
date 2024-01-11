@@ -4,6 +4,8 @@ import reducer from '../Reducer/MenuReducer';
 
 const MenuContext = createContext();
 
+const API = '../../public/data.json';
+
 const initialState = {
   isLoading: false,
   isError: false,
@@ -11,7 +13,6 @@ const initialState = {
   featureProducts: [],
 };
 
-const API = '../../public/data.json';
 
 const MenuProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -33,7 +34,7 @@ const MenuProvider = ({ children }) => {
   }, []);
 
   return (
-    <MenuContext.provider value={{ ...state }}>{children}</MenuContext.provider>
+    <MenuContext.Provider value={{ ...state }}>{children}</MenuContext.Provider>
   );
 };
 
