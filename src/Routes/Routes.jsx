@@ -9,6 +9,7 @@ import About from "../Pages/About";
 import ForgetPassword from "../components/Authentication/ForgetPassword";
 import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
+import SingleFood from "../components/SingleFood/SingleFood";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
          {
           path:'contact',
           element:<Contact></Contact>
+         },
+         {
+          path:'singlefood/:id',
+          element:<SingleFood></SingleFood>
          },
          {
           path:'login',
