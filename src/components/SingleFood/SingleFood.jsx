@@ -4,7 +4,9 @@ import '../../components/SingleFood/SingleFood'
 const SingleFood = () => {
     return (
         <div>
-            <h2>i am single product</h2>
+            <div className="singlefood-main">
+                
+           </div>
         </div>
     );
 };
