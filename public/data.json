@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "name": "Daria Shevtsova",
     "newPrice": 90,
     "oldPrice": 120,
@@ -12,6 +13,7 @@
     "featured": true
   },
   {
+    "id": 2,
     "name": "Hyderabadi Biryani",
     "newPrice": 150,
     "oldPrice": 190,
@@ -23,6 +25,7 @@
     "category": "chiken"
   },
   {
+    "id": 3,
     "name": "Spicy Burger",
     "newPrice": 137,
     "oldPrice": 170,
@@ -34,6 +37,7 @@
     "category": "burger"
   },
   {
+    "id": 4,
     "name": "Mozzarella Sticks",
     "newPrice": 90,
     "oldPrice": 156,
@@ -45,6 +49,7 @@
     "category": "chiken"
   },
   {
+    "id": 5,
     "name": "Popcorn Chicken",
     "newPrice": 80,
     "oldPrice": 150,
@@ -56,6 +61,7 @@
     "category": "chicken"
   },
   {
+    "id": 6,
     "name": "Mexican Pizza",
     "newPrice": 110,
     "oldPrice": 183,
@@ -67,6 +73,7 @@
     "category": "pizza"
   },
   {
+    "id": 7,
     "name": "Onion Rings",
     "newPrice": 50,
     "oldPrice": 100,
@@ -79,6 +86,7 @@
     "featured": true
   },
   {
+    "id": 8,
     "name": "Bread Street Kitchen Burger",
     "newPrice": 129,
     "oldPrice": 220,
