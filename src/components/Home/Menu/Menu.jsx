@@ -19,7 +19,7 @@ const Menu = () => {
             </div>
             <div className="menu-cards-flex">
               {products.map((curElem) => (
-                <Food key={curElem.name} curElem={curElem}></Food>
+                <Food key={curElem.name} {...curElem}></Food>
               ))}
             </div>
           </div>
