@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingleFoodData.css' 
+import './SingleFoodData.css';
 const SingleFoodData = ({ curElem }) => {
   const { id, image, name, description, newPrice, oldPrice, category } =
     curElem;
