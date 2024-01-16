@@ -33,8 +33,10 @@ export const router = createBrowserRouter([
           element:<Contact></Contact>
          },
          {
-          path:'singlefood/:id',
-          element:<SingleFood></SingleFood>
+          path:'singleFood/:id',
+          element:<SingleFood></SingleFood>,
+          //loader: ()=> fetch('http://localhost:5000/food')
+         
          },
          {
           path:'login',

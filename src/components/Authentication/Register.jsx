@@ -1,14 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Link, redirect, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { FaGoogle } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { FaRegEyeSlash } from "react-icons/fa";
+import GithubAndGoogle from "./GithubAndGoogle";
 const Register = () => {
-  const { newCreateUser } = useContext(AuthContext);
+  const { newCreateUser,verifyYouEmail } = useContext(AuthContext);
   const { register,handleSubmit, formState: { errors }, reset, } = useForm();
   const [sigUpError, SetSignUpError] = useState("");
   const [showPassword, setShowPassword]= useState(false)
@@ -35,12 +33,14 @@ const togglePassword = () => {
         toast.success("User Created Successfully!", {
           position: toast.POSITION.TOP_RIGHT,
         });
+        verifyYouEmail()
         reset();
           navigate(from, { replace: true });
       })
       .catch((error) => {
         SetSignUpError(error.message);
       });
+    
   };
 
 
@@ -145,14 +145,8 @@ const togglePassword = () => {
                 </p>
                 <div className="divider">OR</div>
 
-                <button className="btn btn-outline btn-second w-full">
-                  CONTINUE WITH GOOGLE <FaGoogle />{" "}
-                </button>
-
-                <button className="btn btn-outline btn-second w-full">
-                  CONTINUE WITH GITHUB <FaGithub />
-                </button>
               </form>
+              <GithubAndGoogle />
             </div>
           </div>
         </div>

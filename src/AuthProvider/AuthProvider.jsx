@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider  } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider, sendEmailVerification  } from "firebase/auth";
 import app from "../firebase/firebase.config";
+import { toast } from "react-toastify";
 
 
 export const AuthContext = createContext(null)
@@ -11,9 +12,8 @@ const AuthProvider = ({children}) => {
     const [loading, setLoading] = useState(true)
 
      // google and gitHub and facebook login Provider
-    const googleProvider = new GoogleAuthProvider();
-    const githubProvider = new GithubAuthProvider()
-    const facebookProvider =  new FacebookAuthProvider()
+  
+    //const facebookProvider =  new FacebookAuthProvider()
 
     // new user create and register
     const newCreateUser = (email, password)=>{
@@ -28,6 +28,18 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password)
      }
 
+     const verifyYouEmail =()=>{
+        sendEmailVerification(auth.currentUser)
+          .then(()=>{
+          toast.success(" Please cheek your email !!!", {
+                 position: toast.POSITION.TOP_RIGHT,
+               });
+          })
+
+     }
+
+
+   
     // user forget Password create now
     const sendResetPassword = (email) => {
         return sendPasswordResetEmail(auth, email);
@@ -42,16 +54,15 @@ const AuthProvider = ({children}) => {
     }
 
 
-
-     const googleInSingUp =()=>{
-        return signInWithPopup(auth, googleProvider)
-     }
-
-
-     const githubInSingUp =()=>{
+     const githubSignUp = (provider)=>{
         setLoading(true)
-        return signInWithPopup(auth, githubProvider)
-     }
+        return signInWithPopup(auth, provider)
+      }
+
+      const googleInSingUp = (provider)=>{
+        setLoading(true)
+        return signInWithPopup(auth, provider)
+      }
 
 
 
@@ -70,8 +81,9 @@ const AuthProvider = ({children}) => {
               loading,
               newCreateUser,
               loginInSignUp,
+              verifyYouEmail,
               googleInSingUp,
-              githubInSingUp,
+              githubSignUp,
               sendResetPassword,
               logOut,
               user,

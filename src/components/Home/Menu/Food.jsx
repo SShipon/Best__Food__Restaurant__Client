@@ -13,7 +13,7 @@ const Food = (curElem) => {
   } = curElem;
   return (
     <div>
-      <NavLink to={`/singlefood/${id}`}>
+      <NavLink to={`/singleFood/${id}`}>
         <div className="menu-card">
           <img src={image} alt="" />
           <div className="menu-card-content">
