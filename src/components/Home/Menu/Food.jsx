@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Food = (curElem) => {
   const {
-    id,
+    _id,
     image,
     name,
     description,
@@ -11,9 +11,10 @@ const Food = (curElem) => {
     oldPrice,
     category,
   } = curElem;
+
   return (
     <div>
-      <NavLink to={`/singleFood/${id}`}>
+      <Link to={`/singleFood/${_id}`}>
         <div className="menu-card">
           <img src={image} alt="" />
           <div className="menu-card-content">
@@ -42,7 +43,7 @@ const Food = (curElem) => {
             </div>
           </div>
         </div>
-      </NavLink>
+      </Link>
     </div>
   );
 };
