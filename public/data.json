@@ -1,13 +1,35 @@
 [
   {
-    "name": "Daria Shevtsova",
+    "name": "Chicken Wings",
     "newPrice": 90,
     "oldPrice": 120,
     "discount": 30,
     "review": 4,
     "like": "5k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_2.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
+    "Introduction":"Elevate your taste experience with our Chicken Wings, a symphony of flavors and textures that redefine the art of wing perfection. Crispy on the outside, juicy on the inside – these wings are a culinary masterpiece.",
+    "image": [
+       {
+         "id":"img1",
+         "url":"https://html.themefax.com/restina/html/ltr/assets/images/menu_img_2.jpg",
+         "type":"image/png"
+       },
+       {
+         "id":"img2",
+         "url":"https://hips.hearstapps.com/hmg-prod/images/190416-air-fryer-wings-137-1556204553.jpg?crop=0.8891228070175439xw:1xh;center,top&resize=1200:*",
+         "type":"image/png"
+       },
+       {
+         "id":"img3",
+         "url":"https://www.foodandwine.com/thmb/NXUBQ0yUtxxf_jbUlhCMLXW9QD4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-crispy-chicken-wings-hero-02-6d627c282d3f4749a176e0ec34d2d6d7.jpg",
+         "type":"image/png"
+       },
+       {
+         "id":"img4",
+         "url":"https://casuallypeckish.com/wp-content/uploads/2020/08/Soy-garlic-chicken-wings-6.jpg",
+         "type":"image/png"
+       }
+    ],
+    "description": "Our Chicken Wings boast a tantalizingly crisp exterior, achieved through a special seasoning blend, and are meticulously cooked to golden perfection. The succulent meat inside is infused with savory goodness, making every bite a burst of flavor.Choose from an array of mouthwatering sauces, from tangy barbecue to spicy buffalo, each offering a unique taste adventure. Our wings are served with a side of cool ranch or blue cheese dressing, enhancing the overall flavor profile.Perfect for sharing or indulging on your own, these Chicken Wings are the ideal companion for game nights, celebrations, or whenever the craving for bold and delicious wings strikes. Prepare to elevate your wing experience and savor the perfection that defines our culinary expertise.",
     "category": "chicken",
     "featured": true
   },
@@ -18,8 +40,30 @@
     "discount": 20,
     "review": 3,
     "like": "7k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
+    "Introduction":"Indulge your senses in the aromatic symphony of flavors with our exquisite Chicken Biryani. Crafted with precision and love, this traditional South Asian dish is a celebration of fragrant basmati rice, succulent chicken, and a harmonious blend of spices that will transport you to a world of culinary bliss.",
+    "image": [
+      {
+        "id": "img1",
+        "url":  "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://www.simplyrecipes.com/thmb/Fn3xsvrChEJSP-UkWJO2A81PdKw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Chicken-Biryani-LEAD-4-d53c64cefd0142febe882911d7d88622.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://images.aws.nestle.recipes/resized/1Fxu7L83m1qDUM84fvsrQN3iwEjaxeRLEy_A42I8734_944_531.jpg",
+        "type": "image/png"
+      }
+    ],
+    "description": "Indulge in our Chicken Biryani, a culinary masterpiece that artfully combines slow-cooked, marinated chicken with aromatic basmati rice. Infused with a symphony of spices like cumin, coriander, cardamom, and cloves, each bite offers a tantalizing dance of flavors. The golden hue, courtesy of saffron-infused milk, adds a touch of luxury, while crispy fried onions and fresh coriander provide visual and textural delights. Accompanied by cooling raita, our Chicken Biryani strikes the perfect balance of heat and freshness. A harmonious union of tender chicken, fragrant rice, and aromatic spices, every mouthful is a journey through South Asian culinary heritage. Whether a seasoned biryani enthusiast or a first-time adventurer, savor the authenticity and excellence that define our dish – a true taste of traditional Indian and Pakistani kitchens.",
     "category": "chiken"
   },
   {
@@ -29,64 +73,196 @@
     "discount": 22,
     "review": 4,
     "like": "8k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
+   "Introduction":"Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
+        "type": "image/png"
+      }
+    ],
+    "description": "Our Spicy Burger features a perfectly grilled, juicy patty infused with a special blend of fiery spices. Each bite delivers a kick of heat, complemented by the smoky char from the grill, creating an irresistible combination. Topped with melted pepper jack cheese, crisp jalapeños, and a zesty chipotle mayo, this burger is a spicy symphony of textures and tastes.The pillowy soft brioche bun cradles the spicy masterpiece, offering a perfect balance to the intense flavors within. A fresh crunch of lettuce and tomato adds a refreshing contrast, ensuring a delightful interplay of sensations.Pair this Spicy Burger with our hand-cut seasoned fries for a complete taste adventure. Whether you're a spice aficionado or looking to ignite your taste buds, our Spicy Burger is a must-try sensation that promises to satisfy your cravings for bold and unforgettable flavors.",
     "category": "burger"
   },
   {
-    "name": "Mozzarella Sticks",
+    "name": "Melty Mozzarella Bliss",
     "newPrice": 90,
     "oldPrice": 156,
     "discount": 42,
     "review": 5,
     "like": "4k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_5.jpg",
+    "Introduction":"Introducing our Mozzarella Sticks, a golden delight that will transport you to cheese heaven. Irresistibly crispy on the outside and gooey on the inside, these sticks are a cheesy sensation perfect for any indulgent craving.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBdTOxvriisGhzDbGQP5KJdBUx381yF2fGA&usqp=CAU",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://images.themodernproper.com/billowy-turkey/production/posts/2021/Homemade-Mozzarella-Sticks-9.jpeg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1638935116&s=2574b8da89d966ee167111e9822a0b4e",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://hips.hearstapps.com/vidthumb/images/mozzarella-sticks-thumbnail-645006be7b4a1.jpg?crop=0.9997727789138833xw:1xh;center,top&resize=1200:*",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://peaceloveandlowcarb.com/wp-content/uploads/2021/10/Keto-Mozzarella-Sticks-Peace-Love-and-Low-Carb-1.jpg",
+        "type": "image/png"
+      }
+    ],
     "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
     "category": "chiken"
   },
   {
-    "name": "Popcorn Chicken",
+    "name": "Crunchy Popcorn Chicken",
     "newPrice": 80,
     "oldPrice": 150,
     "discount": 30,
     "review": 4,
     "like": "3.5k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
+    "Introduction":"Dive into a world of snack-time bliss with our Popcorn Chicken – bite-sized delights that redefine the art of crispy indulgence. These golden nuggets are a flavor-packed treat for your taste buds.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rHExfFBILo9_UbeSvvzAWCjHhYL2xU-OJQ&usqp=CAU",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://easychickenrecipes.com/wp-content/uploads/2022/12/featured-popcorn-chicken-1.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUrB4PFw-Gobwn69TKcg4DPlGeTe6WzgRvA&usqp=CAU",
+        "type": "image/png"
+      }
+    ],
+    "description": "Our Popcorn Chicken is made from tender, bite-sized pieces of succulent chicken, expertly coated in a secret blend of herbs and spices. Deep-fried to a perfect golden brown, each piece boasts a satisfying crunch that will keep you coming back for more.Choose from an array of dipping sauces, from classic honey mustard to tangy barbecue, to elevate the flavor experience. The versatile nature of our Popcorn Chicken makes it an ideal snack for sharing or a delightful addition to any meal.Perfectly portable and snackable, our Popcorn Chicken is the ultimate crowd-pleaser for movie nights, parties, or any casual gathering. Embrace the irresistible combination of juicy chicken and crispy coating that defines our Popcorn Chicken – a snack that's both fun and flavorful.",
     "category": "chicken"
   },
   {
-    "name": "Mexican Pizza",
+    "name": "Chicken Sandwich",
     "newPrice": 110,
     "oldPrice": 183,
     "discount": 25,
     "review": 5,
     "like": "6.5k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
-    "category": "pizza"
+    "Introduction": "Experience culinary perfection with our Ultimate Chicken Bliss Sandwich – a delectable journey for sandwich enthusiasts. Packed with bold flavors and premium ingredients, this creation is a testament to the art of sandwich craftsmanship.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnpyRrbU5Ffv9bfC-Zy2c-rcGqW1uBWaL7w&usqp=CAU",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiepYgNjsMqYRm5K9zP7yhv7F97z8tKgL_YiU9tkW0MgX5MbFUG9UBkA5YYHDzEMPxsy8&usqp=CAU",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQXA6iGD3-fYykxLqZmFEGESqWazfukzH66NQajqel7KIYTEBv8Zuu1h3gV5lEw_H2q8&usqp=CAU",
+        "type": "image/png"
+      }
+    ],
+    "description": "Our sandwich features succulent, grilled chicken breast, seasoned to perfection for a burst of savory goodness. Nestled between two soft, freshly baked brioche buns, this masterpiece offers a symphony of textures and tastes.Enhanced with crisp lettuce, juicy tomato slices, and zesty mayo, each bite is a harmonious blend of freshness and richness. The grilled chicken brings a smoky depth to the ensemble, elevating the sandwich to gourmet heights.Perfect for lunch or dinner, our Ultimate Chicken Bliss Sandwich caters to both the discerning palate and those seeking a satisfying, hearty meal. It's a go-to choice for chicken lovers craving an unforgettable combination of quality and flavor.Whether you're a sandwich connoisseur or a casual diner, let this sandwich be your gateway to a world of culinary delight – a testament to our commitment to excellence in every bite.",
+    "category": "sandwich"
   },
   {
-    "name": "Onion Rings",
+    "name": "Fruit Dessert",
     "newPrice": 50,
     "oldPrice": 100,
     "discount": 3,
     "review": 4,
     "like": "5.5k",
-    "image": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
-    "category": "chinese",
+    "Introduction":"Savor the sweetness of nature with our Blissful Orchard Medley Dessert, a symphony of fresh fruits that promises a delightful finale to your dining experience. This dessert is a celebration of flavors, textures, and the vibrant colors of the orchard.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://realfood.tesco.com/media/images/Yoghurt-Pots-Final-1400x919-2aa74c0e-2450-4010-949c-8bb6758017d3-0-1400x919.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://insanelygoodrecipes.com/wp-content/uploads/2021/08/Homemade-Colorful-Ambrosia-Fruit-Salad.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:AH8q3dGK2f2vLZVgbRfLTjQPySe2yRaJHs-R1if4kA&usqp=CAU",
+        "type": "image/png"
+      }
+    ],
+    "description": "Indulge in a tantalizing blend of seasonal fruits, carefully selected for their ripeness and sweetness. From succulent strawberries to juicy mangoes, each bite offers a burst of natural goodness.Our Orchard Medley Dessert is artfully crafted with layers of velvety vanilla custard and delicate sponge cake, creating a perfect balance to the fresh fruit medley. It's a harmonious fusion of luscious creaminess and refreshing fruitiness.Garnished with a drizzle of honey and a sprinkle of chopped mint, this dessert is as visually appealing as it is delicious. Perfect for any occasion, our Blissful Orchard Medley Dessert is a guilt-free, refreshing finale that captures the essence of a bountiful harvest.Whether you have a sweet tooth or seek a guilt-free treat, this fruit dessert is a testament to the marriage of nature's bounty and culinary finesse. Dive into a world of natural sweetness with every spoonful, and let the flavors of the orchard dance on your palate.",
+    "category": "Dessert",
     "featured": true
   },
   {
-    "name": "Bread Street Kitchen Burger",
+    "name": "chicken Burger",
     "newPrice": 129,
     "oldPrice": 220,
     "discount": 30,
     "review": 4,
     "like": "15k",
-    "image": "https://images.pexels.com/photos/2271099/pexels-photo-2271099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "For Five Stars’ last meal in Calgary, he wanted either eggs benedict or a burger. I checked around and all the hot spots, such as Maven and OEB, had a waitlist of 90-120 minutes. I suggested we go to Waterloo Pub, as I heard their burgers are top-notch. For this post, let’s listen to “Carry On Wayward Son” by Kansas.",
+    "Introduction": "Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
+    "image": [
+      {
+        "id": "img1",
+        "url": "https://images.pexels.com/photos/2271099/pexels-photo-2271099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "type": "image/png"
+      },
+      {
+        "id": "img2",
+        "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img3",
+        "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
+        "type": "image/png"
+      },
+      {
+        "id": "img4",
+        "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
+        "type": "image/png"
+      }
+    ],
+    "description": "Our Spicy Burger features a perfectly grilled, juicy patty infused with a special blend of fiery spices. Each bite delivers a kick of heat, complemented by the smoky char from the grill, creating an irresistible combination. Topped with melted pepper jack cheese, crisp jalapeños, and a zesty chipotle mayo, this burger is a spicy symphony of textures and tastes.The pillowy soft brioche bun cradles the spicy masterpiece, offering a perfect balance to the intense flavors within. A fresh crunch of lettuce and tomato adds a refreshing contrast, ensuring a delightful interplay of sensations.Pair this Spicy Burger with our hand-cut seasoned fries for a complete taste adventure. Whether you're a spice aficionado or looking to ignite your taste buds, our Spicy Burger is a must-try sensation that promises to satisfy your cravings for bold and unforgettable flavors.",
     "category": "Burger",
     "featured": true
   }

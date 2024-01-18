@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import './Food.css'
 
 const Food = (curElem) => {
   const {
@@ -16,7 +17,7 @@ const Food = (curElem) => {
     <div>
       <Link to={`/singleFood/${_id}`}>
         <div className="menu-card">
-          <img src={image} alt="" />
+          <img src={image[1].url} alt="" />
           <div className="menu-card-content">
             <div className="stars">
               <ul>

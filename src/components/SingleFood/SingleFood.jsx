@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
+import MyImage from '../MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css'
 const SingleFood = () => {
@@ -25,7 +26,8 @@ const SingleFood = () => {
         <div className="singlefood-content">
           <div className="singlefood-grid">
             <div className="singlefood-left">
-              <img src={image} alt="" />
+              {/* <img src={image} alt="" /> */}
+              <MyImage imgs={image}></MyImage>
             </div>
             <div className="singlefood-right">
               <h1>{name}</h1>
