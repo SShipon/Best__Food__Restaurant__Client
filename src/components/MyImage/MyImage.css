@@ -1,0 +1,25 @@
+
+.all-single-images{
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-direction: column;
+}
+.main-single-image{
+    height: 350px;
+    width: 510px;
+     object-fit: cover;
+    display: block;
+    margin: auto;
+}
+.all4-image-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.all4-image{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
