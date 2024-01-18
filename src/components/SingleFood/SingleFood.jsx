@@ -20,8 +20,8 @@ const SingleFood = () => {
   
   return (
     <div>
-      <div className="singlefood-container pt-5">
-        <PageNavigation title={name} ></PageNavigation>
+      <div className="singlefood-container">
+        <PageNavigation title={name}></PageNavigation>
         <div className="singlefood-content">
           <div className="singlefood-grid">
             <div className="singlefood-left">
@@ -32,8 +32,8 @@ const SingleFood = () => {
               <p> 5 stars | {review} Reviews</p>
               <h2>{description}</h2>
               <div className="food-price">
-                Price : <del>{newPrice}</del>
-                <p>{oldPrice}</p>
+                Price : <del>${oldPrice}</del>
+                <p>${newPrice}</p>
               </div>
             </div>
           </div>
