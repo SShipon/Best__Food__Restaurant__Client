@@ -13,6 +13,10 @@ import SingleFood from "../components/Home/Menu/SingleFood/SingleFood";
 import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
 import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import Reviews from "../components/Dashboard/Review/Reviews";
+import { path } from "d3-path";
+import DataList from "../components/Dashboard/DataAnalyis/DataAnalyst";
+import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
+
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -69,7 +73,12 @@ export const router = createBrowserRouter([
             {
               path:'review',
               element:<Reviews></Reviews>
+            },
+            {
+              path:'DataAnalyst',
+              element:<DataAnalyst />
             }
+           
           ]
          }
       ]

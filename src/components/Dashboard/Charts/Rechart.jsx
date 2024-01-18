@@ -12,7 +12,8 @@ const data = [
 
 const Rechart = () => {
   return (
-    <LineChart width={600} height={300} data={data}>
+     <div className='flex justify-center mx-auto'>
+       <LineChart width={600} height={300} data={data}>
       <XAxis dataKey="name" />
       <YAxis />
       <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
@@ -21,6 +22,7 @@ const Rechart = () => {
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
     </LineChart>
+     </div>
   );
 };
 
