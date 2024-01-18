@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Food = ({ curElem }) => {
+const Food = ({ product }) => {
   const {
-    id,
+    _id,
     image,
     name,
     description,
     newPrice,
     oldPrice,
     category,
-  } = curElem;
+  } = product;
   return (
     <div>
-      <NavLink to={`/singleFood/${id}`}>
+      <NavLink to={`/singleFood/${_id}`}>
         <div className="menu-card">
           <img src={image} alt="" />
           <div className="menu-card-content">

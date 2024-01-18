@@ -1,11 +1,8 @@
-import React from 'react';
-import CustomButton from '../Sheared/CustomButton/CustomButton';
-import Rechart from '../components/Charts/Rechart';
-
+import DashboardCom from "../components/Dashboard/Dashboard";
 const Dashboard = () => {
     return (
       <>
-      <Rechart/>
+        <DashboardCom />
       </>
     );
 };

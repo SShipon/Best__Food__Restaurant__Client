@@ -9,7 +9,10 @@ import About from "../Pages/About";
 import ForgetPassword from "../components/Authentication/ForgetPassword";
 import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
-import SingleFood from "../components/SingleFood/SingleFood";
+import SingleFood from "../components/Home/Menu/SingleFood/SingleFood";
+import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
+import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
+import Reviews from "../components/Dashboard/Review/Reviews";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -35,9 +38,10 @@ export const router = createBrowserRouter([
          {
           path:'singleFood/:id',
           element:<SingleFood></SingleFood>,
-          //loader: ()=> fetch('http://localhost:5000/food')
+          loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
          
          },
+
          {
           path:'login',
           element:<Login></Login>
@@ -52,7 +56,21 @@ export const router = createBrowserRouter([
          },
          {
           path:'dashboard',
-          element:<Dashboard></Dashboard>
+          element:<Dashboard></Dashboard>,
+          children:[
+            {
+              path:'myOrder',
+              element:<MyOrder></MyOrder>
+            },
+            {
+              path:'newAddFood',
+              element:<NewAddFood/>
+            },
+            {
+              path:'review',
+              element:<Reviews></Reviews>
+            }
+          ]
          }
       ]
     },

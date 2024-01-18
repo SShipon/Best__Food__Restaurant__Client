@@ -5,7 +5,7 @@ import './Menu.css';
 
 const Menu = () => {
   const { isLoading, products } = useMenuContext();
- 
+    
   return (
     <div className="menu-cards-main">
       <div className="menu-container-grid">
@@ -18,8 +18,8 @@ const Menu = () => {
               <h1>DELICIOUS MENU</h1>
             </div>
             <div className="menu-cards-flex">
-              {products.map((curElem) => (
-                <Food key={curElem.name} curElem={curElem}></Food>
+              {products.map((product) => (
+                <Food key={product.name} product={product}></Food>
               ))}
             </div>
           </div>
