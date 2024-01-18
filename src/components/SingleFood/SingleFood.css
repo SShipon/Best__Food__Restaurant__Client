@@ -1,0 +1,36 @@
+.singlefood-container{
+    background-color: white;
+    /* #e5e7eb */
+    padding:50px 20px ;
+}
+.singlefood-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.singlefood-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.singlefood-right h1{
+    font-size: 35px;
+    color: black;
+}
+.singlefood-right p{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 5px;
+}
+.singlefood-right h2{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 5px;
+}
+.food-price{
+    display: flex;
+    gap: 10px;
+}
+.food-price p{
+    margin-top: -10px;
+}

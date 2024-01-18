@@ -10,6 +10,7 @@ import ForgetPassword from "../components/Authentication/ForgetPassword";
 import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
 import SingleFood from "../components/SingleFood/SingleFood";
+import FoodMenu from "../components/FoodMenu/FoodMenu";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -21,8 +22,8 @@ export const router = createBrowserRouter([
             element:<Home></Home>
         },
         {
-          path:'explore',
-          element:<Explore></Explore>
+          path:'foodmenu',
+          element:<FoodMenu></FoodMenu>
         },
          {
           path:'about',
