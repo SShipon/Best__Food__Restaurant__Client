@@ -47,12 +47,7 @@ const togglePassword = () => {
 
   
   return (
-    <section
-      style={{
-        backgroundColor: "white",
-        color: "black",
-      }}
-    >
+    <section >
       <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
        <div className="order-2 xl:order-first">
        <img
@@ -137,7 +132,7 @@ const togglePassword = () => {
                     value="SIGN UP"
                   />
                 </div>
-                <p>
+                <p className="text-purple">
                   Already have an account ?{" "}
                   <Link className="text-secondary" to="/login">
                     Please Login
