@@ -1,7 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
-import Explore from "../Pages/Explore";
 import Contact from "../Pages/Contact";
 import Dashboard from "../Pages/Dashboard";
 import Register from "../components/Authentication/Register";
@@ -10,7 +9,7 @@ import ForgetPassword from "../components/Authentication/ForgetPassword";
 import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
 import SingleFood from "../components/SingleFood/SingleFood";
-import FoodMenu from "../components/FoodMenu/FoodMenu";
+import Menu from "../Pages/Menu";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -23,7 +22,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'foodmenu',
-          element:<FoodMenu></FoodMenu>
+          element:<Menu></Menu>
         },
          {
           path:'about',
