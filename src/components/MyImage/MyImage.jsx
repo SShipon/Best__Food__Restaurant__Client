@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MyImage.css';
 
 const MyImage = ({ imgs=[{url:''}] }) => {
-  console.log(imgs);
+  // console.log(imgs);
+  const [mainImage, setMainImage] = useState(imgs[0]);
   return (
     <div className="all-single-images">
       <div>
-        <img src={imgs[0].url} alt="" className="main-single-image" />
+        <img src={mainImage.url} alt="" className="main-single-image" />
+        {/* <img src={imgs[0].url} alt="" className="main-single-image" /> */}
       </div>
       <div className="all4-image-flex">
-        {imgs.map((image,index) => {
+        {imgs.map((image, index) => {
           return (
             <figure>
               <img
@@ -17,6 +19,7 @@ const MyImage = ({ imgs=[{url:''}] }) => {
                 alt=""
                 className="all4-image"
                 key={index}
+                onClick={() => setMainImage(image)}
               />
             </figure>
           );
