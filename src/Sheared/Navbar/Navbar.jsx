@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const changeColor = () => window.scrollY >= 80 ? setColor(true) : setColor(false);
   
-  console.log(window.scrollY, colorChange, white);
+  // console.log(window.scrollY, colorChange, white);
   
   window.addEventListener('scroll', changeBackground);
   window.addEventListener('scroll', changeColor);
