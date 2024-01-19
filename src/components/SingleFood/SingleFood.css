@@ -15,18 +15,25 @@
 }
 .singlefood-right h1{
     font-size: 35px;
-    color: black;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 .singlefood-right p{
     font-size: 17px;
     color: black;
     margin-bottom: 5px;
 }
-.singlefood-right h2{
-    font-size: 17px;
-    color: rgb(121, 118, 118);
+.singlefood-right h3{
+    font-size: 15px;
+   font-weight: 500;
+   color: rgb(68, 67, 67);
     margin-bottom: 5px;
-    font-weight: 500;
+}
+.singlefood-right h2{
+    color: rgb(121, 118, 118);
+     /* color: rgb(68, 67, 67); */
+    margin-bottom: 5px;
 }
 .food-price{
     display: flex;
@@ -36,8 +43,13 @@
       margin-top: 15px;
       font-size: 20px;
 }
-.food-price p{
+.food-price del{
     margin-top: -8px;
+   
+   
+}
+.food-price p{
    color: coral;
    font-size: 25px;
+   line-height: 25px;
 }

@@ -8,8 +8,16 @@ const SingleFood = () => {
   const { id } = useParams();
   
   const { getSingleProduct , isSingleLoading , singleProduct } = useMenuContext();
-   const { image, name,review, description, newPrice, oldPrice, category } =
-    singleProduct;
+   const {
+     image,
+     name,
+     review,
+     Introduction,
+     description,
+     newPrice,
+     oldPrice,
+     category,
+   } = singleProduct;
   
   useEffect(() => {
     getSingleProduct(`http://localhost:5000/product/${id}`);
@@ -31,11 +39,12 @@ const SingleFood = () => {
             </div>
             <div className="singlefood-right">
               <h1>{name}</h1>
+              <h3>{Introduction}</h3>
               <p> 5 stars | {review} Reviews</p>
               <h2>{description}</h2>
               <div className="food-price">
-                Price : <del>${oldPrice}</del>
-                <p>${newPrice}</p>
+                Price : <p>${newPrice}</p>
+                <del>${oldPrice}</del>
               </div>
             </div>
           </div>
