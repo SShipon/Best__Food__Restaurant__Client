@@ -117,7 +117,7 @@ const Login = () => {
                     })}
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
-                   <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                   <i onClick={togglePassword} className={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
 
 
                  <p className="text-red">{logInError}</p>

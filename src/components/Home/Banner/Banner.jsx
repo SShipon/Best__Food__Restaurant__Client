@@ -20,7 +20,7 @@ const Banner = () => {
               <a href="">
                 <div className="play-btn">
                   <span>
-                    <i class="fa-solid fa-play"></i>
+                    <i className="fa-solid fa-play"></i>
                   </span>
                 </div>
                 <h4>How to order</h4>
@@ -29,7 +29,7 @@ const Banner = () => {
             <div>
               <p>our Happy Customer</p>
               <span>
-                <i class="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
                 <span>4.7(13.7k Reviews)</span>
               </span>
             </div>
