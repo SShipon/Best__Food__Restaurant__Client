@@ -4,6 +4,7 @@ import { useMenuContext } from '../../Context/MenuContext';
 import MyImage from '../MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css'
+import Stars from './Stars';
 const SingleFood = () => {
   const { id } = useParams();
   
@@ -17,6 +18,7 @@ const SingleFood = () => {
      newPrice,
      oldPrice,
      category,
+     like
    } = singleProduct;
   
   useEffect(() => {
@@ -35,16 +37,46 @@ const SingleFood = () => {
           <div className="singlefood-grid">
             <div className="singlefood-left">
               {/* <img src={image} alt="" /> */}
-              <MyImage imgs={image}></MyImage>
+              <MyImage image={image}></MyImage>
             </div>
             <div className="singlefood-right">
               <h1>{name}</h1>
               <h3>{Introduction}</h3>
-              <p> 5 stars | {review} Reviews</p>
+              <p>
+                {' '}
+                <Stars review={review}></Stars> | {like} Reviews
+              </p>
               <h2>{description}</h2>
               <div className="food-price">
                 Price : <p>${newPrice}</p>
                 <del>${oldPrice}</del>
+              </div>
+
+              <div className="flex gap-4">
+                <div>+</div>
+                <div>1</div>
+                <div>-</div>
+              </div>
+              <div className="Nutrition-div">
+                <h4>Nutrition Facts (per serving)</h4>
+                <div className="Nutrition-flex">
+                  <div className="Nutrition-box">
+                    <h5>1524</h5>
+                    <h6>Calories</h6>
+                  </div>
+                  <div className="Nutrition-box">
+                    <h5>56g</h5>
+                    <h6>Fat</h6>
+                  </div>
+                  <div className="Nutrition-box">
+                    <h5>134g</h5>
+                    <h6>Carbs</h6>
+                  </div>
+                  <div className="Nutrition-box">
+                    <h5>78g</h5>
+                    <h6>Protein</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
