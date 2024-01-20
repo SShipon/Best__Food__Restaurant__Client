@@ -17,7 +17,7 @@ const Food = (curElem) => {
     <div>
       <Link to={`/singleFood/${_id}`}>
         <div className="menu-card">
-         <img src={image[]} alt="" />
+          <img src={image[1].url} alt="" />
           <div className="menu-card-content">
             <div className="stars">
               <ul>
