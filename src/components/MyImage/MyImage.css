@@ -7,7 +7,7 @@ flex-direction: column;
 }
 .main-single-image{
     height: 350px;
-    width: 510px;
+    w__idth: 510px;
      object-fit: cover;
     display: block;
     margin: auto;
@@ -19,7 +19,7 @@ flex-direction: column;
     gap: 10px;
 }
 .all4-image{
-    width: 120px;
+    w__idth: 120px;
     height: 120px;
     object-fit: cover;
 }

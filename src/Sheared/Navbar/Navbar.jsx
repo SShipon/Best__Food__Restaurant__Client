@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
-import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { AuthContext } from '../../AuthProv__ider/AuthProv__ider';
 
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
       >
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:h__idden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
+                  strokeW__idth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
@@ -73,7 +73,7 @@ const Navbar = () => {
           <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a>
         </div>
 
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center h__idden lg:flex">
           <ul className="menu menu-horizontal px-1 NavLink_color">
             {navItems}
           </ul>
@@ -97,7 +97,7 @@ const Navbar = () => {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeW__idth="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
@@ -122,7 +122,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          {user?.uid ? (
+          {user?.u__id ? (
             <Link
               onClick={handelLogOut}
               to="/login"
@@ -135,7 +135,7 @@ const Navbar = () => {
               Login
             </Link>
           )}
-          <Link to="/register" className="navbar-login  hidden mx-0 md:block">
+          <Link to="/register" className="navbar-login  h__idden mx-0 md:block">
             Sign Up Free
           </Link>
         </div>

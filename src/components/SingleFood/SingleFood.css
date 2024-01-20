@@ -4,12 +4,12 @@
 }
 .singlefood-content{
     padding:40px 20px ;
-    max-width: 1500px;
+    max-w__idth: 1500px;
     margin: auto;
 }
-.singlefood-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.singlefood-gr__id{
+    display: gr__id;
+    gr__id-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
 }

@@ -1,7 +1,7 @@
 
 import { Link, useLocation, useNavigate} from "react-router-dom"
 import { useContext, useRef, useState } from "react"
-import { AuthContext } from "../../AuthProvider/AuthProvider"
+import { AuthContext } from "../../AuthProv__ider/AuthProv__ider"
 import { toast } from "react-toastify"
 
 export default function ForgotPassword() {
@@ -51,9 +51,9 @@ export default function ForgotPassword() {
                     {message && <p className="text-cyan-600">{message}</p>}
                     <form onSubmit={handleSubmit}>
                      
-                       <div className="" id="email">
+                       <div className="" __id="email">
                             <label className="mb-2">Email *</label>
-                            <div className="flex items-center border-solid border-2 border-gray-300 hover:border-solid rounded-[12px]">
+                            <div className="flex items-center border-sol__id border-2 border-gray-300 hover:border-sol__id rounded-[12px]">
                             <input type="email" ref={emailRef} placeholder="Enter You Email" required className="input  focus:outline-none focus:ring-0 w-[100%]" />
                           </div>
                         

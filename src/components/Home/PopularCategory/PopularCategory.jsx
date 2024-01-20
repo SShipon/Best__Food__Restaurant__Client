@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSl__ide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -13,24 +13,24 @@ const PopularCategory = () => {
         <h1>OUR POPULAR CATEGORY 🔥 </h1>
         <section>
           <Swiper
-            slidesPerView={2}
+            sl__idesPerView={2}
             freeMode={true}
             spaceBetween={10}
             breakpoints={{
               576: {
-                slidesPerView: 2,
+                sl__idesPerView: 2,
                 spaceBetween: 10,
               },
               768: {
-                slidesPerView: 3,
+                sl__idesPerView: 3,
                 spaceBetween: 10,
               },
               992: {
-                slidesPerView: 4,
+                sl__idesPerView: 4,
                 spaceBetween: 10,
               },
               1200: {
-                slidesPerView: 6,
+                sl__idesPerView: 6,
                 spaceBetween: 10,
               },
             }}
@@ -40,7 +40,7 @@ const PopularCategory = () => {
             modules={[FreeMode, Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_2.jpg"
@@ -48,8 +48,8 @@ const PopularCategory = () => {
                 />
                 <p>Dessert</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_1.jpg"
@@ -57,8 +57,8 @@ const PopularCategory = () => {
                 />
                 <p>Pizza</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_3.jpg"
@@ -66,8 +66,8 @@ const PopularCategory = () => {
                 />
                 <p>BURGER</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_4.jpg"
@@ -75,8 +75,8 @@ const PopularCategory = () => {
                 />
                 <p>DRINKS</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_2.jpg"
@@ -84,8 +84,8 @@ const PopularCategory = () => {
                 />
                 <p>Dessert</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_3.jpg"
@@ -93,8 +93,8 @@ const PopularCategory = () => {
                 />
                 <p>BURGER</p>
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSl__ide>
+            <SwiperSl__ide>
               <a href="#">
                 <img
                   src="https://html.themefax.com/restina/html/rtl/assets/images/category_img_1.jpg"
@@ -102,7 +102,7 @@ const PopularCategory = () => {
                 />
                 <p>Pizza</p>
               </a>
-            </SwiperSlide>
+            </SwiperSl__ide>
           </Swiper>
         </section>
         <section>

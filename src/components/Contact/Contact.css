@@ -25,23 +25,23 @@
     margin: 10px 0px;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  max-width: 400px;
+  max-w__idth: 400px;
 }
 .label-text{
     color: black;
 }
 .contact-right input,textarea{
 background-color: white;
-border: 1px solid rgb(252, 213, 222);
+border: 1px sol__id rgb(252, 213, 222);
 border-radius: 10px;
 padding-left:15px ;
 }
 .contact-right input:hover{
     outline: none;
-border: 1px solid rgb(252, 213, 222);
+border: 1px sol__id rgb(252, 213, 222);
 }
 .contact-right textarea:hover{
-border: 1px solid rgb(252, 213, 222);
+border: 1px sol__id rgb(252, 213, 222);
 }
 
 .contact-right button{
@@ -55,10 +55,10 @@ border: 1px solid rgb(252, 213, 222);
 
 /* -------contact-cards-flex------------ */
 .contact-cards-flex{
-    display: grid;
-   grid-template-columns: repeat(3,1fr);
+    display: gr__id;
+   gr__id-template-columns: repeat(3,1fr);
     gap: 20px;
-   max-width: 1400px;
+   max-w__idth: 1400px;
    margin: auto;
    padding-top: 60px;
 }

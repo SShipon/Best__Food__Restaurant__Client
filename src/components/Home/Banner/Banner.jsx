@@ -12,7 +12,7 @@ const Banner = () => {
               Fresh Ingredient Testy <br /> Meals & Best Flavor
             </h1>
             <p>
-              Imagine you don’t need a diet because we provide healthy and
+              Imagine you don’t need a diet because we prov__ide healthy and
               delicious food for you!.
             </p>
             <div className="banner-btn">
@@ -20,7 +20,7 @@ const Banner = () => {
               <a href="">
                 <div className="play-btn">
                   <span>
-                    <i className="fa-solid fa-play"></i>
+                    <i className="fa-sol__id fa-play"></i>
                   </span>
                 </div>
                 <h4>How to order</h4>
@@ -29,7 +29,7 @@ const Banner = () => {
             <div>
               <p>our Happy Customer</p>
               <span>
-                <i className="fa-solid fa-star"></i>
+                <i className="fa-sol__id fa-star"></i>
                 <span>4.7(13.7k Reviews)</span>
               </span>
             </div>

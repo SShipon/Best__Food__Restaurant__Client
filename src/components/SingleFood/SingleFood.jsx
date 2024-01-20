@@ -5,7 +5,7 @@ import MyImage from '../MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css'
 const SingleFood = () => {
-  const { id } = useParams();
+  const { __id } = useParams();
   
   const { getSingleProduct , isSingleLoading , singleProduct } = useMenuContext();
    const {
@@ -20,7 +20,7 @@ const SingleFood = () => {
    } = singleProduct;
   
   useEffect(() => {
-    getSingleProduct(`http://localhost:5000/product/${id}`);
+    getSingleProduct(`http://localhost:5000/product/${__id}`);
   },[])
 
   if (isSingleLoading) {
@@ -32,7 +32,7 @@ const SingleFood = () => {
       <div className="singlefood-container">
         <PageNavigation title={name}></PageNavigation>
         <div className="singlefood-content">
-          <div className="singlefood-grid">
+          <div className="singlefood-gr__id">
             <div className="singlefood-left">
               {/* <img src={image} alt="" /> */}
               <MyImage imgs={image}></MyImage>

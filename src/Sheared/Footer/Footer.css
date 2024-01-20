@@ -13,7 +13,7 @@
     border-radius: 6px;
     /* background: #645697; */
     background-color: #F01543;
-    width: 40px;
+    w__idth: 40px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -34,7 +34,7 @@ color: #F01543;
     gap: 20px;
 }
 .last-nav input{
-    width:200px ;
+    w__idth:200px ;
     height: 46px;
     border-radius: 10px;
     background-color: white;
@@ -46,11 +46,11 @@ color: #F01543;
 
 .subs-btn{
     background-color: #F01543;
-    border: 2px solid #F01543;
+    border: 2px sol__id #F01543;
     color: #fff;
     padding: 13px 32px;
     transition: all 0.5s linear;
-    overflow: hidden;
+    overflow: h__idden;
     z-index: 1;
     font-size: 20px;
     font-style: normal;

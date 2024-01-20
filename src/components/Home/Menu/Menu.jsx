@@ -8,7 +8,7 @@ const Menu = () => {
     
   return (
     <div className="menu-cards-main">
-      <div className="menu-container-grid">
+      <div className="menu-container-gr__id">
         <section>
           <div className="menu-left"></div>
         </section>

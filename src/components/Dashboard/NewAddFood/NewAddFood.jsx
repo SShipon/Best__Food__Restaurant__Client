@@ -33,7 +33,7 @@ const NewAddFood = () => {
                 img: image,
               };
     
-              const url = `http://localhost:5000/addFood`;
+              const url = `http://localhost:5000/product`;
               fetch(url, {
                 method: "POST",
                 body: JSON.stringify(product),
@@ -73,7 +73,7 @@ const NewAddFood = () => {
                     },
                     pattern: {
                       value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: "provide a valid email",
+                      message: "prov__ide a val__id email",
                     },
                   })}
                 />

@@ -1,36 +1,36 @@
 [
   {
-    "id":1,
+    "__id":1,
     "name": "Daria Shevtsova",
     "newPrice": 90,
     "oldPrice": 120,
     "discount": 30,
     "review": 4,
     "like": "5k",
-    "Introduction":"Elevate your taste experience with our Chicken Wings, a symphony of flavors and textures that redefine the art of wing perfection. Crispy on the outside, juicy on the inside – these wings are a culinary masterpiece.",
+    "Introduction":"Elevate your taste experience with our Chicken Wings, a symphony of flavors and textures that redefine the art of wing perfection. Crispy on the outs__ide, juicy on the ins__ide – these wings are a culinary masterpiece.",
     "image": [
        {
-         "id":"img1",
+         "__id":"img1",
          "url":"https://html.themefax.com/restina/html/ltr/assets/images/menu_img_2.jpg",
          "type":"image/png"
        },
        {
-         "id":"img2",
+         "__id":"img2",
          "url":"https://hips.hearstapps.com/hmg-prod/images/190416-air-fryer-wings-137-1556204553.jpg?crop=0.8891228070175439xw:1xh;center,top&resize=1200:*",
          "type":"image/png"
        },
        {
-         "id":"img3",
+         "__id":"img3",
          "url":"https://www.foodandwine.com/thmb/NXUBQ0yUtxxf_jbUlhCMLXW9QD4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-crispy-chicken-wings-hero-02-6d627c282d3f4749a176e0ec34d2d6d7.jpg",
          "type":"image/png"
        },
        {
-         "id":"img4",
+         "__id":"img4",
          "url":"https://casuallypeckish.com/wp-content/uploads/2020/08/Soy-garlic-chicken-wings-6.jpg",
          "type":"image/png"
        }
     ],
-    "description": "Our Chicken Wings boast a tantalizingly crisp exterior, achieved through a special seasoning blend, and are meticulously cooked to golden perfection. The succulent meat inside is infused with savory goodness, making every bite a burst of flavor.Choose from an array of mouthwatering sauces, from tangy barbecue to spicy buffalo, each offering a unique taste adventure. Our wings are served with a side of cool ranch or blue cheese dressing, enhancing the overall flavor profile.Perfect for sharing or indulging on your own, these Chicken Wings are the ideal companion for game nights, celebrations, or whenever the craving for bold and delicious wings strikes. Prepare to elevate your wing experience and savor the perfection that defines our culinary expertise.",
+    "description": "Our Chicken Wings boast a tantalizingly crisp exterior, achieved through a special seasoning blend, and are meticulously cooked to golden perfection. The succulent meat ins__ide is infused with savory goodness, making every bite a burst of flavor.Choose from an array of mouthwatering sauces, from tangy barbecue to spicy buffalo, each offering a unique taste adventure. Our wings are served with a s__ide of cool ranch or blue cheese dressing, enhancing the overall flavor profile.Perfect for sharing or indulging on your own, these Chicken Wings are the __ideal companion for game nights, celebrations, or whenever the craving for bold and delicious wings strikes. Prepare to elevate your wing experience and savor the perfection that defines our culinary expertise.",
     "category": "chicken",
     "featured": true
   },
@@ -44,27 +44,27 @@
     "Introduction":"Indulge your senses in the aromatic symphony of flavors with our exquisite Chicken Biryani. Crafted with precision and love, this traditional South Asian dish is a celebration of fragrant basmati rice, succulent chicken, and a harmonious blend of spices that will transport you to a world of culinary bliss.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url":  "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_1.jpg",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://www.simplyrecipes.com/thmb/Fn3xsvrChEJSP-UkWJO2A81PdKw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Chicken-Biryani-LEAD-4-d53c64cefd0142febe882911d7d88622.jpg",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://images.aws.nestle.recipes/resized/1Fxu7L83m1qDUM84fvsrQN3iwEjaxeRLEy_A42I8734_944_531.jpg",
         "type": "image/png"
       }
     ],
-    "description": "Indulge in our Chicken Biryani, a culinary masterpiece that artfully combines slow-cooked, marinated chicken with aromatic basmati rice. Infused with a symphony of spices like cumin, coriander, cardamom, and cloves, each bite offers a tantalizing dance of flavors. The golden hue, courtesy of saffron-infused milk, adds a touch of luxury, while crispy fried onions and fresh coriander provide visual and textural delights. Accompanied by cooling raita, our Chicken Biryani strikes the perfect balance of heat and freshness. A harmonious union of tender chicken, fragrant rice, and aromatic spices, every mouthful is a journey through South Asian culinary heritage. Whether a seasoned biryani enthusiast or a first-time adventurer, savor the authenticity and excellence that define our dish – a true taste of traditional Indian and Pakistani kitchens.",
+    "description": "Indulge in our Chicken Biryani, a culinary masterpiece that artfully combines slow-cooked, marinated chicken with aromatic basmati rice. Infused with a symphony of spices like cumin, coriander, cardamom, and cloves, each bite offers a tantalizing dance of flavors. The golden hue, courtesy of saffron-infused milk, adds a touch of luxury, while crispy fried onions and fresh coriander prov__ide visual and textural delights. Accompanied by cooling raita, our Chicken Biryani strikes the perfect balance of heat and freshness. A harmonious union of tender chicken, fragrant rice, and aromatic spices, every mouthful is a journey through South Asian culinary heritage. Whether a seasoned biryani enthusiast or a first-time adventurer, savor the authenticity and excellence that define our dish – a true taste of traditional Indian and Pakistani kitchens.",
     "category": "chiken"
   },
   {
@@ -77,22 +77,22 @@
    "Introduction":"Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
         "type": "image/png"
       }
@@ -101,32 +101,32 @@
     "category": "burger"
   },
   {
-    "id": 4,
+    "__id": 4,
     "name": "Mozzarella Sticks",
     "newPrice": 90,
     "oldPrice": 156,
     "discount": 42,
     "review": 5,
     "like": "4k",
-    "Introduction":"Introducing our Mozzarella Sticks, a golden delight that will transport you to cheese heaven. Irresistibly crispy on the outside and gooey on the inside, these sticks are a cheesy sensation perfect for any indulgent craving.",
+    "Introduction":"Introducing our Mozzarella Sticks, a golden delight that will transport you to cheese heaven. Irresistibly crispy on the outs__ide and gooey on the ins__ide, these sticks are a cheesy sensation perfect for any indulgent craving.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBdTOxvriisGhzDbGQP5KJdBUx381yF2fGA&usqp=CAU",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://images.themodernproper.com/billowy-turkey/production/posts/2021/Homemade-Mozzarella-Sticks-9.jpeg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1638935116&s=2574b8da89d966ee167111e9822a0b4e",
         "type": "image/png"
       },
       {
-        "id": "img3",
-        "url": "https://hips.hearstapps.com/vidthumb/images/mozzarella-sticks-thumbnail-645006be7b4a1.jpg?crop=0.9997727789138833xw:1xh;center,top&resize=1200:*",
+        "__id": "img3",
+        "url": "https://hips.hearstapps.com/v__idthumb/images/mozzarella-sticks-thumbnail-645006be7b4a1.jpg?crop=0.9997727789138833xw:1xh;center,top&resize=1200:*",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://peaceloveandlowcarb.com/wp-content/uploads/2021/10/Keto-Mozzarella-Sticks-Peace-Love-and-Low-Carb-1.jpg",
         "type": "image/png"
       }
@@ -135,7 +135,7 @@
     "category": "chiken"
   },
   {
-    "id": 5,
+    "__id": 5,
     "name": "Popcorn Chicken",
     "newPrice": 80,
     "oldPrice": 150,
@@ -145,31 +145,31 @@
     "Introduction":"Dive into a world of snack-time bliss with our Popcorn Chicken – bite-sized delights that redefine the art of crispy indulgence. These golden nuggets are a flavor-packed treat for your taste buds.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rHExfFBILo9_UbeSvvzAWCjHhYL2xU-OJQ&usqp=CAU",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://easychickenrecipes.com/wp-content/uploads/2022/12/featured-popcorn-chicken-1.jpg",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUrB4PFw-Gobwn69TKcg4DPlGeTe6WzgRvA&usqp=CAU",
         "type": "image/png"
       }
     ],
-    "description": "Our Popcorn Chicken is made from tender, bite-sized pieces of succulent chicken, expertly coated in a secret blend of herbs and spices. Deep-fried to a perfect golden brown, each piece boasts a satisfying crunch that will keep you coming back for more.Choose from an array of dipping sauces, from classic honey mustard to tangy barbecue, to elevate the flavor experience. The versatile nature of our Popcorn Chicken makes it an ideal snack for sharing or a delightful addition to any meal.Perfectly portable and snackable, our Popcorn Chicken is the ultimate crowd-pleaser for movie nights, parties, or any casual gathering. Embrace the irresistible combination of juicy chicken and crispy coating that defines our Popcorn Chicken – a snack that's both fun and flavorful.",
+    "description": "Our Popcorn Chicken is made from tender, bite-sized pieces of succulent chicken, expertly coated in a secret blend of herbs and spices. Deep-fried to a perfect golden brown, each piece boasts a satisfying crunch that will keep you coming back for more.Choose from an array of dipping sauces, from classic honey mustard to tangy barbecue, to elevate the flavor experience. The versatile nature of our Popcorn Chicken makes it an __ideal snack for sharing or a delightful addition to any meal.Perfectly portable and snackable, our Popcorn Chicken is the ultimate crowd-pleaser for movie nights, parties, or any casual gathering. Embrace the irresistible combination of juicy chicken and crispy coating that defines our Popcorn Chicken – a snack that's both fun and flavorful.",
     "category": "chicken"
   },
   {
-    "id": 6,
+    "__id": 6,
     "name": "Mexican Pizza",
     "newPrice": 110,
     "oldPrice": 183,
@@ -179,22 +179,22 @@
     "Introduction": "Experience culinary perfection with our Ultimate Chicken Bliss Sandwich – a delectable journey for sandwich enthusiasts. Packed with bold flavors and premium ingredients, this creation is a testament to the art of sandwich craftsmanship.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnpyRrbU5Ffv9bfC-Zy2c-rcGqW1uBWaL7w&usqp=CAU",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiepYgNjsMqYRm5K9zP7yhv7F97z8tKgL_YiU9tkW0MgX5MbFUG9UBkA5YYHDzEMPxsy8&usqp=CAU",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQXA6iGD3-fYykxLqZmFEGESqWazfukzH66NQajqel7KIYTEBv8Zuu1h3gV5lEw_H2q8&usqp=CAU",
         "type": "image/png"
       }
@@ -203,7 +203,7 @@
     "category": "sandwich"
   },
   {
-    "id": 7,
+    "__id": 7,
     "name": "Onion Rings",
     "newPrice": 50,
     "oldPrice": 100,
@@ -213,22 +213,22 @@
     "Introduction":"Savor the sweetness of nature with our Blissful Orchard Medley Dessert, a symphony of fresh fruits that promises a delightful finale to your dining experience. This dessert is a celebration of flavors, textures, and the vibrant colors of the orchard.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://realfood.tesco.com/media/images/Yoghurt-Pots-Final-1400x919-2aa74c0e-2450-4010-949c-8bb6758017d3-0-1400x919.jpg",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://insanelygoodrecipes.com/wp-content/uploads/2021/08/Homemade-Colorful-Ambrosia-Fruit-Salad.jpg",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:AH8q3dGK2f2vLZVgbRfLTjQPySe2yRaJHs-R1if4kA&usqp=CAU",
         "type": "image/png"
       }
@@ -238,7 +238,7 @@
     "featured": true
   },
   {
-    "id": 8,
+    "__id": 8,
     "name": "Bread Street Kitchen Burger",
     "newPrice": 129,
     "oldPrice": 220,
@@ -248,22 +248,22 @@
     "Introduction": "Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
     "image": [
       {
-        "id": "img1",
+        "__id": "img1",
         "url": "https://images.pexels.com/photos/2271099/pexels-photo-2271099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "type": "image/png"
       },
       {
-        "id": "img2",
+        "__id": "img2",
         "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
         "type": "image/png"
       },
       {
-        "id": "img3",
+        "__id": "img3",
         "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
         "type": "image/png"
       },
       {
-        "id": "img4",
+        "__id": "img4",
         "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
         "type": "image/png"
       }

@@ -17,7 +17,7 @@ const About = () => {
             <h2>DISCOVER ART OF FOOD WITH US.</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm
-              reminu is one doeiusmod tempor incidition ulla mco laboris nisi ut
+              reminu is one doeiusmod tempor inc__idition ulla mco laboris nisi ut
               aliquip ex ea commo condorico consectetur adipiscing elitut
               aliquip.
             </p>
@@ -128,10 +128,10 @@ const About = () => {
               <a
                 className="venobox play-btn vbox-item"
                 data-autoplay="true"
-                data-vbtype="video"
+                data-vbtype="v__ideo"
                 href="https://youtu.be/nqye02H_H6I?si=ougeOsfL0tat6YbT"
               >
-                <i className="fas fa-play" aria-hidden="true"></i>
+                <i className="fas fa-play" aria-h__idden="true"></i>
               </a>
             </div>
           </div>

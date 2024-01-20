@@ -88,7 +88,7 @@ const Contact = () => {
           <div className="contact-cards-flex">
             <div className="contact-card">
               <div className="contact-logo ">
-                <i className="fa-solid fa-phone"></i>
+                <i className="fa-sol__id fa-phone"></i>
                 <h2>Call Us</h2>
               </div>
               <p>+1 234 XXXX 123</p>
@@ -96,7 +96,7 @@ const Contact = () => {
             </div>
             <div className="contact-card">
               <div className="contact-logo ">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-sol__id fa-envelope"></i>
                 <h2>Email</h2>
               </div>
               <p>demomail123@mail.com</p>
@@ -104,7 +104,7 @@ const Contact = () => {
             </div>
             <div className="contact-card">
               <div className="contact-logo ">
-                <i className="fa-solid fa-location-dot"></i>
+                <i className="fa-sol__id fa-location-dot"></i>
                 <h2>Address</h2>
               </div>
               <p>37125 Maya Estate Dr, Victoria Road,</p>

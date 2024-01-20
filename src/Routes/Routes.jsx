@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
           element:<Contact></Contact>
          },
          {
-          path:'singleFood/:id',
+          path:'singleFood/:__id',
           element:<SingleFood></SingleFood>,
           //loader: ()=> fetch('http://localhost:5000/food')
          
