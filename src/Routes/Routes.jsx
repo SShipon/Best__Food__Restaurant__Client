@@ -1,7 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
-import Explore from "../Pages/Explore";
 import Contact from "../Pages/Contact";
 import Dashboard from "../Pages/Dashboard";
 import Register from "../components/Authentication/Register";
@@ -9,12 +8,11 @@ import About from "../Pages/About";
 import ForgetPassword from "../components/Authentication/ForgetPassword";
 import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
-import SingleFood from "../components/Home/Menu/SingleFood/SingleFood";
+import SingleFood from "../components/SingleFood/SingleFood";
+import Menu from "../components/Home/Menu/Menu";
 import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
 import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
-import Reviews from "../components/Dashboard/Review/Reviews";
-import { path } from "d3-path";
-import DataList from "../components/Dashboard/DataAnalyis/DataAnalyst";
+import Reviews from "../components/Home/Review/Reviews";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
 
 export const router = createBrowserRouter([
@@ -28,8 +26,8 @@ export const router = createBrowserRouter([
             element:<Home></Home>
         },
         {
-          path:'explore',
-          element:<Explore></Explore>
+          path:'foodmenu',
+          element:<Menu></Menu>
         },
          {
           path:'about',
@@ -42,7 +40,7 @@ export const router = createBrowserRouter([
          {
           path:'singleFood/:id',
           element:<SingleFood></SingleFood>,
-          loader: ({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+          //loader: ()=> fetch('http://localhost:5000/food')
          
          },
 

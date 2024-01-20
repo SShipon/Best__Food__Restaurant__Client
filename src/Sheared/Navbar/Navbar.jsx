@@ -26,14 +26,14 @@ const Navbar = () => {
 
   const changeColor = () => window.scrollY >= 80 ? setColor(true) : setColor(false);
   
-  console.log(window.scrollY, colorChange, white);
+  // console.log(window.scrollY, colorChange, white);
   
   window.addEventListener('scroll', changeBackground);
   window.addEventListener('scroll', changeColor);
   
   const navItems = <>
     <li ><Link className={white ? 'black' : 'white'}  to="/">Home</Link></li>
-    <li ><Link className={white ? 'black' : 'white'}  to="/explore">Explore</Link></li>
+    <li ><Link className={white ? 'black' : 'white'}  to="/foodmenu">Food Menu</Link></li>
     <li ><Link className={white ? 'black' : 'white'}  to="/about">About</Link></li>
     <li ><Link className={white ? 'black' : 'white'}  to="/contact">Contact</Link></li>
     {/* <li >  className={white ? 'black' : 'white'} <Link  to="/login">Login</Link></li> */}

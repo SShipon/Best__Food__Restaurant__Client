@@ -3,7 +3,7 @@ import { useRouteError } from 'react-router-dom';
 
 const NotFound = () => {
     const error = useRouteError();
-  console.error(error);
+  console.log(error);
     return (
         <div className='flex justify-center mt-72'>
              <div id="error-page">

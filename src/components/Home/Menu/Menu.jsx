@@ -18,8 +18,8 @@ const Menu = () => {
               <h1>DELICIOUS MENU</h1>
             </div>
             <div className="menu-cards-flex">
-              {products.map((product) => (
-                <Food key={product.name} product={product}></Food>
+              {products.map((curElem) => (
+                <Food key={curElem.name} curElem={curElem}></Food>
               ))}
             </div>
           </div>

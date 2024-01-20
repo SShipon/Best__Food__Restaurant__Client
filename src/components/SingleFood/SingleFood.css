@@ -1,0 +1,55 @@
+.singlefood-container{
+    background-color: white;
+    padding: 30px 0px;
+}
+.singlefood-content{
+    padding:40px 20px ;
+    max-width: 1500px;
+    margin: auto;
+}
+.singlefood-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.singlefood-right h1{
+    font-size: 35px;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.singlefood-right p{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 5px;
+}
+.singlefood-right h3{
+    font-size: 15px;
+   font-weight: 500;
+   color: rgb(68, 67, 67);
+    margin-bottom: 5px;
+}
+.singlefood-right h2{
+    color: rgb(121, 118, 118);
+     /* color: rgb(68, 67, 67); */
+    margin-bottom: 5px;
+}
+.food-price{
+    display: flex;
+    gap: 10px;
+     color: black;
+      font-weight: 700;
+      margin-top: 15px;
+      font-size: 20px;
+}
+.food-price del{
+    margin-top: -8px;
+   
+   
+}
+.food-price p{
+   color: coral;
+   font-size: 25px;
+   line-height: 25px;
+}

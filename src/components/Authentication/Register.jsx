@@ -47,12 +47,7 @@ const togglePassword = () => {
 
   
   return (
-    <section
-      style={{
-        backgroundColor: "white",
-        color: "black",
-      }}
-    >
+    <section >
       <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
        <div className="order-2 xl:order-first">
        <img
@@ -119,7 +114,7 @@ const togglePassword = () => {
                     })}
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
-                   <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                   <i onClick={togglePassword} className={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
                    <p className="text-red">{sigUpError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
@@ -137,7 +132,7 @@ const togglePassword = () => {
                     value="SIGN UP"
                   />
                 </div>
-                <p>
+                <p className="text-purple">
                   Already have an account ?{" "}
                   <Link className="text-secondary" to="/login">
                     Please Login
