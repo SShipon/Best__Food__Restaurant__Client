@@ -15,7 +15,7 @@ const Menu = () => {
         <section>
           <div className="menu-right">
             <div className="menu-header">
-              <h1>DELICIOUS MENU</h1>
+              <h1>DELICIOUS MENUS</h1>
             </div>
             <div className="menu-cards-flex">
               {products.map((curElem) => (
