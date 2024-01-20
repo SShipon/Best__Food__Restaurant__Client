@@ -24,14 +24,14 @@
 }
 .home-chefs-header-part h1::after {
   content: '';
-  border: 2px sol__id rgb(245, 101, 45);
+  border: 2px solid rgb(245, 101, 45);
   margin-left: 20px;
 }
 .home-chefs-header-part button {
   font-size: 14px;
   font-weight: 500;
   padding: 10px 20px;
-  border: 1px sol__id rgb(201, 196, 196);
+  border: 1px solid rgb(201, 196, 196);
   border-radius: 6px;
   text-align: center;
 }
@@ -74,13 +74,13 @@
 
 }
 .chef-social li{
-   border:1px sol__id rgb(218, 214, 214) ;
+   border:1px solid rgb(218, 214, 214) ;
    color: black;
    padding: 10px 15px;
    border-radius: 10px;
 }
 .chef-social li:hover{
-     border:1px sol__id rgb(255, 0, 64) ;
+     border:1px solid rgb(255, 0, 64) ;
    background-color: rgb(255, 0, 64);
    color: white;
 }
@@ -91,7 +91,7 @@
     display: block;
     margin: auto;
     height: 50px;
-    w__idth: auto;
+    width: auto;
     background-color: rgb(245, 101, 45);
     color: white;
     font-size: 20px;
@@ -125,7 +125,7 @@
 .about-article-card img {
   border-radius: 10px;
   padding: 15px;
-  border: 1px sol__id rgb(238, 234, 234);
+  border: 1px solid rgb(238, 234, 234);
 }
 
 .about-article-content {
@@ -151,6 +151,6 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
-  border: 1px sol__id rgb(252, 172, 143);
+  border: 1px solid rgb(252, 172, 143);
   padding:10px 20px;
 }

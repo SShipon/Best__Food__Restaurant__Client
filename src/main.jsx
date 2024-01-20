@@ -1,21 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {RouterProv__ider,} from "react-router-dom";
+import {RouterProvider,} from "react-router-dom";
 import { router } from './Routes/Routes';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AuthProv__ider from './AuthProv__ider/AuthProv__ider';
-import { MenuProv__ider } from './Context/MenuContext';
-ReactDOM.createRoot(document.getElementBy__id('root')).render(
+import AuthProvider from './AuthProvider/AuthProvider';
+import { MenuProvider } from './Context/MenuContext';
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MenuProv__ider>
-      <AuthProv__ider>
+    <MenuProvider>
+      <AuthProvider>
         <div className="mx-auto">
-          <RouterProv__ider router={router} />
+          <RouterProvider router={router} />
           <ToastContainer />
         </div>
-      </AuthProv__ider>
-    </MenuProv__ider>
+      </AuthProvider>
+    </MenuProvider>
   </React.StrictMode>
 );

@@ -4,8 +4,8 @@ import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-import { AuthContext } from "../../AuthProv__ider/AuthProv__ider";
-import { GithubAuthProv__ider, GoogleAuthProv__ider } from "firebase/auth";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import GithubAndGoogle from "./GithubAndGoogle";
 
 const Login = () => {
@@ -16,8 +16,8 @@ const Login = () => {
   const [message, setMessage] = useState('');
 
   // github and google signUp pages 
-  const githubProv__ider = new GithubAuthProv__ider();
-  const googleProv__ider = new GoogleAuthProv__ider();
+  const githubProvider = new GithubAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
 
   
   const togglePassword = () =>{
@@ -46,7 +46,7 @@ const Login = () => {
 
 
   const handleGithubLogin = () => {
-    githubSignUp(githubProv__ider)
+    githubSignUp(githubProvider)
       .then(result => {
         const user = result.user;
         console.log(user)
@@ -60,7 +60,7 @@ const Login = () => {
 
 
   const handleGoogleLogin = () => {
-    githubSignUp(githubProv__ider)
+    githubSignUp(githubProvider)
       .then(result => {
         const user = result.user;
         console.log(user)
@@ -83,7 +83,7 @@ const Login = () => {
         color: "black",
       }}
     >
-      <div className="mt-16 h-[600 px] gr__id  sm:gr__id-cols-1 md:gr__id-cols-2  lg:gr__id-cols-2 justify-center items-center">
+      <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
         <div className=" mx-auto">
           <div className="w-96 p-7 mx-auto">
             <h2 className="text-xl text-center font-bold">Login</h2>
@@ -117,7 +117,7 @@ const Login = () => {
                     })}
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
-                   <i onClick={togglePassword} className={`fa-sol__id pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                   <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
 
 
                  <p className="text-red">{logInError}</p>
@@ -143,7 +143,7 @@ const Login = () => {
                   Create New Account
                 </Link>
               </p>
-              <div className="div__ider ">OR</div>
+              <div className="divider ">OR</div>
             </form>
              <GithubAndGoogle/>
           </div>

@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../../AuthProv__ider/AuthProv__ider';
-import { GithubAuthProv__ider, GoogleAuthProv__ider } from "firebase/auth";
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
 const GithubAndGoogle = () => {
     const {githubSignUp,googleInSingUp,verifyYouEmail} = useContext(AuthContext);
-    const githubProv__ider = new GithubAuthProv__ider();
-    const googleProv__ider = new GoogleAuthProv__ider();
+    const githubProvider = new GithubAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
 
 
     const location = useLocation()
@@ -16,7 +16,7 @@ const GithubAndGoogle = () => {
 
     //github in signIn
     const handleGithubLogin = () => {
-        githubSignUp(githubProv__ider)
+        githubSignUp(githubProvider)
           .then(result => {
             const user = result.user;
             console.log(user)
@@ -31,7 +31,7 @@ const GithubAndGoogle = () => {
 
 // google in signIn
       const handleGoogleLogin = () => {
-        googleInSingUp(googleProv__ider)
+        googleInSingUp(googleProvider)
           .then(result => {
             const user = result.user;
             console.log(user)

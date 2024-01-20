@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: h__idden;
+  overflow: hidden;
   padding: 50px 0px;
 }
 
@@ -19,14 +19,14 @@
   flex-basis: 40%;
 }
 .banner-left h5 {
-  w__idth: 50%;
+  width: 50%;
   font-size: 15px;
   font-weight: 600;
   color: #f0165f;
   padding: 7px 50px 7px 10px;
   clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
   margin-bottom: 17px;
-  border: 1px sol__id rgba(14, 13, 14, 0.1);
+  border: 1px solid rgba(14, 13, 14, 0.1);
   background: rgba(14, 13, 14, 0.1);
 }
 .banner-left h1 {
@@ -47,7 +47,7 @@
   margin: 20px 0;
 }
 .banner-btn button {
-  w__idth: auto;
+  width: auto;
   height: auto;
   background-color: orangered;
   color: white;
@@ -60,11 +60,11 @@
   align-items: center;
 }
 .play-btn {
-  w__idth: 45px;
+  width: 45px;
   height: 45px;
   color: orangered;
   border-radius: 50%;
-  border: 2px sol__id orangered;;
+  border: 2px solid orangered;;
   border-inline-end-color: transparent;
   line-height: 40px;
   text-align: center;

@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProv__ider, sendEmailVerification  } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider, sendEmailVerification  } from "firebase/auth";
 import app from "../firebase/firebase.config";
 import { toast } from "react-toastify";
 
@@ -7,13 +7,13 @@ import { toast } from "react-toastify";
 export const AuthContext = createContext(null)
 const auth = getAuth(app);
 
-const AuthProv__ider = ({children}) => {
+const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
-     // google and gitHub and facebook login Prov__ider
+     // google and gitHub and facebook login Provider
   
-    //const facebookProv__ider =  new FacebookAuthProv__ider()
+    //const facebookProvider =  new FacebookAuthProvider()
 
     // new user create and register
     const newCreateUser = (email, password)=>{
@@ -54,14 +54,14 @@ const AuthProv__ider = ({children}) => {
     }
 
 
-     const githubSignUp = (prov__ider)=>{
+     const githubSignUp = (provider)=>{
         setLoading(true)
-        return signInWithPopup(auth, prov__ider)
+        return signInWithPopup(auth, provider)
       }
 
-      const googleInSingUp = (prov__ider)=>{
+      const googleInSingUp = (provider)=>{
         setLoading(true)
-        return signInWithPopup(auth, prov__ider)
+        return signInWithPopup(auth, provider)
       }
 
 
@@ -90,10 +90,10 @@ const AuthProv__ider = ({children}) => {
 
   }
     return (
-        <AuthContext.Prov__ider value={authInfo}>
+        <AuthContext.Provider value={authInfo}>
             {children}
-        </AuthContext.Prov__ider>
+        </AuthContext.Provider>
     );
 };
 
-export default AuthProv__ider;
+export default AuthProvider;

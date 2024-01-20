@@ -8,13 +8,13 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    max-w__idth: 1500px;
+    max-width: 1500px;
     margin: auto;
 }
 .menu-card{
     background-color: white;
     position: relative;
-    w__idth: 300px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 15px 15px 30px #bebebe,
@@ -66,7 +66,7 @@
     line-height: normal;
     margin-top: 7px;
     margin-bottom: 25px;
-    overflow: h__idden;
+    overflow: hidden;
 }
 
 .menu-btn-price{
@@ -88,7 +88,7 @@
     text-decoration: line-through;
 }
 .menu-btn-price button{ 
-   border:1px sol__id rgb(206, 206, 206) ;
+   border:1px solid rgb(206, 206, 206) ;
    padding: 8px 15px;
    color: black;
    font-weight: 600;
@@ -97,7 +97,7 @@
 .menu-btn-price button:hover{ 
   background-color: rgb(170, 69, 103);
   color: white;
-   border:1px sol__id rgb(170, 69, 103) ;
+   border:1px solid rgb(170, 69, 103) ;
   transition: .5s;
 }
 .menu-header h1{

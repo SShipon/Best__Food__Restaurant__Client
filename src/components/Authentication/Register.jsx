@@ -3,7 +3,7 @@ import { Link, redirect, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
-import { AuthContext } from "../../AuthProv__ider/AuthProv__ider";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 import GithubAndGoogle from "./GithubAndGoogle";
 const Register = () => {
   const { newCreateUser,verifyYouEmail } = useContext(AuthContext);
@@ -48,7 +48,7 @@ const togglePassword = () => {
   
   return (
     <section >
-      <div className="mt-16 h-[600 px] gr__id  sm:gr__id-cols-1 md:gr__id-cols-2  lg:gr__id-cols-2 justify-center items-center">
+      <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
        <div className="order-2 xl:order-first">
        <img
           src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?w=740&t=st=1704175534~exp=1704176134~hmac=912bca2161724942122c23b769f558b83e6bc947e4402fb7f9d47c0ac2ed9354"
@@ -114,7 +114,7 @@ const togglePassword = () => {
                     })}
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
-                   <i onClick={togglePassword} className={`fa-sol__id pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+                   <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
                    <p className="text-red">{sigUpError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
@@ -138,7 +138,7 @@ const togglePassword = () => {
                     Please Login
                   </Link>
                 </p>
-                <div className="div__ider">OR</div>
+                <div className="divider">OR</div>
 
               </form>
               <GithubAndGoogle />

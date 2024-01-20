@@ -7,7 +7,7 @@ const Food = (curElem) => {
     _id,
     image,
     name,
-    description,
+    Introduction,
     newPrice,
     oldPrice,
     category,
@@ -17,7 +17,7 @@ const Food = (curElem) => {
     <div>
       <Link to={`/singleFood/${_id}`}>
         <div className="menu-card">
-          <img src={image[1].url} alt="" />
+         <img src={image[]} alt="" />
           <div className="menu-card-content">
             <div className="stars">
               <ul>
@@ -34,7 +34,7 @@ const Food = (curElem) => {
               {category}
             </a>
             <h1>{name}</h1>
-            <p>{description.slice(0, 95)}</p>
+            <p>{Introduction.slice(0, 95)}</p>
             <div className="menu-btn-price">
               <button>Add To Cart</button>
               <div className="menu-price">
