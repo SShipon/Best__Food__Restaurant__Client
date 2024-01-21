@@ -1,8 +1,8 @@
+
 import React, { useEffect, useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
-import MyImage from '../MyImage/MyImage';
-import AddToCart from './AddToCart/AddToCart';
+import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
@@ -37,6 +37,32 @@ const SingleFood = () => {
     setAmount(amount + 1);
   };
 
+
+  const handlePlacedOrder = () => {
+    const order = {
+      id: id,
+      image: image[1].url,
+      name: name,
+      Introduction: Introduction,
+      newPrice: newPrice * amount,
+      amount:amount
+    };
+    //send POST request
+    fetch('http://localhost:5000/foodorder', {
+      method: 'POST',
+      headers: {
+        'Content-Type':'application/json',
+      },
+      body:JSON.stringify(order)
+    })
+      .then((res) => res.json())
+      .then((data) =>console.log('i am your data',data));
+      // .then((data) => {
+      //   console.log('i am your data',data);
+      //   toast('Your order is booked');
+      // });
+  };
+
   return (
     <div>
       <div className="singlefood-container">
@@ -60,9 +86,9 @@ const SingleFood = () => {
                 <h6>Select Size</h6>
                 <div className="sizes-flex">
                   <div>
-                    <p>Large</p>
-                    <p>Medium</p>
-                    <p>Small</p>
+                    <p>Large :</p>
+                    <p>Medium :</p>
+                    <p>Small :</p>
                   </div>
                   <div>
                     <p>$350</p>
@@ -89,9 +115,11 @@ const SingleFood = () => {
                 Price : <p>${newPrice * amount}</p>
                 <del>${oldPrice}</del>
               </div>
-              <NavLink to="/cart">
-                <button className="addToCart-btn">Add To Cart</button>
-              </NavLink>
+             
+                <button type='submit' className="addToCart-btn" onSubmit={handlePlacedOrder}>
+                  Add To Cart
+                </button>
+             
               <div className="Nutrition-div">
                 <h4>Nutrition Facts (per serving)</h4>
                 <div className="Nutrition-flex">
