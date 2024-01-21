@@ -42,11 +42,28 @@ const SingleFood = () => {
             <div className="singlefood-right">
               <h1>{name}</h1>
               <h3>{Introduction}</h3>
+              <p>Category : {category}</p>
               <p>
                 {' '}
                 <Stars review={review}></Stars> | {like} Reviews
               </p>
               <h2>{description}</h2>
+
+              <div className="sizes-div">
+                <h6>Select Size</h6>
+                <div className="sizes-flex">
+                  <div>
+                    <p>Large</p>
+                    <p>Medium</p>
+                    <p>Small</p>
+                  </div>
+                  <div>
+                    <p>$350</p>
+                    <p>$250</p>
+                    <p>$150</p>
+                  </div>
+                </div>
+              </div>
               <div className="food-price">
                 Price : <p>${newPrice}</p>
                 <del>${oldPrice}</del>

@@ -71,3 +71,14 @@ font-size: 1.125rem;
     font-weight: 500;
     text-align: center;
 }
+.sizes-div h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 10px 0px;
+}
+.sizes-flex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
