@@ -1,35 +1,42 @@
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import MyImage from '../MyImage/MyImage';
 import AddToCart from './AddToCart/AddToCart';
 import PageNavigation from './PageNavigation';
-import './SingleFood.css'
+import './SingleFood.css';
 import Stars from './Stars';
 const SingleFood = () => {
   const { id } = useParams();
-  
-  const { getSingleProduct , isSingleLoading , singleProduct } = useMenuContext();
-   const {
-     image,
-     name,
-     review,
-     Introduction,
-     description,
-     newPrice,
-     oldPrice,
-     category,
-     like
-   } = singleProduct;
-  
+  const [amount, setAmount] = useState(1);
+  const { getSingleProduct, isSingleLoading, singleProduct } = useMenuContext();
+  const {
+    image,
+    name,
+    review,
+    Introduction,
+    description,
+    newPrice,
+    oldPrice,
+    category,
+    like,
+  } = singleProduct;
+
   useEffect(() => {
     getSingleProduct(`http://localhost:5000/product/${id}`);
-  },[])
+  }, []);
 
   if (isSingleLoading) {
-  return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
-  
+
+  const setDecrease = () => {
+    amount > 1 ? setAmount(amount - 1) : setAmount(1);
+  };
+  const setIncrease = () => {
+    setAmount(amount + 1);
+  };
+
   return (
     <div>
       <div className="singlefood-container">
@@ -48,7 +55,7 @@ const SingleFood = () => {
                 {' '}
                 <Stars review={review}></Stars> | {like} Reviews
               </p>
-
+              <h2>{description}</h2>
               <div className="sizes-div">
                 <h6>Select Size</h6>
                 <div className="sizes-flex">
@@ -64,13 +71,27 @@ const SingleFood = () => {
                   </div>
                 </div>
               </div>
-
-              <AddToCart singleProduct={singleProduct}></AddToCart>
+              <div>
+                <div className="cart-amount-btn">
+                  <button
+                    className="minus-button"
+                    onClick={() => setDecrease()}
+                  >
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </button>
+                  <div>{amount}</div>
+                  <button className="plus-button" onClick={() => setIncrease()}>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
               <div className="food-price">
-                Price : <p>${newPrice}</p>
+                Price : <p>${newPrice * amount}</p>
                 <del>${oldPrice}</del>
               </div>
-              <h2>{description}</h2>
+              <NavLink to="/cart">
+                <button className="addToCart-btn">Add To Cart</button>
+              </NavLink>
               <div className="Nutrition-div">
                 <h4>Nutrition Facts (per serving)</h4>
                 <div className="Nutrition-flex">

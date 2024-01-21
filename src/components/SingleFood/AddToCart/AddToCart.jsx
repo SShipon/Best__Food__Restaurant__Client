@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './AddToCart.css';
 
 const AddToCart = ({ singleProduct }) => {
@@ -25,11 +26,10 @@ const AddToCart = ({ singleProduct }) => {
             </button>
           </div>
         </div>
-        {/* <CartAmounToggle
-          amount={amount}
-          setDecrease={setDecrease}
-          setIncrease={setIncrease}
-        ></CartAmounToggle> */}
+       
+            <NavLink to="/cart">
+                <button className='addToCart-btn'>Add To Cart</button>
+            </NavLink>
       </div>
     );
 };
