@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import MyImage from '../MyImage/MyImage';
+import AddToCart from './AddToCart/AddToCart';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css'
 import Stars from './Stars';
@@ -47,7 +48,6 @@ const SingleFood = () => {
                 {' '}
                 <Stars review={review}></Stars> | {like} Reviews
               </p>
-              <h2>{description}</h2>
 
               <div className="sizes-div">
                 <h6>Select Size</h6>
@@ -64,16 +64,13 @@ const SingleFood = () => {
                   </div>
                 </div>
               </div>
+
+              <AddToCart singleProduct={singleProduct}></AddToCart>
               <div className="food-price">
                 Price : <p>${newPrice}</p>
                 <del>${oldPrice}</del>
               </div>
-
-              <div className="flex gap-4">
-                <div>+</div>
-                <div>1</div>
-                <div>-</div>
-              </div>
+              <h2>{description}</h2>
               <div className="Nutrition-div">
                 <h4>Nutrition Facts (per serving)</h4>
                 <div className="Nutrition-flex">
