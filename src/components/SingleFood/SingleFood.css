@@ -12,6 +12,7 @@
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .singlefood-right h1{
     font-size: 35px;
@@ -40,16 +41,65 @@
     gap: 10px;
      color: black;
       font-weight: 700;
-      margin-top: 15px;
+      margin: 20px 0px;
       font-size: 20px;
 }
 .food-price del{
-    margin-top: -8px;
-   
-   
+    margin-top: -8px; 
 }
 .food-price p{
    color: coral;
    font-size: 25px;
    line-height: 25px;
+}
+
+.Nutrition-div h4{
+font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: rgb(87, 87, 87);
+    margin: 20px 0px;
+}
+.Nutrition-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px 0px;
+    border-radius: 10px;
+     color: rgb(87, 87, 87);
+    font-weight: 500;
+    text-align: center;
+}
+.sizes-div h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 10px 0px;
+}
+.sizes-flex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* add to cart part */
+
+.cart-amount-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0px;
+}
+.minus-button,.plus-button{
+    background-color: rgb(173, 174, 175);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.addToCart-btn{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(255, 0, 64);
+    padding: 10px 20px;
 }

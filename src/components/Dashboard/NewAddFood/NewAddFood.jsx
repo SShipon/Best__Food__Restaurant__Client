@@ -32,7 +32,7 @@ const NewAddFood = () => {
             img: image,
           };
 
-          const url = `http://localhost:5000/product`;
+          const url = `http://localhost:5000/food`;
           fetch(url, {
             method: "POST",
             headers: {
