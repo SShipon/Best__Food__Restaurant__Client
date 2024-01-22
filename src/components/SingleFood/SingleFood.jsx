@@ -57,11 +57,7 @@ const SingleFood = () => {
     })
       .then((res) => res.json())
       .then((data) =>console.log('i am your data',data));
-      // .then((data) => {
-      //   console.log('i am your data',data);
-      //   toast('Your order is booked');
-      // });
-  };
+   };
 
   return (
     <div>
@@ -116,7 +112,7 @@ const SingleFood = () => {
                 <del>${oldPrice}</del>
               </div>
              
-                <button type='submit' className="addToCart-btn" onSubmit={handlePlacedOrder}>
+                <button type='submit' className="addToCart-btn" onClick={handlePlacedOrder}>
                   Add To Cart
                 </button>
              
