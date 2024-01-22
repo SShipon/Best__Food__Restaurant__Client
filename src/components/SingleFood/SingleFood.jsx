@@ -44,6 +44,7 @@ const SingleFood = () => {
       image: image[1].url,
       name: name,
       Introduction: Introduction,
+      oldPrice:oldPrice,
       newPrice: newPrice * amount,
       amount:amount
     };
@@ -56,11 +57,11 @@ const SingleFood = () => {
       body:JSON.stringify(order)
     })
       .then((res) => res.json())
-      .then((data) =>console.log('i am your data',data));
-      // .then((data) => {
-      //   console.log('i am your data',data);
-      //   toast('Your order is booked');
-      // });
+      .then((data) => {
+        console.log('i am your data', data);
+        alert('ami gechi oboses e')
+        // toast('Your order is booked');
+      });
   };
 
   return (
