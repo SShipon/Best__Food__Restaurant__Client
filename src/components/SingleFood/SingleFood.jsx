@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import {useParams } from 'react-router-dom';
+import {NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
@@ -49,18 +49,17 @@ const SingleFood = () => {
       amount:amount
     };
     //send POST request
-    fetch('http://localhost:5000/foodorder', {
+    fetch('http://localhost:5000/foodOrder', {
       method: 'POST',
       headers: {
-        'Content-Type':'application/json',
+        'Content-Type': 'application/json',
       },
-      body:JSON.stringify(order)
+      body: JSON.stringify(order),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log('i am your data', data);
-        alert('ami gechi oboses e')
-        // toast('Your order is booked');
+        alert('data post successfully'); 
       });
   };
 
@@ -116,11 +115,15 @@ const SingleFood = () => {
                 Price : <p>${newPrice * amount}</p>
                 <del>${oldPrice}</del>
               </div>
-             
-                <button type='submit' className="addToCart-btn" onClick={handlePlacedOrder}>
+              <NavLink to="/cart">
+                <button
+                  type="submit"
+                  className="addToCart-btn"
+                  onClick={handlePlacedOrder}
+                >
                   Add To Cart
                 </button>
-             
+              </NavLink>
               <div className="Nutrition-div">
                 <h4>Nutrition Facts (per serving)</h4>
                 <div className="Nutrition-flex">
