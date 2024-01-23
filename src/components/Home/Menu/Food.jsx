@@ -11,6 +11,7 @@ const Food = (curElem) => {
     newPrice,
     oldPrice,
     category,
+    review
   } = curElem;
 
   return (
@@ -19,17 +20,7 @@ const Food = (curElem) => {
         <div className="menu-card">
           <img src={image[1].url} alt="" />
           <div className="menu-card-content">
-            <div className="stars">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </li>
-              </ul>
-            </div>
+               <p>{review}</p>
             <a className="menu-category" href="">
               {category}
             </a>

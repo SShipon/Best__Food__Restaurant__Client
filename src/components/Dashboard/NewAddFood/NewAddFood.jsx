@@ -154,7 +154,7 @@ const NewAddFood = () => {
             <input
               type="text"
               placeholder="New Price"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered  focus:outline-none focus:ring-0 w-[100%]"
               {...register("newPrice", {
                 required: {
                   value: true,
