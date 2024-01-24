@@ -23,7 +23,7 @@ const Foods = () => {
               <h1>DELICIOUS MENU</h1>
             </div>
             <div className="menu-cards-flex">
-              {products.slice(0, 3).map((curElem) => (
+              {products.slice(0, 4).map((curElem) => (
                 <HomeFood key={curElem.name} {...curElem}></HomeFood>
               ))}
             </div>
