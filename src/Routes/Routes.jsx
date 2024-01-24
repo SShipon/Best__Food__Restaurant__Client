@@ -15,6 +15,7 @@ import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
 import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
 import Reviews from "../components/Dashboard/Review/Reviews";
+import PrivetRoute from "./PrivetRoute";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -39,7 +40,9 @@ export const router = createBrowserRouter([
       },
       {
         path: 'singleFood/:id',
-        element: <SingleFood></SingleFood>,
+        element:<PrivetRoute>
+         <SingleFood></SingleFood>
+        </PrivetRoute>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
       },
@@ -61,7 +64,9 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivetRoute>
+          <Dashboard></Dashboard>
+        </PrivetRoute>,
         children:[
           {
             path:'myOrder',

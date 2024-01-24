@@ -100,6 +100,16 @@ font-size: 1.125rem;
 .addToCart-btn{
     color: white;
     font-weight: 700;
-    background-color: rgb(255, 0, 64);
+    background-color: rgb(252, 39, 92);
     padding: 10px 20px;
+}
+
+@media only screen and (max-width: 900px) {
+ .singlefood-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 }

@@ -1,11 +1,11 @@
-
 import React, { useEffect, useState } from 'react';
-import {useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
+import Loading from '../../Sheared/Loading/Loading';
 const SingleFood = () => {
   const { id } = useParams();
   const [amount, setAmount] = useState(1);
@@ -27,7 +27,7 @@ const SingleFood = () => {
   }, []);
 
   if (isSingleLoading) {
-    return <div>Loading...</div>;
+    return<Loading></Loading>;
   }
 
   const setDecrease = () => {
@@ -37,23 +37,23 @@ const SingleFood = () => {
     setAmount(amount + 1);
   };
 
-
   const handlePlacedOrder = () => {
     const order = {
       id: id,
       image: image[1].url,
       name: name,
       Introduction: Introduction,
+      oldPrice: oldPrice,
       newPrice: newPrice * amount,
-      amount:amount
+      amount: amount,
     };
     //send POST request
     fetch('http://localhost:5000/foodOrder', {
       method: 'POST',
       headers: {
-        'Content-Type':'application/json',
+        'Content-Type': 'application/json',
       },
-      body:JSON.stringify(order)
+      body: JSON.stringify(order),
     })
       .then((res) => res.json())
       .then((data) =>console.log('i am your data',data));
@@ -64,9 +64,8 @@ const SingleFood = () => {
       <div className="singlefood-container">
         <PageNavigation title={name}></PageNavigation>
         <div className="singlefood-content">
-          <div className="singlefood-gr__id">
+          <div className="singlefood-grid">
             <div className="singlefood-left">
-              {/* <img src={image} alt="" /> */}
               <MyImage image={image}></MyImage>
             </div>
             <div className="singlefood-right">
@@ -111,11 +110,12 @@ const SingleFood = () => {
                 Price : <p>${newPrice * amount}</p>
                 <del>${oldPrice}</del>
               </div>
-             
-                <button type='submit' className="addToCart-btn" onClick={handlePlacedOrder}>
+
+              <NavLink to="/cart">
+                <button className="addToCart-btn" onClick={handlePlacedOrder}>
                   Add To Cart
                 </button>
-             
+              </NavLink>
               <div className="Nutrition-div">
                 <h4>Nutrition Facts (per serving)</h4>
                 <div className="Nutrition-flex">
