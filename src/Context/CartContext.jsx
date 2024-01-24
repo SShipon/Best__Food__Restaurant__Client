@@ -5,7 +5,7 @@ import reducer from '../Reducer/CartReducer';
 
 const CartContext = createContext();
 
- const API = 'http://localhost:5000/foodOrder';
+ const API = 'http://localhost:5000/cartProducts';
 
  const initialState = {
    cart: [],
@@ -26,6 +26,7 @@ const CartProvider = ({ children }) => {
         try {
             const res = await axios.get(url);
             const cartData = await res.data;
+            console.log(cartData);
             dispatch({ type: 'SET_CART_API_DATA', payload: cartData });
         } catch (error) {
             dispatch({ type: 'CART_API_ERROR' })
