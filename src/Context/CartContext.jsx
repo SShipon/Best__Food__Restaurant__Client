@@ -22,7 +22,7 @@ const CartProvider = ({ children }) => {
 
   // Fetch cart data from the 'foodOrder' API
     const getCartProducts = async (url) => {
-        dis
+        dispatch({ type: 'SET_CART_LOADING' });
         try {
             const res = await axios.get(url);
             const cartData = await res.data;
