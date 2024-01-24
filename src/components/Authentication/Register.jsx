@@ -13,7 +13,7 @@ const Register = () => {
   const [sigUpError, SetSignUpError] = useState("");
   const [showPassword, setShowPassword]= useState(false)
   const [message, setMessage] = useState('');
-  const location = useLocation()
+  const location = useLocation();
 
      
 
@@ -46,7 +46,7 @@ const Register = () => {
         color: "black",
       }}
     >
-      <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
+      <div className="mt-16 h-[600 px] grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
        <div className="order-2 xl:order-first">
        <img
           src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?w=740&t=st=1704175534~exp=1704176134~hmac=912bca2161724942122c23b769f558b83e6bc947e4402fb7f9d47c0ac2ed9354"
