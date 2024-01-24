@@ -7,7 +7,7 @@ const Loading = () => {
   render(<ColorRing
   visible={true}
   height="80"
-  w__idth="80"
+  width="80"
   ariaLabel="color-ring-loading"
   wrapperStyle={{}}
   wrapperClass="color-ring-wrapper"
