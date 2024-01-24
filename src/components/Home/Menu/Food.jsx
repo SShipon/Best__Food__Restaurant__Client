@@ -20,7 +20,6 @@ const Food = (curElem) => {
         <div className="menu-card">
           <img src={image[1].url} alt="" />
           <div className="menu-card-content">
-               <p>{review}</p>
             <a className="menu-category" href="">
               {category}
             </a>
