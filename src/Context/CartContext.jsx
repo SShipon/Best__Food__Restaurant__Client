@@ -5,18 +5,18 @@ import reducer from '../Reducer/CartReducer';
 
 const CartContext = createContext();
 
+ const API = 'http://localhost:5000/foodOrder';
+
+ const initialState = {
+   cart: [],
+   total_item: '',
+   total_amount: '',
+   shipping_fee: 600,
+   loading: true,
+   error: false,
+ };
+
 const CartProvider = ({ children }) => {
-
-    const API = 'http://localhost:5000/foodOrder';
-
-    const initialState = {
-        cart: [],
-        total_item: '',
-        total_amount: '',
-        shipping_fee: 600,
-        loading: true,
-        error: false,
-    };
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -37,7 +37,7 @@ const CartProvider = ({ children }) => {
     }, []);
 
     return (
-        <CartContext.Provider value={{ ...state, getCartProducts }}>
+        <CartContext.Provider value={{ ...state }}>
             {children}
         </CartContext.Provider>
     );

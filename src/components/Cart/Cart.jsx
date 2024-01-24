@@ -1,7 +1,9 @@
 import React from 'react';
+import { useCartContext } from '../../Context/CartContext';
 import './Cart.css';
 
 const Cart = () => {
+  const { cart } = useCartContext();
     return (
       <div>
         <div className="cart-main">
@@ -12,9 +14,12 @@ const Cart = () => {
               <p>Quantity</p>
               <p className="cart-hide">Subtotal</p>
               <p>Remove</p>
-                    </div>
-                    <hr />
+            </div>
+            <hr />
           </div>
+          {cart.map((cartProduct) => (
+            <div key={cartProduct.id}>{cartProduct.name}</div>
+          ))}
         </div>
       </div>
     );
