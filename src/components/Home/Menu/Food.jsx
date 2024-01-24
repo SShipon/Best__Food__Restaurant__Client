@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Food.css'
+import Rating from 'react-rating';
 
 const Food = (curElem) => {
   const {
@@ -20,7 +21,13 @@ const Food = (curElem) => {
         <div className="menu-card">
           <img src={image[1].url} alt="" />
           <div className="menu-card-content">
-               <p>{review}</p>
+          <Rating
+            className="d-block text-end"
+            readonly
+            initialRating={review}
+            fullSymbol="fas fa-star text-warning"
+            emptySymbol="far fa-star"
+          ></Rating>
             <a className="menu-category" href="">
               {category}
             </a>
