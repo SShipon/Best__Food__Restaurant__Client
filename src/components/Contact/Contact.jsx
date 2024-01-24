@@ -28,7 +28,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div>
+    <div className='bg-purple'>
       <div className="contact-container">
         <section className="contact-flex">
           <div className="contact-left">

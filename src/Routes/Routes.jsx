@@ -11,6 +11,10 @@ import Login from "../Pages/Login";
 import SingleFood from "../components/SingleFood/SingleFood";
 import Menu from "../Pages/Menu";
 import Cart from "../components/Cart/Cart";
+import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
+import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
+import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
+import Reviews from "../components/Dashboard/Review/Reviews";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -58,6 +62,24 @@ export const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dashboard></Dashboard>,
+        children:[
+          {
+            path:'myOrder',
+            element:<MyOrder />
+          },
+          {
+            path:'newAddFood',
+            element:<NewAddFood/>
+          },
+          {
+            path:'dataAnalyst',
+            element:<DataAnalyst />
+          },
+          {
+            path:'review',
+            element:<Reviews />
+          }
+        ]
       },
     ],
   },

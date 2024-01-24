@@ -5,21 +5,27 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    backgroundColor: {
-      customRed: '#fff0000',
-      customGreen: '#00ff00',
+    extend: {
+      colors:{
+        primary: "#f06123",
+        purple: '#3f3cbb',
+      }
     },
-    colors: theme => ({
-      red: '#ff0000',
-      green: '#00ff00',
-      blue: {
-        light: '#0000f0',
-        DEFAULT: '#0000fa',
-        dark: '#0000ff',
-      },
-    }),
   },
   plugins: [require("daisyui")],
 }
 
+
+
+/*  colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'm__idnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+    }, */

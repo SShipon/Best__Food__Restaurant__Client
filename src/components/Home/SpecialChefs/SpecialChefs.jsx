@@ -27,13 +27,13 @@ const SpecialChefs = () => {
                 <div>
                   <ul className="chef-social">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                   </ul>
                 </div>
@@ -47,13 +47,13 @@ const SpecialChefs = () => {
                 <div>
                   <ul className="chef-social">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                   </ul>
                 </div>
@@ -67,13 +67,13 @@ const SpecialChefs = () => {
                 <div>
                   <ul className="chef-social">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                   </ul>
                 </div>
@@ -87,13 +87,13 @@ const SpecialChefs = () => {
                 <div>
                   <ul className="chef-social">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                   </ul>
                 </div>

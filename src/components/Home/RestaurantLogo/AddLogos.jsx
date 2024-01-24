@@ -11,44 +11,44 @@ const Logos = () => {
     const restaurantLogos = [
       {
         icon: <Facebook />,
-        id: 1,
+        __id: 1,
         logoImg: img1,
       },
       {
-        id: 2,
+        __id: 2,
         logoImg: img2,
       },
       {
-        id: 3,
+        __id: 3,
         logoImg: img3,
       },
       {
-        id: 4,
+        __id: 4,
         logoImg: img4,
       },
       {
-        id: 5,
+        __id: 5,
         logoImg: img5,
       },
       {
         icon: <Facebook />,
-        id: 1,
+        __id: 1,
         logoImg: img1,
       },
       {
-        id: 2,
+        __id: 2,
         logoImg: img2,
       },
       {
-        id: 3,
+        __id: 3,
         logoImg: img3,
       },
       {
-        id: 4,
+        __id: 4,
         logoImg: img4,
       },
       {
-        id: 5,
+        __id: 5,
         logoImg: img5,
       },
     ];
@@ -67,7 +67,7 @@ const Logos = () => {
           </h2>
           <p className="mt-4">
             {' '}
-            of companies plan to consolidate their tech tools in the next year.{' '}
+            of companies plan to consol__idate their tech tools in the next year.{' '}
             <br /> One way to respond to this downscaling is to seek out
             technology partnerships..
           </p>
@@ -75,7 +75,7 @@ const Logos = () => {
         <Marquee speed={30}>
           <div className="flex gap-5 z-0">
             {restaurantLogos.map((logo) => (
-              <Logo key={logo.id} logo={logo}></Logo>
+              <Logo key={logo.__id} logo={logo}></Logo>
             ))}
           </div>
         </Marquee>

@@ -149,10 +149,10 @@ const Login = () => {
           </div>
         </div>
         <div className="">
-          <img
-            src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1704173293~exp=1704173893~hmac=d0c3c5b19dcd690fc1519c676dd3b30337b420091a0e32487bc78e73bd12053e"
-            alt=""
-          />
+        <img
+          src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1704173293~exp=1704173893~hmac=d0c3c5b19dcd690fc1519c676dd3b30337b420091a0e32487bc78e73bd12053e"
+          alt=""
+        />
         </div>
       </div>
     </section>
