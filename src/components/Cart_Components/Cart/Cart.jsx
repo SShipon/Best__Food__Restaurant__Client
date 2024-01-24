@@ -10,19 +10,20 @@ const Cart = () => {
         <div className="cart-main">
           <div className="cart-container">
             <div className="cart-heading-grid">
-              <p>Item</p>
-              <p className="cart-hide">Price</p>
-              <p>Quantity</p>
-              <p className="cart-hide">Subtotal</p>
-              <p>Remove</p>
+              <p>IMAGE</p>
+              <p>PRODUCT DETAILS</p>
+              <p className="cart-hide">PRICE</p>
+              <p>QUANTITY</p>
+              <p className="cart-hide">SUBTOTAL</p>
+              <p>REMOVE</p>
             </div>
             <hr />
             <div className="cart-items">
-              {
-                cart.map((cartProduct) => {
-                  return <CartItem key={cartProduct.id} {...cartProduct}></CartItem>
-                })
-             }
+              {cart.map((cartProduct) => {
+                return (
+                  <CartItem key={cartProduct.id} {...cartProduct}></CartItem>
+                );
+              })}
             </div>
           </div>
         </div>
