@@ -19,8 +19,24 @@ const CartReducer = (state, action) => {
         loading: false,
         error: true,
       };
-    
- 
+
+    // SET_INCREMENT;
+    case 'SET_INCREMENT':
+      let updatedProduct = state.cart.map((curElem) => {
+        if (curElem.id === action.payload) {
+          let incrementAmount = curElem.amount + 1;
+          return {
+            ...curElem,
+            amount: incrementAmount,
+          };
+        } else {
+          return curElem;
+        }
+      });
+      return {
+        ...state,
+        cart: updatedProduct,
+      };
 
     // SET_DECREMENT;
     case 'SET_DECREMENT':
@@ -28,12 +44,12 @@ const CartReducer = (state, action) => {
         if (curElem.id === action.payload) {
           let decrementAmount = curElem.amount - 1;
           if (decrementAmount <= 1) {
-            decrementAmount=1;
+            decrementAmount = 1;
           }
-            return {
-              ...curElem,
-              amount: decrementAmount,
-            };
+          return {
+            ...curElem,
+            amount: decrementAmount,
+          };
         } else {
           return curElem;
         }
@@ -42,8 +58,6 @@ const CartReducer = (state, action) => {
         ...state,
         cart: updateDecreaseProduct,
       };
-
-   
 
     default:
       return state;
