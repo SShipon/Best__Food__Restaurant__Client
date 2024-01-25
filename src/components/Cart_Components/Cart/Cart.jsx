@@ -9,7 +9,7 @@ const Cart = () => {
       <div>
         <div className="cart-main">
           <div className="cart-container">
-            <div className="cart-heading-grid">
+            <div className="cart-heading cart-heading-grid">
               <p>IMAGE</p>
               <p>PRODUCT DETAILS</p>
               <p className="cart-hide">PRICE</p>
