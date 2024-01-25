@@ -10,7 +10,7 @@ const CartContext = createContext();
  const initialState = {
    cart: [],
    total_item: '',
-   total_amount: '',
+   total_price: '',
    shipping_fee: 600,
    loading: true,
    error: false,
@@ -35,7 +35,8 @@ const CartProvider = ({ children }) => {
     //get all getCartProducts for cart
     useEffect(() => {
         getCartProducts(API);
-    }, []);
+        dispatch({ type: 'CART_TOTAL_ITEM' });
+    }, [state.cart]);
 
 
 
@@ -47,12 +48,6 @@ const CartProvider = ({ children }) => {
     const setIncrease = (id) => {
         dispatch({type:'SET_INCREMENT',payload:id})
     }
-
-
-
-
-
-
 
 
     return (
