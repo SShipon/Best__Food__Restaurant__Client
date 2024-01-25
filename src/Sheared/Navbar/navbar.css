@@ -2,6 +2,9 @@
     background-color: transparent !important;
     font-weight: bold;
 }
+.NavLink_color li a:active{
+    color: rgb(190, 13, 102) !important;
+}
 
 .navbar {
     width: 100%;
@@ -26,28 +29,19 @@
 
 .black-bg {
   background-color: #1f2122;
+  color: black !important;
 }
 
 .scroll {
   background-color: #fcfcff;
+  color: white !important;
 }
   
-
-
-.login-btn ,.register-btn{
-    width: auto;
-    height: auto;
-    background-color: rgb(231, 31, 81);
+.navbar-login{
+    background-color: rgb(224, 62, 124);
     color: white;
-    padding: 8px 16px;
+    font-weight: bold;
+    padding: 8px 15px;
     border-radius: 5px;
 }
-.register-btn{
-    width: auto;
-    height: auto;
-    background-color: rgb(231, 31, 81);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 5px;
-    line-height: 30px;
-}
+

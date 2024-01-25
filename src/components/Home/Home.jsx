@@ -4,13 +4,15 @@ import Menu from './Menu/Menu';
 import PopularCategory from './PopularCategory/PopularCategory';
 import Logos from './RestaurantLogo/AddLogos';
 import SpecialChefs from './SpecialChefs/SpecialChefs';
+import Foods from './HomeFood/Foods';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <PopularCategory></PopularCategory>
-            <Menu></Menu>
+            {/* <Menu></Menu> */}
+            <Foods />
             <SpecialChefs></SpecialChefs>
             <Logos></Logos>
            

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css';
+import bannerimg from '../../../assets/HomeBanner/home_banner_img.png'
 const Banner = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Banner = () => {
               Fresh Ingredient Testy <br /> Meals & Best Flavor
             </h1>
             <p>
-              Imagine you don’t need a diet because we provide healthy and
+              Imagine you don’t need a diet because we prov__ide healthy and
               delicious food for you!.
             </p>
             <div className="banner-btn">
@@ -19,7 +20,7 @@ const Banner = () => {
               <a href="">
                 <div className="play-btn">
                   <span>
-                    <i class="fa-solid fa-play"></i>
+                    <i className="fa-sol__id fa-play"></i>
                   </span>
                 </div>
                 <h4>How to order</h4>
@@ -28,14 +29,14 @@ const Banner = () => {
             <div>
               <p>our Happy Customer</p>
               <span>
-                <i class="fa-solid fa-star"></i>
+                <i className="fa-sol__id fa-star"></i>
                 <span>4.7(13.7k Reviews)</span>
               </span>
             </div>
           </div>
           <div className="banner-right">
             <img
-              src="https://html.themefax.com/restina/html/assets/images/banner_img.png"
+              src={bannerimg}
               alt=""
             />
           </div>

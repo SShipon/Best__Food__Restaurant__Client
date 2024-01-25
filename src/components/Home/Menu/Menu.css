@@ -1,6 +1,6 @@
 .menu-cards-main{
     padding:60px 0px;
-    background-color: white;
+    background-color: #f4ecdf;
 }
 .menu-cards-flex{
     display: flex;
@@ -47,7 +47,7 @@
     padding: 6px 10px;
     position: absolute;
     right: 20px;
-    top: 165px;
+    top: 205px;
    border-radius: 6px;
     color: white;
 }
@@ -99,4 +99,11 @@
   color: white;
    border:1px solid rgb(170, 69, 103) ;
   transition: .5s;
+}
+.menu-header h1{
+    margin-bottom: 40px ;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
 }

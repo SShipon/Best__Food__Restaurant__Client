@@ -1,21 +1,28 @@
 import React, { useContext, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { toast } from "react-toastify";
-import { FaGoogle } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { Link, redirect, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { FaRegEyeSlash } from "react-icons/fa";
+import GithubAndGoogle from "./GithubAndGoogle";
 const Register = () => {
-  const { newCreateUser } = useContext(AuthContext);
+  const { newCreateUser,verifyYouEmail } = useContext(AuthContext);
   const { register,handleSubmit, formState: { errors }, reset, } = useForm();
   const [sigUpError, SetSignUpError] = useState("");
   const [showPassword, setShowPassword]= useState(false)
   const [message, setMessage] = useState('');
-  const location = useLocation();
+
+ //users redirect pages and login now
+  const location = useLocation()
+  const navigate = useNavigate()
+const from = location.state?.from?.pathname || "/";
 
      
+
+const togglePassword = () => {
+  setShowPassword(!showPassword)
+}
 
   const HandleRegister = (data) => {
     console.log(data);
@@ -24,29 +31,26 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        toast.success("User Created Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
         });
+  
+        verifyYouEmail()
         reset();
+          navigate(from, { replace: true });
       })
       .catch((error) => {
         SetSignUpError(error.message);
       });
+    
   };
 
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword)
-  }
+
   
   return (
-    <section
-      style={{
-        backgroundColor: "white",
-        color: "black",
-      }}
-    >
-      <div className="mt-16 h-[600 px] grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
+    <section >
+      <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
        <div className="order-2 xl:order-first">
        <img
           src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?w=740&t=st=1704175534~exp=1704176134~hmac=912bca2161724942122c23b769f558b83e6bc947e4402fb7f9d47c0ac2ed9354"
@@ -130,7 +134,7 @@ const Register = () => {
                     value="SIGN UP"
                   />
                 </div>
-                <p>
+                <p className="text-purple">
                   Already have an account ?{" "}
                   <Link className="text-secondary" to="/login">
                     Please Login
@@ -138,14 +142,8 @@ const Register = () => {
                 </p>
                 <div className="divider">OR</div>
 
-                <button className="btn btn-outline btn-second w-full">
-                  CONTINUE WITH GOOGLE <FaGoogle />{" "}
-                </button>
-
-                <button className="btn btn-outline btn-second w-full">
-                  CONTINUE WITH GITHUB <FaGithub />
-                </button>
               </form>
+              <GithubAndGoogle />
             </div>
           </div>
         </div>

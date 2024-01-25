@@ -5,14 +5,21 @@ import { FaGithub } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import GithubAndGoogle from "./GithubAndGoogle";
 
 const Login = () => {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
-  const { loginInSignUp } = useContext(AuthContext);
+  const { loginInSignUp,githubSignUp,googleInSingUp } = useContext(AuthContext);
   const [showPassword, setShowPassword]= useState(false)
   const [logInError, setLoginError] = useState('')
   const [message, setMessage] = useState('');
 
+  // github and google signUp pages 
+  const githubProvider = new GithubAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
+
+  
   const togglePassword = () =>{
     setShowPassword(!showPassword)
   }
@@ -24,8 +31,8 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        toast.success("User Login Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success(" User Login Successfully !", {
+          position: "top-center"
         });
         //navigate(from, { replace: true });
         reset()
@@ -36,6 +43,37 @@ const Login = () => {
 
       });
   }
+
+
+  const handleGithubLogin = () => {
+    githubSignUp(githubProvider)
+      .then(result => {
+        const user = result.user;
+        console.log(user)
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
+        });
+      })
+      .catch(error => console.log(error))
+  }
+
+
+
+  const handleGoogleLogin = () => {
+    githubSignUp(githubProvider)
+      .then(result => {
+        const user = result.user;
+        console.log(user)
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
+        });
+      })
+      .catch(error => console.log(error))
+  }
+
+
+
+
 
 
   return (
@@ -62,8 +100,7 @@ const Login = () => {
                   <label className="label">
                     <span className="label-text">Password</span>
                   </label>
-                 <div className="relative ">
-            
+                 <div className="relative">
                  <input
                   type={showPassword ? "text" : "password"} 
                     {...register("password", {
@@ -81,6 +118,8 @@ const Login = () => {
                     className="input input-bordered  focus:outline-none focus:ring-0 w-[100%] relative"
                   />
                    <i onClick={togglePassword} class={`fa-solid pr-2 absolute top-4 right-0 ${showPassword ? 'fa-eye' : 'fa-eye-slash'}`}></i>
+
+
                  <p className="text-red">{logInError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
@@ -104,23 +143,16 @@ const Login = () => {
                   Create New Account
                 </Link>
               </p>
-              <div className="divider">OR</div>
-
-              <button className="btn btn-outline btn-second w-full">
-                CONTINUE WITH GOOGLE <FaGoogle />{" "}
-              </button>
-
-              <button className="btn btn-outline btn-second w-full">
-                CONTINUE WITH GITHUB <FaGithub />
-              </button>
+              <div className="divider ">OR</div>
             </form>
+             <GithubAndGoogle/>
           </div>
         </div>
         <div className="">
-          <img
-            src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1704173293~exp=1704173893~hmac=d0c3c5b19dcd690fc1519c676dd3b30337b420091a0e32487bc78e73bd12053e"
-            alt=""
-          />
+        <img
+          src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1704173293~exp=1704173893~hmac=d0c3c5b19dcd690fc1519c676dd3b30337b420091a0e32487bc78e73bd12053e"
+          alt=""
+        />
         </div>
       </div>
     </section>

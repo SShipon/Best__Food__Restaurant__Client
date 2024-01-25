@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider  } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail ,signOut, FacebookAuthProvider, sendEmailVerification  } from "firebase/auth";
 import app from "../firebase/firebase.config";
+import { toast } from "react-toastify";
 
 
 export const AuthContext = createContext(null)
@@ -9,11 +10,10 @@ const auth = getAuth(app);
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
-  
+
      // google and gitHub and facebook login Provider
-    const googleProvider = new GoogleAuthProvider();
-    const githubProvider = new GithubAuthProvider()
-    const facebookProvider =  new FacebookAuthProvider()
+  
+    //const facebookProvider =  new FacebookAuthProvider()
 
     // new user create and register
     const newCreateUser = (email, password)=>{
@@ -28,30 +28,41 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password)
      }
 
-    // user forget Password create now
-     const forgetPassword = (email)=>{
-        setLoading(true)
-        sendPasswordResetEmail(auth, email)
+     const verifyYouEmail =()=>{
+        sendEmailVerification(auth.currentUser)
+          .then(()=>{
+            toast.success("Check Your Email Verify Login please !", {
+              position: "top-center"
+            });
+          })
 
-    }
+     }
+
+
+   
+    // user forget Password create now
+    const sendResetPassword = (email) => {
+        return sendPasswordResetEmail(auth, email);
+      };
+      
+  
   
     // user logOut web page
-    const logOUt = ()=>{
+    const logOut = ()=>{
         setLoading(true)
         signOut(auth)
     }
 
 
-
-     const googleInSingUp =()=>{
-        return signInWithPopup(auth, googleProvider)
-     }
-
-
-     const githubInSingUp =()=>{
+     const githubSignUp = (provider)=>{
         setLoading(true)
-        return signInWithPopup(auth, githubProvider)
-     }
+        return signInWithPopup(auth, provider)
+      }
+
+      const googleInSingUp = (provider)=>{
+        setLoading(true)
+        return signInWithPopup(auth, provider)
+      }
 
 
 
@@ -70,16 +81,14 @@ const AuthProvider = ({children}) => {
               loading,
               newCreateUser,
               loginInSignUp,
+              verifyYouEmail,
               googleInSingUp,
-              githubInSingUp,
-              forgetPassword,
-              logOUt,
+              githubSignUp,
+              sendResetPassword,
+              logOut,
               user,
 
-              
-           
-             
-      }
+  }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
