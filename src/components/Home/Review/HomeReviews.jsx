@@ -52,8 +52,8 @@ export default function HomeReviews() {
   return (
     <div>
       <section>
-      <div className="my-8">
-        <div className="mx-auto">
+      <div className="my-8 flex justify-center ">
+        <div className="mx-auto w-5/6">
           <Slider {...settings}>
             {reviews.map((review) => (
               <HomeReview key={review._id} review={review}></HomeReview>

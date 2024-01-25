@@ -1,0 +1,32 @@
+.cart-products{
+   display: grid;
+    grid-template-columns: repeat(5,1fr) 0.3fr ;
+    align-items: center;
+    margin: 15px 0px;
+}
+.cart-products img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cart-products-detail h1{
+    font-weight: 600;
+}
+.cart-products-detail h2{
+    font-size: 14px;
+    color: rgb(233, 134, 22);
+    font-weight: 500;
+}
+
+.cart-products-detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cart-products p{
+    font-size: 20px;
+color: rgb(241, 34, 96);
+}

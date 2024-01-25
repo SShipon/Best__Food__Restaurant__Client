@@ -43,7 +43,7 @@ const SingleFood = () => {
       image: image[1].url,
       name: name,
       Introduction: Introduction,
-      oldPrice: oldPrice,
+      price: newPrice,
       newPrice: newPrice * amount,
       amount: amount,
     };

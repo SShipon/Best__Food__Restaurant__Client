@@ -10,7 +10,7 @@ import NotFound from "../Sheared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
 import SingleFood from "../components/SingleFood/SingleFood";
 import Menu from "../Pages/Menu";
-import Cart from "../components/Cart/Cart";
+import Cart from "../components/Cart_Components/Cart/Cart";
 import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
 import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";

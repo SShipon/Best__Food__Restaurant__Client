@@ -10,12 +10,11 @@ import HomeReviews from './Review/HomeReviews';
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <PopularCategory></PopularCategory>
-            {/* <Menu></Menu> */}
+            <Banner />
+            <PopularCategory />
             <Foods />
-            <SpecialChefs></SpecialChefs>
-            <Logos></Logos>
+            <SpecialChefs />
+            <Logos />
             <HomeReviews />
            
         </div>
