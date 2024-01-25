@@ -5,15 +5,15 @@ import Navbar from '../Sheared/Navbar/Navbar';
 
 
 const Main = () => {
-    const location = useLocation()
+    const location = useLocation();
     // const noNavbarNoFooter = location.pathname.includes('login')
     // const register = location.pathname.includes('register')
-    const forgetPassword = location.pathname.includes('forgetPassword')
+    const forgetPassword = location.pathname.includes('forgetPassword');
     return (
         <div>
-          {  forgetPassword|| <Navbar></Navbar>}
+          { forgetPassword || <Navbar></Navbar>}
             <Outlet></Outlet>
-          { forgetPassword||<Footer></Footer>}
+          { forgetPassword || <Footer></Footer>}
         </div>
     );
 };

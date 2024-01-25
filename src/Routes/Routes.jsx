@@ -40,11 +40,12 @@ export const router = createBrowserRouter([
       },
       {
         path: 'singleFood/:id',
-        element:<PrivetRoute>
-         <SingleFood></SingleFood>
-        </PrivetRoute>,
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.id}`),
+        element:
+          <PrivetRoute>
+          <SingleFood></SingleFood>
+          </PrivetRoute>,
+          loader: ({ params }) =>
+            fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: 'cart',
@@ -64,27 +65,28 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <PrivetRoute>
-          <Dashboard></Dashboard>
-        </PrivetRoute>,
-        children:[
-          {
-            path:'myOrder',
-            element:<MyOrder />
-          },
-          {
-            path:'newAddFood',
-            element:<NewAddFood/>
-          },
-          {
-            path:'dataAnalyst',
-            element:<DataAnalyst />
-          },
-          {
-            path:'review',
-            element:<Reviews />
-          }
-        ]
+        element:
+          <PrivetRoute>
+            <Dashboard></Dashboard>
+          </PrivetRoute>,
+          children: [
+            {
+              path: 'myOrder',
+              element: <MyOrder />
+            },
+            {
+              path: 'newAddFood',
+              element: <NewAddFood/>
+            },
+            {
+              path: 'dataAnalyst',
+              element: <DataAnalyst />
+            },
+            {
+              path: 'review',
+              element: <Reviews />
+            }
+          ]
       },
     ],
   },
