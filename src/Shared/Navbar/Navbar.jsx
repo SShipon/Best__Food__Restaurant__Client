@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import transparentLogo from '../../assets/Restaurant_logo/best_food.png';
+import lightLogo from '../../assets/Restaurant_logo/best_food_original.png';
 
 
 const Navbar = () => {
@@ -70,7 +72,12 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a>
+          <img
+            src={transparentLogo}
+            alt="Logo"
+            className='w-16'
+          />
+          {/* <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a> */}
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -89,7 +96,7 @@ const Navbar = () => {
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className={white ? 'black' : 'white h-5 w-5'}
+                  className={`h-5 w-5 ${white ? 'black' : 'white'}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -101,7 +108,9 @@ const Navbar = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span className={`badge badge-sm indicator-item ${white ? 'bg-black text-white' : 'bg-white'}`}>
+                  8
+                </span>
               </div>
             </div>
             <div

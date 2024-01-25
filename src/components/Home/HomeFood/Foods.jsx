@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMenuContext } from '../../../Context/MenuContext';
 import HomeFood from './HomeFood';
-import Loading from '../../../Sheared/Loading/Loading';
+import Loading from '../../../Shared/Loading/Loading';
 
 const Foods = () => {
     const { products } = useMenuContext();

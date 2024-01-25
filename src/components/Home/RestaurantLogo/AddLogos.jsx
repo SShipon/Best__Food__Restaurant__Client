@@ -6,7 +6,7 @@ import img4 from  '../../../assets/Restaurant_logo/images__6_-removebg-preview.p
 import img5 from  '../../../assets/Restaurant_logo/images__9_-removebg-preview.png'
 import Logo from './AddLogo';
 import Marquee from 'react-fast-marquee';
-import Facebook from '../../../Sheared/Svg/Facebook';
+import Facebook from '../../../Shared/Svg/Facebook';
 const Logos = () => {
     const restaurantLogos = [
       {
@@ -67,7 +67,7 @@ const Logos = () => {
           </h2>
           <p className="mt-4">
             {' '}
-            of companies plan to consol__idate their tech tools in the next year.{' '}
+            of companies plan to consolidate their tech tools in the next year.{' '}
             <br /> One way to respond to this downscaling is to seek out
             technology partnerships..
           </p>
