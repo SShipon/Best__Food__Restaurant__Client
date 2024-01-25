@@ -40,7 +40,7 @@ const CartProvider = ({ children }) => {
 
 
 
-    // increment and decrement the cart product
+    // increment and decrement only for the the cart product
     const setDecrease = (id) => {
         dispatch({type:'SET_DECREMENT',payload:id})
     }
