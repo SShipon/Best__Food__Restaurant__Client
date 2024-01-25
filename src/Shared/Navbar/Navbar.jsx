@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import transparentLogo from '../../assets/Restaurant_logo/best_food.png';
+import lightLogo from '../../assets/Restaurant_logo/best_food_original.png';
 
 
 const Navbar = () => {
@@ -70,7 +72,12 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a>
+          <img
+            src={transparentLogo}
+            alt="Logo"
+            className='w-16'
+          />
+          {/* <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a> */}
         </div>
 
         <div className="navbar-center hidden lg:flex">

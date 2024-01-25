@@ -29,8 +29,8 @@ const Banner = () => {
             <div>
               <p>our Happy Customer</p>
               <span>
-                <i className="fa-sol__id fa-star"></i>
-                <span>4.7(13.7k Reviews)</span>
+                <i className="fa-solid fa-star"></i>
+                <span> <strong>4.7</strong> (13.7k Reviews)</span>
               </span>
             </div>
           </div>
