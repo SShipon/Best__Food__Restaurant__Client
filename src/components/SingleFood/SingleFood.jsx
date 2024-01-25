@@ -44,7 +44,7 @@ const SingleFood = () => {
       name: name,
       Introduction: Introduction,
       price: newPrice,
-      newPrice: newPrice * amount,
+      newPrice: newPrice,
       amount: amount,
     };
     //send POST request
@@ -113,7 +113,8 @@ const SingleFood = () => {
                 </div> */}
               </div>
               <div className="food-price">
-                Price : <p>${newPrice * amount}</p>
+                Price : <p>${newPrice}</p>
+                {/* Price : <p>${newPrice * amount}</p> */}
                 <del>${oldPrice}</del>
               </div>
 
