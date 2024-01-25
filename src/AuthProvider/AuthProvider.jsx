@@ -31,9 +31,9 @@ const AuthProvider = ({children}) => {
      const verifyYouEmail =()=>{
         sendEmailVerification(auth.currentUser)
           .then(()=>{
-          toast.success(" Please cheek your email !!!", {
-                 position: toast.POSITION.TOP_RIGHT,
-               });
+            toast.success("Check Your Email Verify Login please !", {
+              position: "top-center"
+            });
           })
 
      }

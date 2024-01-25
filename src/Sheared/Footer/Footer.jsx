@@ -86,7 +86,7 @@ const Footer = () => {
           </nav>
         </footer>
         <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-          <as__ide className="items-center gr__id-flow-col">
+          <aside className="items-center grid-flow-col">
             <svg
               w__idth="24"
               height="24"
@@ -102,9 +102,9 @@ const Footer = () => {
               ACME Industries Ltd. <br />
               Prov__iding reliable tech since 1992
             </p>
-          </as__ide>
+          </aside>
           <nav className="md:place-self-center md:justify-self-end">
-            <div className="gr__id gr__id-flow-col gap-4">
+            <div className="grid grid-flow-col gap-4">
               <a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

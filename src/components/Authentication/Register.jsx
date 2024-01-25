@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, redirect, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -30,9 +31,10 @@ const togglePassword = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        toast.success("User Created Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
         });
+  
         verifyYouEmail()
         reset();
           navigate(from, { replace: true });

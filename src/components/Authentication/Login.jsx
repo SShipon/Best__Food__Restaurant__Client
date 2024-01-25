@@ -31,8 +31,8 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        toast.success("User Login Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success(" User Login Successfully !", {
+          position: "top-center"
         });
         //navigate(from, { replace: true });
         reset()
@@ -50,8 +50,8 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        toast.success("User Login Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
         });
       })
       .catch(error => console.log(error))
@@ -64,8 +64,8 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        toast.success("User Login Successfully!", {
-          position: toast.POSITION.TOP_RIGHT,
+        toast.success("New User Create Successfully !", {
+          position: "top-center"
         });
       })
       .catch(error => console.log(error))

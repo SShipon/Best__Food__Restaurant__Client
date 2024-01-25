@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './Food.css'
 import Rating from 'react-rating';
 
-const Food = (curElem) => {
+const HomeFood = (curElem) => {
   const {
     _id,
     image,
@@ -47,4 +46,4 @@ const Food = (curElem) => {
   );
 };
 
-export default Food;
+export default HomeFood;

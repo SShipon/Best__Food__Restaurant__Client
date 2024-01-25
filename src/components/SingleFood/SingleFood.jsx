@@ -6,6 +6,7 @@ import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
+import Loading from '../../Sheared/Loading/Loading';
 const SingleFood = () => {
   const { id } = useParams();
   const [amount, setAmount] = useState(1);
@@ -27,7 +28,7 @@ const SingleFood = () => {
   }, []);
 
   if (isSingleLoading) {
-    return <div>Loading...</div>;
+    return<Loading></Loading>;
   }
 
   const setDecrease = () => {
@@ -56,10 +57,8 @@ const SingleFood = () => {
       body: JSON.stringify(order),
     })
       .then((res) => res.json())
-      .then((data) => {
-        alert('data post successfully');
-      });
-  };
+      .then((data) =>console.log('i am your data',data));
+   };
 
   return (
     <div>

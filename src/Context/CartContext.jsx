@@ -37,10 +37,28 @@ const CartProvider = ({ children }) => {
         getCartProducts(API);
     }, []);
 
+
+
+    // increment and decrement the cart product
+    const setDecrease = (id) => {
+        dispatch({type:'SET_DECREMENT',payload:id})
+    }
+
+    const setIncrease = (id) => {
+        dispatch({type:'SET_INCREMENT',payload:id})
+    }
+
+
+
+
+
+
+
+
     return (
-        <CartContext.Provider value={{ ...state }}>
-            {children}
-        </CartContext.Provider>
+      <CartContext.Provider value={{ ...state, setDecrease, setIncrease }}>
+        {children}
+      </CartContext.Provider>
     );
 };
 
@@ -49,3 +67,12 @@ const useCartContext = () => {
 }
 
 export { CartProvider, useCartContext };
+
+
+
+//  //get order data
+//     app.get('/cartProducts', async (req, res) => {
+//       const query = foodOrderCollection.find();
+//       const result = await query.toArray();
+//       res.send(result);
+//     })

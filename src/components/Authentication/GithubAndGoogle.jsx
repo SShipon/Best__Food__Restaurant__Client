@@ -20,8 +20,8 @@ const GithubAndGoogle = () => {
           .then(result => {
             const user = result.user;
             console.log(user)
-            toast.success("User Create Successfully !!!", {
-              position: toast.POSITION.TOP_RIGHT,
+            toast.success("New User Create Successfully !", {
+              position: "top-center"
             });
             navigate(from, { replace: true });
           })
@@ -35,8 +35,8 @@ const GithubAndGoogle = () => {
           .then(result => {
             const user = result.user;
             console.log(user)
-            toast.success("User Create Successfully !!!", {
-              position: toast.POSITION.TOP_RIGHT,
+            toast.success("New User Create Successfully !", {
+              position: "top-center"
             });
             navigate(from, { replace: true });
           })

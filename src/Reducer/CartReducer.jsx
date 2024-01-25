@@ -1,37 +1,55 @@
+const CartReducer = (state, action) => {
+  switch (action.type) {
+    case 'SET_CART_LOADING':
+      return {
+        ...state,
+        loading: true,
+      };
 
+    case 'SET_CART_API_DATA':
+      return {
+        ...state,
+        loading: false,
+        cart: action.payload,
+      };
 
-const CartReducer = (state,action) => {
-   
-    switch (action.type) {
-      case 'SET_CART_LOADING':
-        return {
-          ...state,
-          loading: true,
-        };
+    case 'SET_CART_ERROR':
+      return {
+        ...state,
+        loading: false,
+        error: true,
+      };
+    
+ 
 
-      case 'SET_CART_API_DATA':
-        return {
-          ...state,
-          loading: false,
-          cart: action.payload,
-            };
-        
-        case 'SET_CART_ERROR': 
+    // SET_DECREMENT;
+    case 'SET_DECREMENT':
+      let updateDecreaseProduct = state.cart.map((curElem) => {
+        if (curElem.id === action.payload) {
+          let decrementAmount = curElem.amount - 1;
+          if (decrementAmount <= 1) {
+            decrementAmount=1;
+          }
             return {
-                ...state,
-                loading: false,
-                error: true,
+              ...curElem,
+              amount: decrementAmount,
             };
-        
-        default:
-            return state;
-      
-    }
+        } else {
+          return curElem;
+        }
+      });
+      return {
+        ...state,
+        cart: updateDecreaseProduct,
+      };
+
    
-   
-   
-   
-    return state;
+
+    default:
+      return state;
+  }
+
+  return state;
 };
 
 export default CartReducer;

@@ -1,15 +1,13 @@
 import React from 'react';
+import { useCartContext } from '../../../Context/CartContext';
 import AddToCart from '../../SingleFood/AddToCart/AddToCart';
 import './CartItem.css' 
 
 const CartItem = (cartProduct) => {
     const { id, image, name, price, newPrice, amount } = cartProduct;
-   const setDecrease = () => {
-     setAmount(amount - 1);
-   };
-   const setIncrease = () => {
-     setAmount(amount + 1);
-   };
+  
+  const { setDecrease, setIncrease } = useCartContext();
+  
   return (
     <div>
       <div className="cartItem-container">
@@ -23,8 +21,8 @@ const CartItem = (cartProduct) => {
           <h4>${price}</h4>
           <AddToCart
             amount={amount}
-            setDecrease={setDecrease}
-            setIncrease={setIncrease}
+            setDecrease={()=>setDecrease(id)}
+            setIncrease={()=>setIncrease(id)}
           ></AddToCart>
           <h6>${newPrice*amount}</h6>
           <p>
