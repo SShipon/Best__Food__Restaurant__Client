@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './navbar.css'
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
@@ -112,11 +112,9 @@ const Navbar = () => {
                 {/* <span className="font-bold text-lg">8 Items</span>
                   <span className="text-info">Subtotal: $999</span> */}
                 <div className="card-actions">
-                  <NavLink to="/cart">
-                    <button className="btn btn-primary btn-block">
-                      View cart
-                    </button>
-                  </NavLink>
+                  <button className="btn btn-primary btn-block">
+                    View cart
+                  </button>
                 </div>
               </div>
             </div>

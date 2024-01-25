@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const MenuReducer = (state, action) => {
   // if (action.type === 'SET_LOADING') {
