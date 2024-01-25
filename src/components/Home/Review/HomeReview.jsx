@@ -12,7 +12,7 @@ export default function HomeReview({ review }) {
             <figure>
               <img className="rounded-full w-[70px]" src={photo} alt="" />
             </figure>
-            <h2 className=" px-4">{name}</h2>
+            <h2 className=" text-xl font-semibold px-4">{name}</h2>
           </div>
        
        <Rating
