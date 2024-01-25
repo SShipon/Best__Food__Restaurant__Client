@@ -6,6 +6,7 @@ import Logos from './RestaurantLogo/AddLogos';
 import SpecialChefs from './SpecialChefs/SpecialChefs';
 import Foods from './HomeFood/Foods';
 import HomeReviews from './Review/HomeReviews';
+import Reviews from '../Dashboard/Review/Reviews';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <SpecialChefs />
             <Logos />
             <HomeReviews />
+            <Reviews/>
            
         </div>
     );

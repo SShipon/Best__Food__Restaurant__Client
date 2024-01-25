@@ -14,13 +14,15 @@ export default function HomeReview({ review }) {
             </figure>
             <h2 className=" px-4">{name}</h2>
           </div>
-          <Rating
-            className="d-block"
+       
+       <Rating
+            className="d-block text-xs"
             readonly
             initialRating={rating}
             fullSymbol="fas fa-star text-warning"
             emptySymbol="far fa-star"
           ></Rating>
+       
           <p className="text-sm">{email}</p>
           <p>{customerFeedbackReview}</p>
           <div className="card-actions justify-end">

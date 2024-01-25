@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import CustomButton from "../../../Sheared/CustomButton/CustomButton";
 
@@ -16,6 +16,9 @@ const Reviews = () => {
   const [currentValue, setCurrentValue] = useState(0);
   const { user } = useContext(AuthContext);
   console.log(user)
+
+   //users redirect pages and login now
+ 
   const { id } = useParams();
   const handleClick = (value) => {
     setCurrentValue(value);
@@ -47,13 +50,15 @@ const Reviews = () => {
                 position: "top-center"
               });
         }
+       
       });
+
       event.target.feedback.value = ''
   };
 
   return (
     <div className="card  my-24 bg-base-100  flex justify-center items-center">
-      <div className="card-body shadow-xl">
+      <div className="card-body  shadow-xl">
         <div className="flex gap-3 mb-5 cursor-pointer">
           {stars.map((_, index) => {
             return (
@@ -67,9 +72,10 @@ const Reviews = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <textarea
-            className="textarea input input-bordered focus:outline-none focus:ring-0 w-[400px]"
+            className="textarea input input-bordered focus:outline-none focus:ring-0 sm:w-[100%]  md:w-[100%]  xl:w-[500px] size-20"
             name="feedback"
             placeholder="What's your feedback"
+            required
           ></textarea>
           <br />
           <CustomButton className="">Feedback</CustomButton>
