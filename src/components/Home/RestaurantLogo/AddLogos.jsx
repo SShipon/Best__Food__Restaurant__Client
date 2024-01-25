@@ -67,7 +67,7 @@ const Logos = () => {
           </h2>
           <p className="mt-4">
             {' '}
-            of companies plan to consol__idate their tech tools in the next year.{' '}
+            of companies plan to consolidate their tech tools in the next year.{' '}
             <br /> One way to respond to this downscaling is to seek out
             technology partnerships..
           </p>
