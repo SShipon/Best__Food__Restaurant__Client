@@ -6,19 +6,18 @@ export default function HomeReview({review}) {
   return (
     <div className="card mr-4 glass">
         
-  <Rating
-className="d-block text-center"
-readonly
-initialRating={rating}
-fullSymbol="fas fa-star text-warning"
-emptySymbol="far fa-star"
-></Rating>
   <div className="card-body">
    <div className='flex'>
-   <figure><img className='rounded-full' src={photo} alt="car!"/></figure>
+   <figure><img className='rounded-full w-[60px]'  src={photo} alt="photo!"/></figure>
     <h2 className="card-title px-4">{name}</h2>
    </div>
-  
+   <Rating
+className="d-block text-[11px]"
+readonly
+initialRating={rating}
+fullSymbol="fas fa-star text-blue"
+emptySymbol="far fa-star"
+></Rating>
    <p className='text-sm'>{email}</p>
     <p>{customerFeedbackReview}</p>
     <div className="card-actions justify-end">
