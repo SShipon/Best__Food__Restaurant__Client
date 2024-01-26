@@ -16,10 +16,10 @@ export default function HomeReview({ review }) {
           </div>
        
        <Rating
-            className="d-block text-blue text-[14px]"
+            className="d-block text-xs"
             readonly
             initialRating={rating}
-            fullSymbol="fas fa-star"
+            fullSymbol="fas fa-star text-warning"
             emptySymbol="far fa-star"
           ></Rating>
        
