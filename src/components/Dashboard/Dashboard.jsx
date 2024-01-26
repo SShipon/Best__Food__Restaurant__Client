@@ -6,17 +6,17 @@ const Dashboard = () => {
     return (
       <>
         <div className="drawer lg:drawer-open bg-white text-black">
-      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
 
       <div className="drawer-content">
         <h2 className="text-3xl">Admin Dashboard</h2>
         {/* Page content here */}
         <Outlet></Outlet>
       </div>
-      <div className="drawerside">
-        <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
+      <div className="drawer-side">
+        <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-48 bg-white text-base text-black font-bold">
-          {/* S__idebar content here */}
+          {/* Sidebar content here */}
 
           <li>
             <NavLink to="/dashboard/myOrder">My Order</NavLink>

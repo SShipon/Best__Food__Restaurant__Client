@@ -6,16 +6,16 @@ import Dashboard from "../Pages/Dashboard";
 import Register from "../components/Authentication/Register";
 import About from "../Pages/About";
 import ForgetPassword from "../components/Authentication/ForgetPassword";
-import NotFound from "../Sheared/PageNotFound/NotFound";
+import NotFound from "../Shared/PageNotFound/NotFound";
 import Login from "../Pages/Login";
 import SingleFood from "../components/SingleFood/SingleFood";
 import Menu from "../Pages/Menu";
-import Cart from "../components/Cart_Components/Cart/Cart";
+import Cart from "../components/Cart/Cart";
 import MyOrder from "../components/Dashboard/MyOrder/MyOrder";
 import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
 import Reviews from "../components/Dashboard/Review/Reviews";
-import PrivetRoute from "./PrivetRoute";
+import PrivateRoute from "./PrivateRoute";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -40,9 +40,9 @@ export const router = createBrowserRouter([
       },
       {
         path: 'singleFood/:id',
-        element:<PrivetRoute>
+        element:<PrivateRoute>
          <SingleFood></SingleFood>
-        </PrivetRoute>,
+        </PrivateRoute>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
       },
@@ -64,9 +64,9 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <PrivetRoute>
+        element: <PrivateRoute>
           <Dashboard></Dashboard>
-        </PrivetRoute>,
+        </PrivateRoute>,
         children:[
           {
             path:'myOrder',

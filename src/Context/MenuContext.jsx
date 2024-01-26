@@ -5,6 +5,7 @@ import reducer from '../Reducer/MenuReducer';
 const MenuContext = createContext();
 
 const API = 'http://localhost:5000/product';
+//const API = 'data.json';
 
 const initialState = {
   isLoading: false,
