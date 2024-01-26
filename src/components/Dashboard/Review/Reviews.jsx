@@ -2,24 +2,20 @@
 import { useContext, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import CustomButton from "../../../Shared/CustomButton/CustomButton";
-
+import CustomButton from "../../../Sheared/CustomButton/CustomButton";
 
 const Reviews = () => {
   const stars = Array(5).fill(0);
   const colors = {
-    orange: "#1e40af",
-    gray: "#fde047",
+    orange: "#FFBA5A",
+    gray: "#a9a9a9",
   };
 
   const [currentValue, setCurrentValue] = useState(0);
   const { user } = useContext(AuthContext);
   console.log(user)
-
-   //users redirect pages and login now
- 
   const { id } = useParams();
   const handleClick = (value) => {
     setCurrentValue(value);
@@ -51,15 +47,13 @@ const Reviews = () => {
                 position: "top-center"
               });
         }
-       
       });
-
       event.target.feedback.value = ''
   };
 
   return (
-    <div className="card  my-24 bg-base-100  flex justify-center items-center">
-      <div className="card-body  shadow-xl">
+    <div className="card lg:mx-40 my-24 bg-base-100 shadow-xl flex justify-center items-center">
+      <div className="card-body">
         <div className="flex gap-3 mb-5 cursor-pointer">
           {stars.map((_, index) => {
             return (
@@ -73,10 +67,9 @@ const Reviews = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <textarea
-            className="textarea input input-bordered focus:outline-none focus:ring-0 sm:w-[100%]  md:w-[100%]  xl:w-[500px] size-20"
+            className="textarea textarea-bordered w-[400px]"
             name="feedback"
             placeholder="What's your feedback"
-            required
           ></textarea>
           <br />
           <CustomButton className="">Feedback</CustomButton>

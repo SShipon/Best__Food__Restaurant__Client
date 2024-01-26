@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Navigate, useLocation } from "react-router";
-import Loading from "../Shared/Loading/Loading";
+import Loading from "../Sheared/Loading/Loading";
 
 
-const PrivateRoute = ({ children}) => {
+const PrivetRoute = ({ children}) => {
     const { user, loading } = useContext(AuthContext);
     const location = useLocation();
 
@@ -22,4 +22,4 @@ const PrivateRoute = ({ children}) => {
    
 };
 
-export default PrivateRoute;
+export default PrivetRoute;

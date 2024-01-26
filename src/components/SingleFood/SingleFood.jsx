@@ -6,7 +6,7 @@ import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
-import Loading from '../../Shared/Loading/Loading';
+import Loading from '../../Sheared/Loading/Loading';
 const SingleFood = () => {
   const { id } = useParams();
   const [amount, setAmount] = useState(1);

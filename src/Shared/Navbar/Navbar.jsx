@@ -5,7 +5,7 @@ import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { useCartContext } from '../../Context/CartContext';
 
 const Navbar = () => {
-  //const {total_item}=useCartContext()
+  const {total_item}=useCartContext()
   const { logOut, user } = useContext(AuthContext);
   const [colorChange, setNavbar] = useState(false);
   const [white, setColor] = useState(false);
@@ -72,7 +72,7 @@ const Navbar = () => {
             </ul>
           </div>
           <img
-          //  src={transparentLogo}
+            src={transparentLogo}
             alt="Logo"
             className='w-16'
           />
@@ -108,7 +108,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="badge badge-sm indicator-item">
-                {/*   {total_item} */}
+                  {total_item}
                 </span>
               </div>
             </div>

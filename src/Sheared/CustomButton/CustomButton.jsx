@@ -6,7 +6,7 @@ const CustomButton = ({ bgColor, outlineColor, children }) => {
     //    <button className="btn btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to-primary">{children}</button>
 
     <button
-      className={`border ${outlineColor} bg-${bgColor} hover:bg-${bgColor}-dark text-white py-2 px-4 rounded bg-gradient-to-r from-secondary to-primary`}
+      className={`border ${outlineColor} bg-${bgColor} hover:bg-${bgColor}-dark text-white py-2 px-4 rounded bg-gradient-to-r w-full from-secondary to-primary`}
     >
       {children}
     </button>
