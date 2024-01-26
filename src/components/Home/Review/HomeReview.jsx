@@ -16,7 +16,7 @@ export default function HomeReview({ review }) {
           </div>
        
        <Rating
-            className="d-block text-blue text-[10px]"
+            className="d-block text-blue text-[14px]"
             readonly
             initialRating={rating}
             fullSymbol="fas fa-star"

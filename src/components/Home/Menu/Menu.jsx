@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useMenuContext } from '../../../Context/MenuContext';
 import Food from './Food';
 import './Menu.css';
-import Loading from '../../../Sheared/Loading/Loading';
+import Loading from '../../../Shared/Loading/Loading';
 
 const Menu = () => {
   const { isLoading, products } = useMenuContext();

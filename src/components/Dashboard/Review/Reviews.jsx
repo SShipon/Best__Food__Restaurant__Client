@@ -1,10 +1,4 @@
-
-import { useContext, useState } from "react";
-import { FaStar } from "react-icons/fa";
-import { AuthContext } from "../../../AuthProvider/AuthProvider";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { toast } from "react-toastify";
-import CustomButton from "../../../Sheared/CustomButton/CustomButton";
+import React from 'react';
 
 const Reviews = () => {
   const stars = Array(5).fill(0);
@@ -70,19 +64,7 @@ const Reviews = () => {
             );
           })}
         </div>
-        <form onSubmit={handleSubmit}>
-          <textarea
-            className="textarea input input-bordered focus:outline-none focus:ring-0 sm:w-[100%]  md:w-[100%]  xl:w-[500px] size-20"
-            name="feedback"
-            placeholder="What's your feedback"
-            required
-          ></textarea>
-          <br />
-          <CustomButton className="">Feedback</CustomButton>
-        </form>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Reviews;

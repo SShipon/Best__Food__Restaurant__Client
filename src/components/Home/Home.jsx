@@ -5,19 +5,16 @@ import PopularCategory from './PopularCategory/PopularCategory';
 import Logos from './RestaurantLogo/AddLogos';
 import SpecialChefs from './SpecialChefs/SpecialChefs';
 import Foods from './HomeFood/Foods';
-import HomeReviews from './Review/HomeReviews';
-import Reviews from '../Dashboard/Review/Reviews';
 
 const Home = () => {
     return (
         <div>
-            <Banner />
-            <PopularCategory />
+            <Banner></Banner>
+            <PopularCategory></PopularCategory>
+            {/* <Menu></Menu> */}
             <Foods />
-            <SpecialChefs />
-            <Logos />
-            <HomeReviews />
-            <Reviews/>
+            <SpecialChefs></SpecialChefs>
+            <Logos></Logos>
            
         </div>
     );
