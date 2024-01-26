@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
+import AddToCart from './AddToCart/AddToCart';
 import MyImage from './MyImage/MyImage';
 import PageNavigation from './PageNavigation';
 import './SingleFood.css';
@@ -44,7 +45,7 @@ const SingleFood = () => {
       name: name,
       Introduction: Introduction,
       price: newPrice,
-      newPrice: newPrice * amount,
+      newPrice: newPrice,
       amount: amount,
     };
     //send POST request
@@ -93,7 +94,11 @@ const SingleFood = () => {
                 </div>
               </div>
               <div>
-                <div className="cart-amount-btn">
+                <AddToCart setDecrease={setDecrease}
+                  amount={amount}
+                  setIncrease={setIncrease}
+                ></AddToCart>
+                {/* <div className="cart-amount-btn">
                   <button
                     className="minus-button"
                     onClick={() => setDecrease()}
@@ -104,10 +109,11 @@ const SingleFood = () => {
                   <button className="plus-button" onClick={() => setIncrease()}>
                     <i class="fa fa-plus" aria-hidden="true"></i>
                   </button>
-                </div>
+                </div> */}
               </div>
               <div className="food-price">
-                Price : <p>${newPrice * amount}</p>
+                Price : <p>${newPrice}</p>
+                {/* Price : <p>${newPrice * amount}</p> */}
                 <del>${oldPrice}</del>
               </div>
 
