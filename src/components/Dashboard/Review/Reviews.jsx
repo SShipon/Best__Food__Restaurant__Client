@@ -53,8 +53,8 @@ const Reviews = () => {
   };
 
   return (
-    <div className="card lg:mx-40 my-24 bg-base-100 shadow-xl flex justify-center items-center">
-      <div className="card-body">
+    <div className="card lg:mx-40 my-10 bg-base-100 flex justify-center items-center">
+      <div className="card-body shadow-xl rounded-xl">
         <div className="flex gap-3 mb-5 cursor-pointer">
           {stars.map((_, index) => {
             return (
@@ -71,6 +71,7 @@ const Reviews = () => {
             className="textarea textarea-bordered w-[400px]"
             name="feedback"
             placeholder="What's your feedback"
+           required
           ></textarea>
           <br />
           <CustomButton className="">Feedback</CustomButton>
