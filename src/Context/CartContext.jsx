@@ -11,7 +11,7 @@ const CartContext = createContext();
    cart: [],
    total_item: '',
    total_price: '',
-   shipping_fee: 600,
+   shipping_fee:600,
    loading: true,
    error: false,
  };
@@ -26,7 +26,6 @@ const CartProvider = ({ children }) => {
         try {
             const res = await axios.get(url);
             const cartData = await res.data;
-            console.log(cartData);
             dispatch({ type: 'SET_CART_API_DATA', payload: cartData });
         } catch (error) {
             dispatch({ type: 'CART_API_ERROR' })
@@ -36,8 +35,8 @@ const CartProvider = ({ children }) => {
     useEffect(() => {
         getCartProducts(API);
         dispatch({ type: 'CART_TOTAL_ITEM' });
+        dispatch({type:'CART_TOTAL_PRICE'})
     }, [state.cart]);
-
 
 
     // increment and decrement only for the the cart product
