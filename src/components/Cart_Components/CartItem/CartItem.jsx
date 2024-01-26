@@ -1,13 +1,37 @@
 import React from 'react';
 import { useCartContext } from '../../../Context/CartContext';
 import AddToCart from '../../SingleFood/AddToCart/AddToCart';
-import './CartItem.css' 
+import './CartItem.css';
 
 const CartItem = (cartProduct) => {
     const { id, image, name, price, newPrice, amount } = cartProduct;
   
-  const { setDecrease, setIncrease } = useCartContext();
-  
+  const { cart, setDecrease, setIncrease, deleteCartProduct } =
+    useCartContext();
+ 
+
+  const handleCartItemDelete = (id) => {
+    const proceed = window.confirm('Are you sure?');
+    if (proceed) {
+      deleteCartProduct(id);
+      // const url = `http://localhost:5000/cartProducts/${id}`;
+
+      // axios.delete(url)
+      //   .then((response) => {
+      //     console.log(response.data);
+      //     const remaining = state.cart.filter(
+      //       (cartProduct) => cartProduct.id !== id
+      //     );
+      //     console.log(id);
+      //     // Handle the 'remaining' data or update your state accordingly
+      //   })
+      //   .catch((error) => {
+      //     console.error('Error deleting the item:', error);
+      //     // Handle the error
+      //   });
+    }
+  }
+
   return (
     <div>
       <div className="cartItem-container">
@@ -21,13 +45,15 @@ const CartItem = (cartProduct) => {
           <h4>${price}</h4>
           <AddToCart
             amount={amount}
-            setDecrease={()=>setDecrease(id)}
-            setIncrease={()=>setIncrease(id)}
+            setDecrease={() => setDecrease(id)}
+            setIncrease={() => setIncrease(id)}
           ></AddToCart>
-          <h6>${newPrice*amount}</h6>
-          <p>
-            <i class="fa-solid fa-trash"></i>
-          </p>
+          <h6>${newPrice * amount}</h6>
+          <button onClick={()=>handleCartItemDelete(id)}>
+            <p>
+              <i class="fa-solid fa-trash"></i>
+            </p>
+          </button>
         </div>
       </div>
     </div>

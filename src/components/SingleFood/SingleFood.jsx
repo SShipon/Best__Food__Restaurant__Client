@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import AddToCart from './AddToCart/AddToCart';
@@ -7,10 +7,12 @@ import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
 import Loading from '../../Sheared/Loading/Loading';
+import { useCartContext } from '../../Context/CartContext';
 const SingleFood = () => {
   const { id } = useParams();
   const [amount, setAmount] = useState(1);
   const { getSingleProduct, isSingleLoading, singleProduct } = useMenuContext();
+  const { addToCart } = useCartContext();
   const {
     image,
     name,
@@ -48,17 +50,20 @@ const SingleFood = () => {
       newPrice: newPrice,
       amount: amount,
     };
+    // Add the item to the cart
+    addToCart(order);
+
     //send POST request
-    fetch('http://localhost:5000/foodOrder', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(order),
-    })
-      .then((res) => res.json())
-      .then((data) =>console.log('i am your data',data));
-   };
+    // fetch('http://localhost:5000/foodOrder', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(order),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => console.log('i am your data', data));
+  };
 
   return (
     <div>
