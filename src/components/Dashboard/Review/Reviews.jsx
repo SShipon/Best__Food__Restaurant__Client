@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import CustomButton from "../../../Sheared/CustomButton/CustomButton";
+
 
 const Reviews = () => {
   const stars = Array(5).fill(0);
