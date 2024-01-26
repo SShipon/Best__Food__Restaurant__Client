@@ -15,8 +15,8 @@ const Home = () => {
             {/* <Menu></Menu> */}
             <Foods />
             <SpecialChefs></SpecialChefs>
-            <HomeReviews></HomeReviews>
             <Logos></Logos>
+            <HomeReviews />
            
         </div>
     );

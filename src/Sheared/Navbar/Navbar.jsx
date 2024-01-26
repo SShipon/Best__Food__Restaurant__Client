@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.css'
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { useCartContext } from '../../Context/CartContext';
+
 
 const Navbar = () => {
   const {total_item}=useCartContext()
@@ -71,12 +72,7 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <img
-            src={transparentLogo}
-            alt="Logo"
-            className='w-16'
-          />
-          {/* <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a> */}
+          <a className={white ? 'black' : 'white bold'}>BEST__FOOD</a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -95,7 +91,7 @@ const Navbar = () => {
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className={`h-5 w-5 ${white ? 'black' : 'white'}`}
+                  className={white ? 'black' : 'white h-5 w-5'}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -120,9 +116,11 @@ const Navbar = () => {
                 {/* <span className="font-bold text-lg">8 Items</span>
                   <span className="text-info">Subtotal: $999</span> */}
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
+                  <NavLink to="/cart">
+                    <button className="btn btn-primary btn-block">
+                      View cart
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>

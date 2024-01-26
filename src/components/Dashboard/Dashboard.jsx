@@ -6,7 +6,7 @@ const Dashboard = () => {
     return (
       <>
         <div className="drawer lg:drawer-open bg-white text-black">
-      <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
+      <input __id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
 
       <div className="drawer-content">
         <h2 className="text-3xl">Admin Dashboard</h2>
