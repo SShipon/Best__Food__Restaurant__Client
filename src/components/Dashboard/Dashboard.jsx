@@ -16,7 +16,7 @@ const Dashboard = () => {
       <div className="drawer-side">
         <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-48 bg-white text-base text-black font-bold">
-          {/* Sidebar content here */}
+          {/*content here */}
 
           <li>
             <NavLink to="/dashboard/myOrder">My Order</NavLink>
