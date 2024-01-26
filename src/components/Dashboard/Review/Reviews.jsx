@@ -9,8 +9,8 @@ import CustomButton from "../../../Sheared/CustomButton/CustomButton";
 const Reviews = () => {
   const stars = Array(5).fill(0);
   const colors = {
-    orange: "#facc15",
-    gray: "#475569",
+    orange: "#1e40af",
+    gray: "#fde047",
   };
 
   const [currentValue, setCurrentValue] = useState(0);
