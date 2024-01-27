@@ -41,6 +41,7 @@ const SingleFood = () => {
   };
 
   const handlePlacedOrder = () => {
+   
     const order = {
       id: id,
       image: image[1].url,
@@ -63,6 +64,7 @@ const SingleFood = () => {
     // })
     //   .then((res) => res.json())
     //   .then((data) => console.log('i am your data', data));
+
   };
 
   return (

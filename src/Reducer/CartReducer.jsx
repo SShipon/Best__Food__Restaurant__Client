@@ -1,6 +1,5 @@
 const CartReducer = (state, action) => {
   switch (action.type) {
-    
     // ADD_TO_CART (for post data cartdatabase)
     case 'ADD_TO_CART':
       return {
