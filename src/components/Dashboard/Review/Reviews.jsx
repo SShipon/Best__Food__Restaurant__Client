@@ -9,9 +9,10 @@ import CustomButton from "../../../Sheared/CustomButton/CustomButton";
 const Reviews = () => {
   const stars = Array(5).fill(0);
   const colors = {
-    orange: "#FFBA5A",
-    gray: "#a9a9a9",
+    orange: "#1e40af",
+    gray: "#FFBA5A",
   };
+  
 
   const [currentValue, setCurrentValue] = useState(0);
   const { user } = useContext(AuthContext);
@@ -70,6 +71,7 @@ const Reviews = () => {
             className="textarea textarea-bordered w-[400px]"
             name="feedback"
             placeholder="What's your feedback"
+           required
           ></textarea>
           <br />
           <CustomButton className="">Feedback</CustomButton>

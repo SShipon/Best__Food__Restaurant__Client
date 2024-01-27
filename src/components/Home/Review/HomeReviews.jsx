@@ -50,9 +50,9 @@ export default function HomeReviews() {
     ],
   };
   return (
-    <div>
-      <section>
-      <div className="my-8">
+    
+      <section className='my-20'>
+      <div className="mx-8">
         <div className="mx-auto">
           <Slider {...settings}>
             {reviews.map((review) => (
@@ -62,7 +62,7 @@ export default function HomeReviews() {
         </div>
       </div>
     </section>
-    </div>
+  
   )
 }
 
