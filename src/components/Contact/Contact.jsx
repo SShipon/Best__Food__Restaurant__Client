@@ -101,6 +101,10 @@ const Contact = () => {
               </div>
               <p>demomail123@mail.com</p>
               <p>helpdemo123@mail.com</p>
+              <p>demomail123@mail.com</p>
+              <p>helpdemo123@mail.com</p>
+              <p>demomail123@mail.com</p>
+              <p>helpdemo123@mail.com</p>
             </div>
             <div className="contact-card">
               <div className="contact-logo ">
