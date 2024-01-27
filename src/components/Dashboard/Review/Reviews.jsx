@@ -9,9 +9,10 @@ import CustomButton from "../../../Sheared/CustomButton/CustomButton";
 const Reviews = () => {
   const stars = Array(5).fill(0);
   const colors = {
-    orange: "#FFBA5A",
-    gray: "#a9a9a9",
+    orange: "#1e40af",
+    gray: "#FFBA5A",
   };
+  
 
   const [currentValue, setCurrentValue] = useState(0);
   const { user } = useContext(AuthContext);
@@ -52,8 +53,8 @@ const Reviews = () => {
   };
 
   return (
-    <div className="card lg:mx-40 my-24 bg-base-100 shadow-xl flex justify-center items-center">
-      <div className="card-body">
+    <div className="card lg:mx-40 my-10 bg-base-100 flex justify-center items-center">
+      <div className="card-body shadow-xl rounded-xl">
         <div className="flex gap-3 mb-5 cursor-pointer">
           {stars.map((_, index) => {
             return (
@@ -70,6 +71,7 @@ const Reviews = () => {
             className="textarea textarea-bordered w-[400px]"
             name="feedback"
             placeholder="What's your feedback"
+           required
           ></textarea>
           <br />
           <CustomButton className="">Feedback</CustomButton>
