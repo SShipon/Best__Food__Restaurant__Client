@@ -7,6 +7,7 @@ import SpecialChefs from './SpecialChefs/SpecialChefs';
 import Foods from './HomeFood/Foods';
 import HomeReviews from './Review/HomeReviews';
 import Reviews from '../Dashboard/Review/Reviews';
+import Timer from '../Timer/Timer';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Logos></Logos>
             <HomeReviews />
             <Reviews />
+            <Timer />
            
         </div>
     );
