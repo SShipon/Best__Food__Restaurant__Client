@@ -6,11 +6,11 @@ const CartReducer = (state, action) => {
 
     case 'ADD_TO_CART':
       let { order } = action.payload;
-       console.log('Order in reducer:', order);
+      //  console.log('Order in reducer:', order);
       let existingProduct = state.cart.find(
         (existingItem) => existingItem.id === order.id
       );
-       console.log('Existing product:', existingProduct);
+      //  console.log('Existing product:', existingProduct);
       if (existingProduct) {
         let existinfCartItem = state.cart.map((curElem) => {
           if (curElem.id === order.id) {
