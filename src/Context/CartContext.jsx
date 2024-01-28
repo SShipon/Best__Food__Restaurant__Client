@@ -11,7 +11,7 @@ const initialState = {
   cart: [],
   total_item: '',
   total_price: '',
-  shipping_fee: 600,
+  shipping_fee: 200,
   loading: true,
   error: false,
 };
@@ -29,7 +29,7 @@ const CartProvider = ({ children }) => {
       console.log('Added item response:', addedItem);
       // Dispatch the action to add the item to the local state
       dispatch({ type: 'ADD_TO_CART', payload: { addedItem, order } });
-    console.log('Payload dispatched to reducer:', { addedItem, order });
+      console.log('Payload dispatched to reducer:', { addedItem, order });
     } catch (error) {
       console.error('Error adding item to the cart:', error);
     }
@@ -46,9 +46,13 @@ const CartProvider = ({ children }) => {
       dispatch({ type: 'CART_API_ERROR' });
     }
   };
+
   //get all getCartProducts for cart
   useEffect(() => {
     getCartProducts(API);
+  }, []);
+  useEffect(() => {
+    // getCartProducts(API);
     dispatch({ type: 'CART_TOTAL_ITEM' });
     dispatch({ type: 'CART_TOTAL_PRICE' });
   }, [state.cart]);
