@@ -1,11 +1,39 @@
 const CartReducer = (state, action) => {
   switch (action.type) {
     // ADD_TO_CART (for post data cartdatabase)
+    // ADD_TO_CART (for post data cartdatabase)
+    // ADD_TO_CART (for post data cartdatabase)
+
     case 'ADD_TO_CART':
-      return {
-        ...state,
-        cart: [...state.cart, action.payload],
-      };
+      let { order } = action.payload;
+       console.log('Order in reducer:', order);
+      let existingProduct = state.cart.find(
+        (existingItem) => existingItem.id === order.id
+      );
+       console.log('Existing product:', existingProduct);
+      if (existingProduct) {
+        let existinfCartItem = state.cart.map((curElem) => {
+          if (curElem.id === order.id) {
+            let newAmount = curElem.amount + order.amount;
+            return {
+              ...curElem,
+              amount: newAmount,
+            };
+          } else {
+            return curElem;
+          }
+        });
+
+        return {
+          ...state,
+          cart: existinfCartItem,
+        };
+      } else {
+        return {
+          ...state,
+          cart: [...state.cart, action.payload],
+        };
+      }
 
     // for get the cart data
     case 'SET_CART_LOADING':

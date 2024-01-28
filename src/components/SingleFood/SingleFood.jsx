@@ -30,7 +30,7 @@ const SingleFood = () => {
   }, []);
 
   if (isSingleLoading) {
-    return<Loading></Loading>;
+    return <Loading></Loading>;
   }
 
   const setDecrease = () => {
@@ -41,7 +41,6 @@ const SingleFood = () => {
   };
 
   const handlePlacedOrder = () => {
-   
     const order = {
       id: id,
       image: image[1].url,
@@ -51,21 +50,21 @@ const SingleFood = () => {
       newPrice: newPrice,
       amount: amount,
     };
+     console.log('Order to be added:', order);
     // Add the item to the cart
     addToCart(order);
-
-    //send POST request
-    // fetch('http://localhost:5000/foodOrder', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(order),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => console.log('i am your data', data));
-
   };
+
+  //send POST request
+  // fetch('http://localhost:5000/foodOrder', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(order),
+  // })
+  //   .then((res) => res.json())
+  //   .then((data) => console.log('i am your data', data));
 
   return (
     <div>
@@ -101,22 +100,11 @@ const SingleFood = () => {
                 </div>
               </div>
               <div>
-                <AddToCart setDecrease={setDecrease}
+                <AddToCart
+                  setDecrease={setDecrease}
                   amount={amount}
                   setIncrease={setIncrease}
                 ></AddToCart>
-                {/* <div className="cart-amount-btn">
-                  <button
-                    className="minus-button"
-                    onClick={() => setDecrease()}
-                  >
-                    <i class="fa fa-minus" aria-hidden="true"></i>
-                  </button>
-                  <div>{amount}</div>
-                  <button className="plus-button" onClick={() => setIncrease()}>
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </button>
-                </div> */}
               </div>
               <div className="food-price">
                 Price : <p>${newPrice}</p>

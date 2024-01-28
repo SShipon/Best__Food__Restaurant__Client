@@ -51,7 +51,7 @@ const CartItem = (cartProduct) => {
           <h6>${newPrice * amount}</h6>
           <button onClick={()=>handleCartItemDelete(id)}>
             <p>
-              <i class="fa-solid fa-trash"></i>
+              <i className="fa-solid fa-trash"></i>
             </p>
           </button>
         </div>
