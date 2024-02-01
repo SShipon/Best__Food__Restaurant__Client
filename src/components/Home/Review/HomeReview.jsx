@@ -6,7 +6,7 @@ export default function HomeReview({review}) {
   return (
     <div className="card mr-4 glass">
         
-  <div className="card-body">
+  <div className="card-body flex">
    <div className='flex'>
    <figure><img className='rounded-full w-[60px]'  src={photo} alt="photo!"/></figure>
     <h2 className="card-title px-4">{name}</h2>

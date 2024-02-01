@@ -22,7 +22,7 @@ const Home = () => {
             <HomeReviews />
             <Reviews />
             <Timer />
-            <Infinity />
+           
            
         </div>
     );

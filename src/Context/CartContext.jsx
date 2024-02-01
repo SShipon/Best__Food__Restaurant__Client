@@ -65,7 +65,7 @@ const CartProvider = ({ children }) => {
     };
 
     fetchCartData(); // Invoke the effect
-  }, []);
+  }, [state.cart]);
 
   // Update total item and total price when state.cart changes
   useEffect(() => {
