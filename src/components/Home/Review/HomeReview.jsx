@@ -4,7 +4,7 @@ import Rating from 'react-rating';
 export default function HomeReview({review}) {
     const {name,email, photo, dateTime,rating,customerFeedbackReview  } = review;
   return (
-    <div className="card mr-4 glass">
+    <div className="card mr-4 border-4 border-indigo-500/100">
         
   <div className="card-body flex">
    <div className='flex'>
