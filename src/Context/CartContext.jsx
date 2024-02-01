@@ -47,41 +47,15 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  //get all getCartProducts for cart
-
-  // Fetch cart products on component mount
+  // Fetch cart products on component amount
   useEffect(() => {
-    const fetchCartData = async () => {
-      try {
-        // Fetch cart products
-        await getCartProducts(API);
-
-        // After fetching, update total item and total price
-        dispatch({ type: 'CART_TOTAL_ITEM' });
-        dispatch({ type: 'CART_TOTAL_PRICE' });
-      } catch (error) {
-        console.error('Error fetching cart products:', error);
-      }
-    };
-
-    fetchCartData(); // Invoke the effect
+    getCartProducts(API);
   }, []);
 
-  // Update total item and total price when state.cart changes
   useEffect(() => {
     dispatch({ type: 'CART_TOTAL_ITEM' });
     dispatch({ type: 'CART_TOTAL_PRICE' });
   }, [state.cart]);
-
-  // Fetch cart products on component amount
-  // useEffect(() => {
-  //   getCartProducts(API);
-  // }, []);
-
-  // useEffect(() => {
-  //   dispatch({ type: 'CART_TOTAL_ITEM' });
-  //   dispatch({ type: 'CART_TOTAL_PRICE' });
-  // }, [state.cart]);
 
   //delete cart item
   const deleteCartProduct = (id) => {
