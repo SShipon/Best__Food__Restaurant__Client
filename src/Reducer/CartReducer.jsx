@@ -1,5 +1,41 @@
 const CartReducer = (state, action) => {
   switch (action.type) {
+    // ADD_TO_CART (for post data cartdatabase)
+    // ADD_TO_CART (for post data cartdatabase)
+    // ADD_TO_CART (for post data cartdatabase)
+
+    case 'ADD_TO_CART':
+      let { order } = action.payload;
+      //  console.log('Order in reducer:', order);
+      let existingProduct = state.cart.find(
+        (existingItem) => existingItem.id === order.id
+      );
+      //  console.log('Existing product:', existingProduct);
+      if (existingProduct) {
+        let existinfCartItem = state.cart.map((curElem) => {
+          if (curElem.id === order.id) {
+            let newAmount = curElem.amount + order.amount;
+            return {
+              ...curElem,
+              amount: newAmount,
+            };
+          } else {
+            return curElem;
+          }
+        });
+
+        return {
+          ...state,
+          cart: existinfCartItem,
+        };
+      } else {
+        return {
+          ...state,
+          cart: [...state.cart, action.payload],
+        };
+      }
+
+    // for get the cart data
     case 'SET_CART_LOADING':
       return {
         ...state,
@@ -69,6 +105,27 @@ const CartReducer = (state, action) => {
       return {
         ...state,
         total_item: updatedCartItemVal,
+      };
+
+    case 'CART_TOTAL_PRICE':
+      let totalCartPrice = state.cart.reduce((initialVal, eachCartData) => {
+        let { amount, price } = eachCartData;
+        initialVal = initialVal + price * amount;
+        return initialVal;
+      }, 0);
+      return {
+        ...state,
+        total_price: totalCartPrice,
+      };
+
+    //REMOVE_CART_ITEM
+    case 'REMOVE_CART_ITEM':
+      const remaining = state.cart.filter(
+        (cartProduct) => cartProduct.id !== action.payload
+      );
+      return {
+        ...state,
+        cart: remaining,
       };
 
     default:

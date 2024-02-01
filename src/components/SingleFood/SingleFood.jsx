@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import { useMenuContext } from '../../Context/MenuContext';
 import AddToCart from './AddToCart/AddToCart';
@@ -7,10 +7,12 @@ import PageNavigation from './PageNavigation';
 import './SingleFood.css';
 import Stars from './Stars';
 import Loading from '../../Sheared/Loading/Loading';
+import { useCartContext } from '../../Context/CartContext';
 const SingleFood = () => {
   const { id } = useParams();
   const [amount, setAmount] = useState(1);
   const { getSingleProduct, isSingleLoading, singleProduct } = useMenuContext();
+  const { addToCart } = useCartContext();
   const {
     image,
     name,
@@ -28,7 +30,7 @@ const SingleFood = () => {
   }, []);
 
   if (isSingleLoading) {
-    return<Loading></Loading>;
+    return <Loading></Loading>;
   }
 
   const setDecrease = () => {
@@ -48,17 +50,21 @@ const SingleFood = () => {
       newPrice: newPrice,
       amount: amount,
     };
-    //send POST request
-    fetch('http://localhost:5000/foodOrder', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(order),
-    })
-      .then((res) => res.json())
-      .then((data) =>console.log('i am your data',data));
-   };
+     console.log('Order to be added:', order);
+    // Add the item to the cart
+    addToCart(order);
+  };
+
+  //send POST request
+  // fetch('http://localhost:5000/foodOrder', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(order),
+  // })
+  //   .then((res) => res.json())
+  //   .then((data) => console.log('i am your data', data));
 
   return (
     <div>
@@ -94,22 +100,11 @@ const SingleFood = () => {
                 </div>
               </div>
               <div>
-                <AddToCart setDecrease={setDecrease}
+                <AddToCart
+                  setDecrease={setDecrease}
                   amount={amount}
                   setIncrease={setIncrease}
                 ></AddToCart>
-                {/* <div className="cart-amount-btn">
-                  <button
-                    className="minus-button"
-                    onClick={() => setDecrease()}
-                  >
-                    <i class="fa fa-minus" aria-hidden="true"></i>
-                  </button>
-                  <div>{amount}</div>
-                  <button className="plus-button" onClick={() => setIncrease()}>
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                  </button>
-                </div> */}
               </div>
               <div className="food-price">
                 Price : <p>${newPrice}</p>
