@@ -27,17 +27,17 @@ const Cart = () => {
           </div>
           <div className="order-total-amount-container">
             <div className="order-total-amount">
-              <div className="total-flex">
-                <p>Subtotal:</p>
+              <div className="total-flex order-price">
+                <p>Subtotal :</p>
                 <p>{total_price}</p>
               </div>
-              <div className="total-flex">
-                <p>Shipping-Fee:</p>
+              <div className="total-flex delivery-charge">
+                <p>Delivery Charge :</p>
                 <p>{shipping_fee}</p>
               </div>
               <hr />
-              <div className="total-flex">
-                <p>Order total:</p>
+              <div className="total-flex total-order-calculation">
+                <p>Order total :</p>
                 <p>{total_price + shipping_fee}</p>
               </div>
             </div>

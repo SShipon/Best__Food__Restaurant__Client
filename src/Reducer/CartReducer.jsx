@@ -1,9 +1,7 @@
 const CartReducer = (state, action) => {
   switch (action.type) {
-    // ADD_TO_CART (for post data cartdatabase)
-    // ADD_TO_CART (for post data cartdatabase)
-    // ADD_TO_CART (for post data cartdatabase)
 
+    // ADD_TO_CART (for post data cartdatabase)
     case 'ADD_TO_CART':
       let { order } = action.payload;
       //  console.log('Order in reducer:', order);
@@ -74,7 +72,7 @@ const CartReducer = (state, action) => {
         cart: updatedProduct,
       };
 
-    // SET_DECREMENT;
+    // // SET_DECREMENT;
     case 'SET_DECREMENT':
       let updateDecreaseProduct = state.cart.map((curElem) => {
         if (curElem.id === action.payload) {
@@ -107,6 +105,7 @@ const CartReducer = (state, action) => {
         total_item: updatedCartItemVal,
       };
 
+    //CART_TOTAL_PRICE calculation
     case 'CART_TOTAL_PRICE':
       let totalCartPrice = state.cart.reduce((initialVal, eachCartData) => {
         let { amount, price } = eachCartData;

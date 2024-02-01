@@ -14,21 +14,6 @@ const CartItem = (cartProduct) => {
     const proceed = window.confirm('Are you sure?');
     if (proceed) {
       deleteCartProduct(id);
-      // const url = `http://localhost:5000/cartProducts/${id}`;
-
-      // axios.delete(url)
-      //   .then((response) => {
-      //     console.log(response.data);
-      //     const remaining = state.cart.filter(
-      //       (cartProduct) => cartProduct.id !== id
-      //     );
-      //     console.log(id);
-      //     // Handle the 'remaining' data or update your state accordingly
-      //   })
-      //   .catch((error) => {
-      //     console.error('Error deleting the item:', error);
-      //     // Handle the error
-      //   });
     }
   }
 
