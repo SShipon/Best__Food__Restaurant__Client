@@ -48,6 +48,8 @@ const CartProvider = ({ children }) => {
   };
 
   // Fetch cart products on component amount
+
+  //-----------------problem here----------------
   useEffect(() => {
     getCartProducts(API);
   }, []);
@@ -56,6 +58,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: 'CART_TOTAL_ITEM' });
     dispatch({ type: 'CART_TOTAL_PRICE' });
   }, [state.cart]);
+  //------------------problem here-----------------
 
   //delete cart item
   const deleteCartProduct = (id) => {
