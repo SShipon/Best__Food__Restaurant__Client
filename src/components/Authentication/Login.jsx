@@ -90,7 +90,7 @@ const Login = () => {
            <div className="shadow-2xl rounded-2xl pt-4 border border-sky-200">
            <GithubAndGoogle/>
             <div className="divider">OR</div>
-            <form  onSubmit={handleSubmit(handleLogin)}className="card-body mb-10">
+            <form  onSubmit={handleSubmit(handleLogin)}className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
