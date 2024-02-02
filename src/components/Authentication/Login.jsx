@@ -126,11 +126,6 @@ const Login = () => {
                  <p className="text-red">{logInError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
-                  <label className="label">
-                    <Link to="/forgetPassword" className="">
-                      Forgot password?
-                    </Link>
-                  </label>
                   {errors.password && <p className="text-red-600 my-2">{errors.password?.message}</p>}
                 </div>
               <div className="form-control">
@@ -140,12 +135,18 @@ const Login = () => {
                   value="Login"
                 />
               </div>
-              <p>
-                New to Restaurant ?{" "}
-                <Link className="text-secondary" to="/register">
+              <div className="">
+                <p className="text-sm ">Forgot Your Password?
+                    <Link to="/forgetPassword" className="p-2 btn-link">
+                      Reset password
+                    </Link>
+                </p>
+                <p className="text-purple flex justify-center">
+                  <Link className="text-secondary" to="/register">
                   Create New Account
-                </Link>
-              </p>
+                  </Link>
+                </p>
+                </div>
             </form>
            </div>
           </div>
