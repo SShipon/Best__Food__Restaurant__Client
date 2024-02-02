@@ -37,12 +37,7 @@ const HomeFood = (curElem) => {
             </a>
             <h1>{name}</h1>
            
-            <p className='text'>
-            {isReadMore ? Introduction.slice(0, 50) : Introduction}
-            <button onClick={toggleReadMore} className='read-or-hide btn btn-xs btn-ghost cursor-pointer text-cyan-700'>
-                {isReadMore ? 'read more' : 'show less'}
-            </button>
-        </p>
+          <p>{Introduction}</p>
     
             <div className="menu-btn-price">
             <Link to={`/singleFood/${_id}`}><button className='btn btn-outline btn-secondary'>Add To Cart</button></Link>
