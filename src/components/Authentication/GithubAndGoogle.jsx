@@ -49,19 +49,19 @@ const GithubAndGoogle = () => {
     return (
         <div className='flex justify-center'>
             <button className='pr-4 btn btn-ghost ' onClick={handleGoogleLogin}>
-             <span className='text-3xl'>  <FaGoogle /></span>
+             <span className='text-2xl'>  <FaGoogle /></span>
               </button>
               <button  className='pr-4 btn btn-ghost rounded' onClick={handleGithubLogin}>
-             <span  className='text-3xl'>  <FaGithub /></span>
+             <span  className='text-2xl'>  <FaGithub /></span>
               </button>
               <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
-             <span className='text-3xl'>  <FaFacebook /></span>
+             <span className='text-2xl'>  <FaFacebook /></span>
               </button>
               <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
-              <span className='text-3xl'>  <FaLinkedin /></span>
+              <span className='text-2xl'>  <FaLinkedin /></span>
               </button>
               <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
-             <span className='text-3xl'>  <FaInstagram /></span>
+             <span className='text-2xl'>  <FaInstagram /></span>
               </button>
         </div>
     );
