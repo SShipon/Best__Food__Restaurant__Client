@@ -86,8 +86,11 @@ const Login = () => {
       <div className="mt-16 h-[600 px] grid  sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-2 justify-center items-center">
         <div className=" mx-auto">
           <div className="w-96 p-7 mx-auto">
-            <h2 className="text-xl text-center font-bold">Login</h2>
-            <form  onSubmit={handleSubmit(handleLogin)}className="card-body">
+            <h2 className="text-xl text-center font-bold my-4">Login</h2>
+           <div className="shadow-2xl rounded-2xl pt-4 border border-sky-200">
+           <GithubAndGoogle/>
+            <div className="divider">OR</div>
+            <form  onSubmit={handleSubmit(handleLogin)}className="card-body mb-10">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -143,9 +146,8 @@ const Login = () => {
                   Create New Account
                 </Link>
               </p>
-              <div className="divider ">OR</div>
             </form>
-             <GithubAndGoogle/>
+           </div>
           </div>
         </div>
         <div className="">
