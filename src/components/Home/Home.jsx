@@ -8,6 +8,7 @@ import Foods from './HomeFood/Foods';
 import HomeReviews from './Review/HomeReviews';
 import Reviews from '../Dashboard/Review/Reviews';
 import Timer from '../Timer/Timer';
+import Infinity from '../Infinity/Infinity';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <HomeReviews />
             <Reviews />
             <Timer />
+           
            
         </div>
     );

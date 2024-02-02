@@ -1,6 +1,6 @@
 [
   {
-    "__id":1,
+   
     "name": "Daria Shevtsova",
     "newPrice": 90,
     "oldPrice": 120,
@@ -49,17 +49,17 @@
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://www.simplyrecipes.com/thmb/Fn3xsvrChEJSP-UkWJO2A81PdKw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Chicken-Biryani-LEAD-4-d53c64cefd0142febe882911d7d88622.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://images.aws.nestle.recipes/resized/1Fxu7L83m1qDUM84fvsrQN3iwEjaxeRLEy_A42I8734_944_531.jpg",
         "type": "image/png"
       }
@@ -77,22 +77,22 @@
     "Introduction": "Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_3.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
         "type": "image/png"
       }
@@ -102,7 +102,7 @@
     "sizes": ["Large", "Medium", "Small"]
   },
   {
-    "__id": 4,
+
     "name": "Mozzarella Sticks",
     "newPrice": 90,
     "oldPrice": 156,
@@ -112,22 +112,22 @@
     "Introduction":"Introducing our Mozzarella Sticks, a golden delight that will transport you to cheese heaven. Irresistibly crispy on the outside and gooey on the inside, these sticks are a cheesy sensation perfect for any indulgent craving.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBdTOxvriisGhzDbGQP5KJdBUx381yF2fGA&usqp=CAU",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://images.themodernproper.com/billowy-turkey/production/posts/2021/Homemade-Mozzarella-Sticks-9.jpeg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1638935116&s=2574b8da89d966ee167111e9822a0b4e",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://hips.hearstapps.com/v__idthumb/images/mozzarella-sticks-thumbnail-645006be7b4a1.jpg?crop=0.9997727789138833xw:1xh;center,top&resize=1200:*",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://peaceloveandlowcarb.com/wp-content/uploads/2021/10/Keto-Mozzarella-Sticks-Peace-Love-and-Low-Carb-1.jpg",
         "type": "image/png"
       }
@@ -137,7 +137,7 @@
     "sizes": ["Large", "Medium", "Small"]
   },
   {
-    "__id": 5,
+
     "name": "Popcorn Chicken",
     "newPrice": 80,
     "oldPrice": 150,
@@ -147,22 +147,22 @@
     "Introduction": "Dive into a world of snack-time bliss with our Popcorn Chicken – bite-sized delights that redefine the art of crispy indulgence. These golden nuggets are a flavor-packed treat for your taste buds.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_6.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rHExfFBILo9_UbeSvvzAWCjHhYL2xU-OJQ&usqp=CAU",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://easychickenrecipes.com/wp-content/uploads/2022/12/featured-popcorn-chicken-1.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUrB4PFw-Gobwn69TKcg4DPlGeTe6WzgRvA&usqp=CAU",
         "type": "image/png"
       }
@@ -171,7 +171,7 @@
     "category": "chicken"
   },
   {
-    "__id": 6,
+   
     "name": "Mexican Pizza",
     "newPrice": 110,
     "oldPrice": 183,
@@ -181,22 +181,22 @@
     "Introduction": "Experience culinary perfection with our Ultimate Chicken Bliss Sandwich – a delectable journey for sandwich enthusiasts. Packed with bold flavors and premium ingredients, this creation is a testament to the art of sandwich craftsmanship.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_7.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnpyRrbU5Ffv9bfC-Zy2c-rcGqW1uBWaL7w&usqp=CAU",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiepYgNjsMqYRm5K9zP7yhv7F97z8tKgL_YiU9tkW0MgX5MbFUG9UBkA5YYHDzEMPxsy8&usqp=CAU",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQXA6iGD3-fYykxLqZmFEGESqWazfukzH66NQajqel7KIYTEBv8Zuu1h3gV5lEw_H2q8&usqp=CAU",
         "type": "image/png"
       }
@@ -206,7 +206,7 @@
     "sizes": ["Large", "Medium", "Small"]
   },
   {
-    "__id": 7,
+ 
     "name": "Onion Rings",
     "newPrice": 50,
     "oldPrice": 100,
@@ -216,22 +216,22 @@
     "Introduction": "Savor the sweetness of nature with our Blissful Orchard Medley Dessert, a symphony of fresh fruits that promises a delightful finale to your dining experience. This dessert is a celebration of flavors, textures, and the vibrant colors of the orchard.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://html.themefax.com/restina/html/ltr/assets/images/menu_img_8.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://realfood.tesco.com/media/images/Yoghurt-Pots-Final-1400x919-2aa74c0e-2450-4010-949c-8bb6758017d3-0-1400x919.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://insanelygoodrecipes.com/wp-content/uploads/2021/08/Homemade-Colorful-Ambrosia-Fruit-Salad.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:AH8q3dGK2f2vLZVgbRfLTjQPySe2yRaJHs-R1if4kA&usqp=CAU",
         "type": "image/png"
       }
@@ -242,7 +242,7 @@
     "featured": true
   },
   {
-    "__id": 8,
+  
     "name": "Bread Street Kitchen Burger",
     "newPrice": 129,
     "oldPrice": 220,
@@ -252,22 +252,22 @@
     "Introduction": "Dive into a world of bold flavors with our Spicy Burger, a fiery delight that will awaken your taste buds. Crafted with passion, this burger is an explosion of heat and succulence that promises a thrilling gastronomic experience.",
     "image": [
       {
-        "__id": "img1",
+        "id": "img1",
         "url": "https://images.pexels.com/photos/2271099/pexels-photo-2271099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "type": "image/png"
       },
       {
-        "__id": "img2",
+        "id": "img2",
         "url": "https://www.gardengourmet.com/sites/default/files/recipes/aeead5804e79ff6fb98b2039619c5230_200828_MEDIAMONKS_GG_Spicytarian.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img3",
+        "id": "img3",
         "url": "https://flawlessfood.co.uk/wp-content/uploads/2020/02/blog-200225-Spicy-Chicken-Burger-14686.jpg",
         "type": "image/png"
       },
       {
-        "__id": "img4",
+        "id": "img4",
         "url": "https://c4.wallpaperflare.com/wallpaper/374/404/846/brown-bird-perching-during-daytime-wren-wren-wallpaper-preview.jpg",
         "type": "image/png"
       }

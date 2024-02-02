@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Timer() {
+  const [showText, setShowText] = useState(false);
+  const handleButtonClick = () => {
+    setShowText(!showText);
+  };
+
   return (
     <div>
-      <h3>Timer pages updated Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad eum cupiditate non qui esse optio. Blanditiis iste, recusandae optio velit deserunt, mollitia accusantium perspiciatis deleniti laboriosam neque inventore fugiat ab quod maxime a illo veniam. Sit odio facere inventore voluptate doloremque officiis numquam cum fuga, fugiat aperiam quibusdam in.</h3>
+       <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      
+      {showText && (
+        <p>
+          More text to show when the button is clicked. Add your additional content here.
+        </p>
+      )}
+
+      <button onClick={handleButtonClick}>
+        {showText ? 'Show Less' : 'Show More'}
+      </button>
+    </div>
+    
     </div>
   )
 }

@@ -60,8 +60,11 @@ const togglePassword = () => {
         <div className="order-1">
           <div className=" mx-auto">
             <div className="w-96 p-7 mx-auto">
-              <h2 className="text-xl text-center font-bold">Register</h2>
+              <h2 className="text-xl text-center font-bold my-4">Register</h2>
               <Toaster position="top-center" reverseOrder={false} />
+             <div className="shadow-2xl rounded-2xl pt-4 border border-sky-200">
+             <GithubAndGoogle></GithubAndGoogle>
+              <div className="divider">OR</div>
               <form
                 onSubmit={handleSubmit(HandleRegister)}
                 className="card-body"
@@ -120,11 +123,7 @@ const togglePassword = () => {
                    <p className="text-red">{sigUpError}</p>
                    {errors.email && <p className="text-red-600 my-2">{errors.email?.message}</p>}
                  </div>
-                  <label className="label">
-                    <Link to="/forgetPassword" className="">
-                      Forgot password?
-                    </Link>
-                  </label>
+                 
                   {errors.password && <p className="text-red-600 my-2">{errors.password?.message}</p>}
                 </div>
                 <div className="form-control">
@@ -134,16 +133,22 @@ const togglePassword = () => {
                     value="SIGN UP"
                   />
                 </div>
-                <p className="text-purple">
-                  Already have an account ?{" "}
+                <div className="">
+                <p className="text-sm ">Forgot Your Password?
+                    <Link to="/forgetPassword" className="p-2 btn-link">
+                      Reset password
+                    </Link>
+                </p>
+                <p className="text-purple flex justify-center">
                   <Link className="text-secondary" to="/login">
                     Please Login
                   </Link>
                 </p>
-                <div className="divider">OR</div>
+                </div>
 
               </form>
-              <GithubAndGoogle />
+             </div>
+            {/*   <GithubAndGoogle /> */}
             </div>
           </div>
         </div>

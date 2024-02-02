@@ -4,9 +4,9 @@ import Rating from 'react-rating';
 export default function HomeReview({review}) {
     const {name,email, photo, dateTime,rating,customerFeedbackReview  } = review;
   return (
-    <div className="card mr-4 glass">
+    <div className="card mr-4 border border-sky-200 bg-gradient-to-r from-indigo-200 via-purple-500 to-pink-300">
         
-  <div className="card-body">
+  <div className="card-body flex">
    <div className='flex'>
    <figure><img className='rounded-full w-[60px]'  src={photo} alt="photo!"/></figure>
     <h2 className="card-title px-4">{name}</h2>

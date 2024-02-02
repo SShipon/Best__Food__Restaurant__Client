@@ -36,32 +36,32 @@ export default function HomeReviews() {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 3,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
   };
   return (
     
-      <section className='my-20'>
-      <div className="mx-8">
-        <div className="mx-auto">
-          <Slider {...settings}>
-            {reviews.map((review) => (
-              <HomeReview key={review._id} review={review}></HomeReview>
-            ))}
-          </Slider>
-        </div>
+    <section className='my-20'>
+    <div className="mx-8">
+      <div className="mx-auto">
+        <Slider {...settings}>
+          {reviews.map((review) => (
+            <HomeReview key={review._id} review={review}></HomeReview>
+          ))}
+        </Slider>
       </div>
-    </section>
+    </div>
+  </section>
   
   )
 }

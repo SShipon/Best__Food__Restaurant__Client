@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaGoogle, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
 const GithubAndGoogle = () => {
@@ -47,12 +47,21 @@ const GithubAndGoogle = () => {
       
 
     return (
-        <div className='w-50 px-7'>
-            <button onClick={handleGoogleLogin}  className="btn btn-outline btn-second w-full ">
-                CONTINUE WITH GOOGLE <FaGoogle />{" "}
+        <div className='flex justify-center'>
+            <button className='pr-4 btn btn-ghost ' onClick={handleGoogleLogin}>
+             <span className='text-3xl'>  <FaGoogle /></span>
               </button>
-              <button onClick={handleGithubLogin} className="btn btn-outline btn-second w-full mt-2">
-                CONTINUE WITH GITHUB <FaGithub />
+              <button  className='pr-4 btn btn-ghost rounded' onClick={handleGithubLogin}>
+             <span  className='text-3xl'>  <FaGithub /></span>
+              </button>
+              <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
+             <span className='text-3xl'>  <FaFacebook /></span>
+              </button>
+              <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
+              <span className='text-3xl'>  <FaLinkedin /></span>
+              </button>
+              <button  className='pr-4 btn btn-ghost' onClick={handleGithubLogin}>
+             <span className='text-3xl'>  <FaInstagram /></span>
               </button>
         </div>
     );

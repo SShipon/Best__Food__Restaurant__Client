@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Rating from 'react-rating';
 
@@ -14,9 +14,14 @@ const HomeFood = (curElem) => {
     review
   } = curElem;
 
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+      setIsReadMore(!isReadMore);
+    }
+
+
   return (
     <div>
-      <Link to={`/singleFood/${_id}`}>
         <div className="menu-card">
           <img src={image[1].url} alt="" />
           <div className="menu-card-content">
@@ -31,9 +36,11 @@ const HomeFood = (curElem) => {
               {category}
             </a>
             <h1>{name}</h1>
-            <p>{Introduction.slice(0, 95)}</p>
+           
+          <p>{Introduction}</p>
+    
             <div className="menu-btn-price">
-              <button>Add To Cart</button>
+            <Link to={`/singleFood/${_id}`}><button className='btn btn-outline btn-secondary'>Add To Cart</button></Link>
               <div className="menu-price">
                 <h2>${newPrice}</h2>
                 <h5>${oldPrice}</h5>
@@ -41,7 +48,6 @@ const HomeFood = (curElem) => {
             </div>
           </div>
         </div>
-      </Link>
     </div>
   );
 };
