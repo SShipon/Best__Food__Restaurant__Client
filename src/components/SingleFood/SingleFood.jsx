@@ -55,16 +55,7 @@ const SingleFood = () => {
     addToCart(order);
   };
 
-  //send POST request
-  // fetch('http://localhost:5000/foodOrder', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify(order),
-  // })
-  //   .then((res) => res.json())
-  //   .then((data) => console.log('i am your data', data));
+  
 
   return (
     <div>
