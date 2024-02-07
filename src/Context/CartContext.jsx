@@ -26,10 +26,10 @@ const CartProvider = ({ children }) => {
       // Make a POST request to add the item to the API
       const res = await axios.post(API2, order);
       const addedItem = res.data;
-      console.log('Added item response:', addedItem);
+    //  console.log('Added item response:', addedItem);
       // Dispatch the action to add the item to the local state
       dispatch({ type: 'ADD_TO_CART', payload: { addedItem, order } });
-      console.log('Payload dispatched to reducer:', { addedItem, order });
+     // console.log('Payload dispatched to reducer:', { addedItem, order });
     } catch (error) {
       console.error('Error adding item to the cart:', error);
     }
@@ -72,6 +72,7 @@ const CartProvider = ({ children }) => {
 
   //delete cart item
   const deleteCartProduct = (id) => {
+    console.log(id)
     dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
   };
 
