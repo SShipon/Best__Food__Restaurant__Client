@@ -21,6 +21,7 @@ const CartProvider = ({ children }) => {
 
   // post cart data to the 'foodOrder' API
   // Add item to the cart
+  // add to cart
   const addToCart = async (order) => {
     try {
       // Make a POST request to add the item to the API
