@@ -43,6 +43,9 @@ const Cart = () => {
             </div>
           </div>
         </div>
+        <div>
+          <button className="checkout-btn">Checkout</button>
+        </div>
       </div>
     </div>
   );
