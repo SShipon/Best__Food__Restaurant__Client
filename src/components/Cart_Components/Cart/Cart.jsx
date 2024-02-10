@@ -27,10 +27,12 @@ const Cart = () => {
           </div>
           <div className="order-total-amount-container">
             <div className="order-total-amount">
+              <h2>TOTAL CART</h2>
               <div className="total-flex order-price">
                 <p>Subtotal :</p>
                 <p>{total_price}</p>
               </div>
+              <hr/>
               <div className="total-flex delivery-charge">
                 <p>Delivery Charge :</p>
                 <p>{shipping_fee}</p>
@@ -40,11 +42,11 @@ const Cart = () => {
                 <p>Order total :</p>
                 <p>{total_price + shipping_fee}</p>
               </div>
+              <div className="checkout-btn-div">
+                <button className="checkout-btn">Checkout</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <button className="checkout-btn">Checkout</button>
         </div>
       </div>
     </div>
