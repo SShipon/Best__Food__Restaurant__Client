@@ -6,7 +6,7 @@ const CartContext = createContext();
 
 const API2 = 'http://localhost:5000/foodOrder'; //post cart data
 const API = 'http://localhost:5000/cartProducts'; //Fetch cart data
-const API3 = 'http://localhost:5000/cartProducts';
+const API3 = 'http://localhost:5000/cartProducts';// deleted product data
 const initialState = {
   cart: [],
   total_item: '',
@@ -96,7 +96,7 @@ const CartProvider = ({ children }) => {
       await axios.delete(`${API3}/${id}`);
       
       // Dispatch the action to remove the item from the local state
-      dispatch({ type: 'DELETE_CART_PRODUCT', payload: id });
+      dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
     } catch (error) {
       console.error('Error deleting item from the cart:', error);
     }
