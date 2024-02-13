@@ -5,6 +5,12 @@ import './Cart.css';
 
 const Cart = () => {
   const { cart, total_price, shipping_fee } = useCartContext();
+  console.log(total_price, shipping_fee)
+  const numericTotalPrice = parseFloat(total_price);
+  const numericShippingFee = parseFloat(shipping_fee);
+  // Calculate the total order amount only if both total_price and shipping_fee are numeric
+  const orderTotal = numericTotalPrice + numericShippingFee
+
   return (
     <div>
       <div className="cart-main">
@@ -29,16 +35,16 @@ const Cart = () => {
             <div className="order-total-amount">
               <div className="total-flex order-price">
                 <p>Subtotal :</p>
-                <p>{total_price}</p>
+               <p>{numericTotalPrice}</p>
               </div>
               <div className="total-flex delivery-charge">
                 <p>Delivery Charge :</p>
-                <p>{shipping_fee}</p>
+               <p>{numericShippingFee}</p>
               </div>
               <hr />
               <div className="total-flex total-order-calculation">
                 <p>Order total :</p>
-                <p>{total_price + shipping_fee}</p>
+                <p>{orderTotal}</p>
               </div>
             </div>
           </div>

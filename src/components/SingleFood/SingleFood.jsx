@@ -25,6 +25,8 @@ const SingleFood = () => {
     like,
   } = singleProduct;
 
+
+  
   useEffect(() => {
     getSingleProduct(`http://localhost:5000/product/${id}`);
   }, []);
@@ -50,7 +52,7 @@ const SingleFood = () => {
       newPrice: newPrice,
       amount: amount,
     };
-     console.log('Order to be added:', order);
+     console.log('Order to be added:', order.price);
     // Add the item to the cart
     addToCart(order);
   };

@@ -74,21 +74,8 @@ const CartProvider = ({ children }) => {
   //delete cart item
 
 
-  // const cartReducer = (state, action) => {
-  //   switch (action.type) {
-  //     case 'REMOVE_CART_ITEM':
-  //       return {
-  //         ...state,
-  //         cart: state.cart.filter(item => item.id !== action.payload),
-  //       };
-  //     // ... other cases
-  //     default:
-  //       return state;
-  //   }
-  // };
 
 
-  
 
   const deleteCartProduct = async (id) => {
     try {
@@ -103,18 +90,7 @@ const CartProvider = ({ children }) => {
   };
 
 
-  // useEffect(() => {
-  //   const storedCart = JSON.parse(localStorage.getItem('cart'));
-  //   if (storedCart) {
-  //     dispatch({ type: 'SET_CART_API_DATA', payload: storedCart });
-  //   }
-  // }, []);
   
-  // // Save cart state to localStorage after each modification
-  // useEffect(() => {
-  //   localStorage.setItem('cart', JSON.stringify(state.cart));
-  // }, [state.cart]);
-
 
   // increment and decrement only for the the cart product
   const setDecrease = (id) => {
@@ -145,10 +121,3 @@ const useCartContext = () => {
 };
 
 export { CartProvider, useCartContext };
-
-//  //get order data
-//     app.get('/cartProducts', async (req, res) => {
-//       const query = foodOrderCollection.find();
-//       const result = await query.toArray();
-//       res.send(result);
-//     })

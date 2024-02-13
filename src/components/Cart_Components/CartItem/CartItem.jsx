@@ -11,7 +11,7 @@ const CartItem = (cartProduct) => {
  
 
   const handleCartItemDelete = (id) => {
-    console.log(id)
+    console.log(id,'id deleted Ui ')
     const proceed = window.confirm('Are you sure?');
     if (proceed) {
       deleteCartProduct(id);
