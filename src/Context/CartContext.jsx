@@ -4,6 +4,7 @@ import reducer from '../Reducer/CartReducer';
 
 const CartContext = createContext();
 
+const API3 = 'http://localhost:5000/cartProducts';// deleted product data
 const API2 = 'http://localhost:5000/foodOrder'; //post cart data
 const API = 'http://localhost:5000/cartProducts'; //Fetch cart data
 
@@ -61,8 +62,19 @@ const CartProvider = ({ children }) => {
   //------------------problem here-----------------
 
   //delete cart item
-  const deleteCartProduct = (id) => {
-    dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
+  // const deleteCartProduct = (id) => {
+  //   dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
+  // };
+  const deleteCartProduct = async (id) => {
+    try {
+      // Make a DELETE request to remove the item from the API
+      await axios.delete(`${API3}/${id}`);
+      
+      // Dispatch the action to remove the item from the local state
+      dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
+    } catch (error) {
+      console.error('Error deleting item from the cart:', error);
+    }
   };
 
   // increment and decrement only for the the cart product

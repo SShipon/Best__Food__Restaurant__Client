@@ -2,6 +2,7 @@ import React from 'react';
 import { useCartContext } from '../../../Context/CartContext';
 import CartItem from '../CartItem/CartItem';
 import './Cart.css';
+import Link from 'react-dom';
 
 const Cart = () => {
   const { cart, total_price, shipping_fee } = useCartContext();
@@ -32,7 +33,7 @@ const Cart = () => {
                 <p>Subtotal :</p>
                 <p>{total_price}</p>
               </div>
-              <hr/>
+              <hr />
               <div className="total-flex delivery-charge">
                 <p>Delivery Charge :</p>
                 <p>{shipping_fee}</p>
