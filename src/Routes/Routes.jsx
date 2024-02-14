@@ -16,7 +16,7 @@ import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
 import Reviews from "../components/Dashboard/Review/Reviews";
 import PrivetRoute from "./PrivetRoute";
-import Checkout from "../components/Checkout/Checkout";
+import Checkout from "../Pages/Checkout";
 export const router = createBrowserRouter([
   {
     path: '/',
