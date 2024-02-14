@@ -3,6 +3,7 @@ import { useCartContext } from '../../../Context/CartContext';
 import CartItem from '../CartItem/CartItem';
 import './Cart.css';
 import Link from 'react-dom';
+import { NavLink } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, total_price, shipping_fee } = useCartContext();
@@ -43,9 +44,11 @@ const Cart = () => {
                 <p>Order total :</p>
                 <p>{total_price + shipping_fee}</p>
               </div>
-              <div className="checkout-btn-div">
-                <button className="checkout-btn">Checkout</button>
-              </div>
+            
+                <div className="checkout-btn-div">
+                  <NavLink to='/checkout' className="checkout-btn">Checkout</NavLink>
+                </div>
+              
             </div>
           </div>
         </div>
