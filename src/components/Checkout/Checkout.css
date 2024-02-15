@@ -1,0 +1,18 @@
+.checkout-container{
+    background-color: white;
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.billing-container{
+    flex-basis: 50%;
+}
+.order-container{
+    flex-basis: 50%;
+}
+.chek-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
