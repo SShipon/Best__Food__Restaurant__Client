@@ -120,7 +120,7 @@ const Checkout = () => {
 
               <div className="checkout-btn-div">
                 <NavLink to="/checkout" className="checkout-btn">
-                  Checkout
+                  Place order
                 </NavLink>
               </div>
             </div>
