@@ -68,7 +68,31 @@ const Checkout = () => {
           </form>
         </div>
         <div className="order-container">
-         
+          <div className="order-total-amount-container">
+            <div className="order-total-amount">
+              <h2>TOTAL CART</h2>
+              <div className="total-flex order-price">
+                <p>Subtotal :</p>
+                <p>{total_price}</p>
+              </div>
+              <hr />
+              <div className="total-flex delivery-charge">
+                <p>Delivery Charge :</p>
+                <p>{shipping_fee}</p>
+              </div>
+              <hr />
+              <div className="total-flex total-order-calculation">
+                <p>Order total :</p>
+                <p>{total_price + shipping_fee}</p>
+              </div>
+
+              <div className="checkout-btn-div">
+                <NavLink to="/checkout" className="checkout-btn">
+                  Checkout
+                </NavLink>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
