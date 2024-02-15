@@ -19,7 +19,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
               <label className="form-control w-full max-w-xs">
@@ -29,7 +29,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
             </div>
@@ -41,7 +41,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="Enter Country"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
               <label className="form-control w-full max-w-xs">
@@ -51,7 +51,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="Enter City"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
               <label className="form-control w-full max-w-xs">
@@ -61,7 +61,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="Enter Zip"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input  w-full max-w-xs"
                 />
               </label>
             </div>
@@ -73,7 +73,7 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="example@example.com"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
               <label className="form-control w-full max-w-xs">
@@ -83,18 +83,18 @@ const Checkout = () => {
                 <input
                   type="text"
                   placeholder="+88  123-XXX-78901"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input w-full max-w-xs"
                 />
               </label>
             </div>
-            <label className="form-control w-full max-w-xs">
+            <label className="form-control w-full ">
               <div className="label">
                 <span className="label-text-alt">Address</span>
               </div>
               <input
                 type="text"
                 placeholder="Enter your Address"
-                className="input input-bordered "
+                className="input"
               />
             </label>
           </form>

@@ -16,9 +16,23 @@
 .order-container {
   flex-basis: 25%;
 }
-
+.billing-container input{
+background-color: white;
+border: 1px solid rgb(199, 197, 197);
+}
+.billing-container h1{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 40px;
+    color: black;
+}
 .chek-flex {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.label-text-alt{
+    color: black;
+    font-size: 15px;
 }
