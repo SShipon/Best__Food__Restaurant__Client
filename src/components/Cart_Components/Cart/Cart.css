@@ -25,14 +25,14 @@
 
 .order-total-amount-container{
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 300px;
 
 }
 
 .order-total-amount{ 
   position: absolute;
   right: 20px;
-  background-color: rgb(248, 246, 248);
+  background-color: rgb(254, 255, 255);
   /* background-color: rgb(248, 74, 127); */
   width:350px;
   height: auto;
@@ -40,7 +40,7 @@
   color: black;
   text-align: center;
   color: black;
-    box-shadow: 10px 10px 30px #a2dba1,
+    box-shadow: 10px 10px 30px #969b96,
              -10px -10px 30px #c7e0e0;
   
 }
