@@ -1,18 +1,24 @@
-.checkout-container{
-    background-color: white;
-    padding: 40px 0px;
-    display: flex;
-    flex-wrap: wrap;
+.checkout-container {
+  background-color: white;
+  padding: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.billing-container{
-    flex-basis: 50%;
+.billing-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.order-container{
-    flex-basis: 50%;
+.order-container {
+  flex-basis: 25%;
 }
-.chek-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+
+.chek-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }

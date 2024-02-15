@@ -6,7 +6,7 @@ import './Checkout.css';
 const Checkout = () => {
     const { cart, total_price, shipping_fee } = useCartContext();
   return (
-    <div>
+    <div className=''>
       <div className="checkout-container">
         <div className="billing-container">
           <h1>BILLING DETAILS</h1>
@@ -65,6 +65,38 @@ const Checkout = () => {
                 />
               </label>
             </div>
+            <div className="chek-flex">
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text-alt">Email</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="example@example.com"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text-alt">Phone Number</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="+88  123-XXX-78901"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+            </div>
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text-alt">Address</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Enter your Address"
+                className="input input-bordered "
+              />
+            </label>
           </form>
         </div>
         <div className="order-container">
