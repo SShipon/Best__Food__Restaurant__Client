@@ -16,6 +16,7 @@ import NewAddFood from "../components/Dashboard/NewAddFood/NewAddFood";
 import DataAnalyst from "../components/Dashboard/DataAnalyis/DataAnalyst";
 import Reviews from "../components/Dashboard/Review/Reviews";
 import PrivetRoute from "./PrivetRoute";
+import Checkout from "../Pages/Checkout";
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -40,15 +41,21 @@ export const router = createBrowserRouter([
       },
       {
         path: 'singleFood/:id',
-        element:<PrivetRoute>
-         <SingleFood></SingleFood>
-        </PrivetRoute>,
+        element: (
+          <PrivetRoute>
+            <SingleFood></SingleFood>
+          </PrivetRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product/${params.id}`),
       },
       {
         path: 'cart',
         element: <Cart></Cart>,
+      },
+      {
+        path: 'checkout',
+        element: <Checkout></Checkout>,
       },
       {
         path: 'login',
@@ -64,27 +71,29 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <PrivetRoute>
-          <Dashboard></Dashboard>
-        </PrivetRoute>,
-        children:[
+        element: (
+          <PrivetRoute>
+            <Dashboard></Dashboard>
+          </PrivetRoute>
+        ),
+        children: [
           {
-            path:'myOrder',
-            element:<MyOrder />
+            path: 'myOrder',
+            element: <MyOrder />,
           },
           {
-            path:'newAddFood',
-            element:<NewAddFood/>
+            path: 'newAddFood',
+            element: <NewAddFood />,
           },
           {
-            path:'dataAnalyst',
-            element:<DataAnalyst />
+            path: 'dataAnalyst',
+            element: <DataAnalyst />,
           },
           {
-            path:'review',
-            element:<Reviews />
-          }
-        ]
+            path: 'review',
+            element: <Reviews />,
+          },
+        ],
       },
     ],
   },

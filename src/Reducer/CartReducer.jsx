@@ -119,9 +119,7 @@ const CartReducer = (state, action) => {
 
     //REMOVE_CART_ITEM
     case 'REMOVE_CART_ITEM':
-      const remaining = state.cart.filter(
-        (cartProduct) => cartProduct.id !== action.payload
-      );
+      const remaining = state.cart.filter((cartProduct) => cartProduct.id !== action.payload);
       return {
         ...state,
         cart: remaining,

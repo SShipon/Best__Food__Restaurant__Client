@@ -28,7 +28,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className='bg-purple'>
+    <div className="bg-purple">
       <div className="contact-container">
         <section className="contact-flex">
           <div className="contact-left">
@@ -49,8 +49,8 @@ const Contact = () => {
                   <span className="label-text">Name</span>
                 </label>
                 <input
-                    type="text"
-                    name="user_name}"
+                  type="text"
+                  name="user_name}"
                   placeholder="Enter Name"
                   className="input input-bordered"
                   required
@@ -80,7 +80,7 @@ const Contact = () => {
                   rows="10"
                 ></textarea>
               </div>
-              <button type='submit' >Send Message</button>
+              <button type="submit">Send Message</button>
             </form>
           </div>
         </section>
@@ -89,7 +89,7 @@ const Contact = () => {
             <div className="contact-card">
               <div className="contact-logo ">
                 <i className="fa-solid fa-phone"></i>
-                <h2>Call Us</h2>
+                <h2>Phone Us 24/7</h2>
               </div>
               <p>+1 234 XXXX 123</p>
               <p>+1 234 XXXX 567</p>
@@ -97,18 +97,18 @@ const Contact = () => {
             <div className="contact-card">
               <div className="contact-logo ">
                 <i className="fa-solid fa-envelope"></i>
-                <h2>Email</h2>
+                <h2>Get Direction</h2>
               </div>
-              <p>demomail123@mail.com</p>
-              <p>helpdemo123@mail.com</p>
+              <p>Sector:7, Road:27, House:18, Uttara, Dhaka, 1230 Dhaka.</p>
+              {/* <p>37125 Maya Estate Dr, Victoria Road,</p> */}
+              <p>Warsaw, Poland - 234834</p>
             </div>
             <div className="contact-card">
               <div className="contact-logo ">
                 <i className="fa-solid fa-location-dot"></i>
-                <h2>Address</h2>
+                <h2>Opening Hours</h2>
               </div>
-              <p>37125 Maya Estate Dr, Victoria Road,</p>
-              <p>Warsaw, Poland - 234834</p>
+              <p>Everyday 11.00 PM - 11.00 AM</p>
             </div>
           </div>
         </section>
