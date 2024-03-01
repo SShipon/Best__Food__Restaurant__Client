@@ -13,7 +13,9 @@ import Infinity from '../Infinity/Infinity';
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
+           
+           <Banner></Banner>
+         
             <PopularCategory></PopularCategory>
             {/* <Menu></Menu> */}
             <Foods />

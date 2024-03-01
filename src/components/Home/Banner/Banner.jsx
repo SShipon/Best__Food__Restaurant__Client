@@ -4,7 +4,7 @@ import bannerimg from '../../../assets/HomeBanner/home_banner_img.png'
 const Banner = () => {
   return (
     <div>
-      <div className="banner-container">
+      <div className="banner-container m-0">
         <div className="banner-flex">
           <div className="banner-left">
             <h5>Welcome to our delicious corner</h5>
