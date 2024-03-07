@@ -6,7 +6,7 @@ import './Checkout.css';
 const Checkout = () => {
     const { cart, total_price, shipping_fee } = useCartContext();
   return (
-    <div className=''>
+    <div className="">
       <div className="checkout-container">
         <div className="billing-container">
           <h1>BILLING DETAILS</h1>
@@ -100,7 +100,7 @@ const Checkout = () => {
           </form>
         </div>
         <div className="order-container">
-          <div className="order-total-amount-container">
+          <div className="checkout-order-total-amount-container">
             <div className="order-total-amount">
               <h2>TOTAL CART</h2>
               <div className="total-flex order-price">

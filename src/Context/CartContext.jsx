@@ -31,6 +31,7 @@ const CartProvider = ({ children }) => {
       // Dispatch the action to add the item to the local state
       dispatch({ type: 'ADD_TO_CART', payload: { addedItem, order } });
       console.log('Payload dispatched to reducer:', { addedItem, order });
+     getCartProducts(API);
     } catch (error) {
       console.error('Error adding item to the cart:', error);
     }
@@ -51,9 +52,9 @@ const CartProvider = ({ children }) => {
   // Fetch cart products on component amount
 
   //-----------------problem here----------------
-  useEffect(() => {
-    getCartProducts(API);
-  }, []);
+  // useEffect(() => {
+  //   getCartProducts(API);
+  // }, [state.cart]);
 
   useEffect(() => {
     dispatch({ type: 'CART_TOTAL_ITEM' });
@@ -69,9 +70,10 @@ const CartProvider = ({ children }) => {
     try {
       // Make a DELETE request to remove the item from the API
       await axios.delete(`${API3}/${id}`);
-      
+
       // Dispatch the action to remove the item from the local state
       dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
+      getCartProducts(API);
     } catch (error) {
       console.error('Error deleting item from the cart:', error);
     }

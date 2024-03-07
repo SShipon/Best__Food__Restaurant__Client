@@ -36,3 +36,26 @@ border: 1px solid rgb(199, 197, 197);
     color: black;
     font-size: 15px;
 }
+
+/* different cart total */
+.checkout-order-total-amount-container{
+  position: relative;
+  margin-bottom: 300px;
+
+}
+
+.order-total-amount{ 
+  position: absolute;
+  right: 20px;
+  background-color: rgb(254, 255, 255);
+ 
+  width:350px;
+  height: auto;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  color: black;
+    box-shadow: 10px 10px 30px #969b96,
+             -10px -10px 30px #c7e0e0;
+  
+}
