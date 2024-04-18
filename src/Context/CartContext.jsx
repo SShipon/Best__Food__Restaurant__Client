@@ -4,9 +4,10 @@ import reducer from '../Reducer/CartReducer';
 
 const CartContext = createContext();
 
+const API3 = 'http://localhost:5000/cartProducts';// deleted product data
 const API2 = 'http://localhost:5000/foodOrder'; //post cart data
 const API = 'http://localhost:5000/cartProducts'; //Fetch cart data
-const API3 = 'http://localhost:5000/cartProducts';// deleted product data
+
 const initialState = {
   cart: [],
   total_item: '',
@@ -49,6 +50,8 @@ const CartProvider = ({ children }) => {
   };
 
   // Fetch cart products on component amount
+
+  //-----------------problem here----------------
   useEffect(() => {
     const fetchCartData = async () => {
       try {
@@ -70,6 +73,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: 'CART_TOTAL_ITEM' });
     dispatch({ type: 'CART_TOTAL_PRICE' });
   }, [state.cart]);
+  //------------------problem here-----------------
 
   //delete cart item
 
