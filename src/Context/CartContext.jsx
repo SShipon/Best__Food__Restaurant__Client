@@ -4,10 +4,10 @@ import reducer from '../Reducer/CartReducer';
 
 const CartContext = createContext();
 
-const API3 = 'http://localhost:5000/cartProducts';// deleted product data
+
 const API2 = 'http://localhost:5000/foodOrder'; //post cart data
 const API = 'http://localhost:5000/cartProducts'; //Fetch cart data
-
+const API3 = 'http://localhost:5000/cartProducts';// deleted product data
 const initialState = {
   cart: [],
   total_item: '',
@@ -53,20 +53,7 @@ const CartProvider = ({ children }) => {
 
   //-----------------problem here----------------
   useEffect(() => {
-    const fetchCartData = async () => {
-      try {
-        // Fetch cart products
-        await getCartProducts(API);
-
-        // After fetching, update total item and total price
-        dispatch({ type: 'CART_TOTAL_ITEM' });
-        dispatch({ type: 'CART_TOTAL_PRICE' });
-      } catch (error) {
-        console.error('Error fetching cart products:', error);
-      }
-    };
-
-    fetchCartData(); // Invoke the effect
+    getCartProducts(API);
   }, []);
 
   useEffect(() => {
@@ -76,24 +63,9 @@ const CartProvider = ({ children }) => {
   //------------------problem here-----------------
 
   //delete cart item
-
-
-  // const cartReducer = (state, action) => {
-  //   switch (action.type) {
-  //     case 'REMOVE_CART_ITEM':
-  //       return {
-  //         ...state,
-  //         cart: state.cart.filter(item => item.id !== action.payload),
-  //       };
-  //     // ... other cases
-  //     default:
-  //       return state;
-  //   }
+  // const deleteCartProduct = (id) => {
+  //   dispatch({ type: 'REMOVE_CART_ITEM', payload: id });
   // };
-
-
-  
-
   const deleteCartProduct = async (id) => {
     try {
       // Make a DELETE request to remove the item from the API
